@@ -1,50 +1,24 @@
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/BLE_1.o : D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_dis.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_hrs.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyFlash.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.c 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/Opamp.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.c 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.c : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/Opamp_PM.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp_PM.c 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp_PM.c : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/cyfitter_cfg.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_dis.h : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_hrs.h : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyFlash.h : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.c : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/BLE_1_gatt.o : D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_dis.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_hrs.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyFlash.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.c 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.c : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.c : 
 

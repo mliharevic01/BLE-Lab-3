@@ -59,13 +59,13 @@
 /*****************************************************************************
 * Global variables
 *****************************************************************************/
-//static CYBLE_GAP_CONN_UPDATE_PARAM_T hrmConnectionParam =
-//{
-//    16,         /* Minimum connection interval of 20 ms */
-//    16,         /* Maximum connection interval of 20 ms */
-//    49,         /* Slave latency of 49 */
-//    500         /* Supervision timeout of 5 seconds */
-//};
+static CYBLE_GAP_CONN_UPDATE_PARAM_T hrmConnectionParam =
+{
+    800,         /* Minimum connection interval of 1 s, 800 * 1.25= 1000 ms */
+    800,         /* Maximum connection interval of 1 s, 800 * 1.25= 1000 ms */
+    49,         /* Slave latency of 49 */
+    500         /* Supervision timeout of 5 seconds */
+};
 
 
 /*****************************************************************************
@@ -110,6 +110,8 @@ static void InitializeSystem(void)
 	
     /* Start BLE component */
     CyBle_Start(GeneralEventHandler);
+    
+    
     
     
     /* Register the Heart Rate Service event handler callback. The function
@@ -180,15 +182,15 @@ int main()
         currentTimestamp = WatchdogTimer_GetTimestamp();        
 
 //        /* Update BLE connection parameters a few seconds after connection */
-//        if((CyBle_GetState() == CYBLE_STATE_CONNECTED) && 
-//           (connParamRequestState == CONN_PARAM_REQUEST_NOT_SENT))
-//        {
-//            if((currentTimestamp - timestampWhenConnected) > TIME_SINCE_CONNECTED_MS)
-//            {
-//                CyBle_L2capLeConnectionParamUpdateRequest(cyBle_connHandle.bdHandle, &hrmConnectionParam);
-//                connParamRequestState = CONN_PARAM_REQUEST_SENT;
-//            }
-//        }
+        if((CyBle_GetState() == CYBLE_STATE_CONNECTED) && 
+           (connParamRequestState == CONN_PARAM_REQUEST_NOT_SENT))
+       {
+           if((currentTimestamp - timestampWhenConnected) > TIME_SINCE_CONNECTED_MS)
+            {
+                CyBle_L2capLeConnectionParamUpdateRequest(cyBle_connHandle.bdHandle, &hrmConnectionParam);
+                connParamRequestState = CONN_PARAM_REQUEST_SENT;
+            }
+        }
         
         
         /* Send Heart Rate notification over BLE every second.

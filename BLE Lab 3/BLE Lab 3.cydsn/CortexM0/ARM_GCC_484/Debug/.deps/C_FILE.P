@@ -1,114 +1,102 @@
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/BleProcessing.o : D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_IRQ.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_intClock.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_dis.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_hrs.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyFlash.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Wakeup_ISR.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmFunc.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmInstr.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyPm.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydisabledsheets.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cypins.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/project.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/BleProcessing.c D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/BleProcessing.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/HeartRateProcessing.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/WatchdogTimer.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/main.h 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/main.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_IRQ.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_intClock.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_dis.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_hrs.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output_aliases.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input_aliases.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green_aliases.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue_aliases.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch_aliases.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Wakeup_ISR.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmFunc.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmInstr.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyPm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydisabledsheets.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/project.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/BleProcessing.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/HeartRateProcessing.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/WatchdogTimer.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/main.c C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/main.h 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_IRQ.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_IRQ.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_intClock.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_intClock.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_dis.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_dis.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_hrs.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_hrs.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output_aliases.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output_aliases.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyFlash.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyFlash.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input_aliases.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input_aliases.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green_aliases.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green_aliases.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue_aliases.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue_aliases.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch_aliases.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch_aliases.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Wakeup_ISR.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Wakeup_ISR.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmFunc.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmFunc.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmInstr.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmInstr.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyPm.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyPm.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydisabledsheets.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydisabledsheets.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cypins.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cypins.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/project.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/project.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/BleProcessing.c : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/BleProcessing.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/BleProcessing.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/HeartRateProcessing.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/HeartRateProcessing.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/WatchdogTimer.h : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/WatchdogTimer.h : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/main.c : 
 
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/main.h : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/HeartRateProcessing.o : D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_IRQ.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_intClock.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_dis.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_hrs.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyFlash.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Wakeup_ISR.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmFunc.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmInstr.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyPm.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydisabledsheets.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cypins.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/project.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/HeartRateProcessing.c D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/WatchdogTimer.h 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/HeartRateProcessing.c : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/WatchdogTimer.o : D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_IRQ.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_intClock.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_dis.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_hrs.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyFlash.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Wakeup_ISR.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmFunc.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmInstr.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyPm.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydisabledsheets.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cypins.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/project.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/WatchdogTimer.c 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/WatchdogTimer.c : 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/main.o : D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_IRQ.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_intClock.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_dis.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_hrs.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Button_output_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyFlash.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch_aliases.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Wakeup_ISR.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cm0_psoc4.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmFunc.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/core_cmInstr.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyPm.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydisabledsheets.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cypins.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/project.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/BleProcessing.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/HeartRateProcessing.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/WatchdogTimer.h D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/main.c D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/main.h 
-
-D:/ECEG_Labs/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/main.c : 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/main.h : 
 
