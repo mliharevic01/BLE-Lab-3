@@ -68,10 +68,10 @@ void Opamp_RestoreConfig(void);
 ****************************************/
 
 #define Opamp_OUTPUT_CURRENT         (0u)
-#define Opamp_POWER                  (2u)
+#define Opamp_POWER                  (1u)
 #define Opamp_MODE                   (1u)
 #define Opamp_OA_COMP_TRIM_VALUE     (3u)
-#define Opamp_DEEPSLEEP_SUPPORT      (0u)
+#define Opamp_DEEPSLEEP_SUPPORT      (1u)
 
 
 /***************************************

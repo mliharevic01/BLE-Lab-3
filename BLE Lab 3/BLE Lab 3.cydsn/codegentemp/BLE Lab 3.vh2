@@ -2,7 +2,7 @@
 --	Conversion of BLE Lab 3.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sat Oct 15 21:43:00 2016
+--	Sun Oct 16 18:13:52 2016
 --
 
 USE cypress.cypress.all;
@@ -542,8 +542,8 @@ Led_Connected_Blue:cy_psoc3_pins_v1_10
 		dig_domain_out=>open);
 \Opamp:cy_psoc4_abuf\:cy_psoc4_abuf_v1_0
 	GENERIC MAP(cy_registers=>"",
-		needs_dsab=>'0',
-		deepsleep_available=>'0',
+		needs_dsab=>'1',
+		deepsleep_available=>'1',
 		has_resistor=>'0')
 	PORT MAP(vplus=>Net_1185,
 		vminus=>\Opamp:Net_9\,

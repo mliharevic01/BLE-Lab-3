@@ -1,6 +1,6 @@
 // ======================================================================
 // BLE Lab 3.v generated from TopDesign.cysch
-// 10/15/2016 at 21:42
+// 10/16/2016 at 18:13
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -114,7 +114,7 @@ endmodule
 `include "D:\Program Files(x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\cy_analog_virtualmux_v1_0\cy_analog_virtualmux_v1_0.v"
 `endif
 
-// OpAmp_P4_v1_10(Compensation=3, DeepSleepSupport=false, Mode=1, OutputCurrent=0, Power=2, CY_COMPONENT_NAME=OpAmp_P4_v1_10, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Opamp, CY_INSTANCE_SHORT_NAME=Opamp, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=10, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.1 Component Pack 1, INSTANCE_NAME=Opamp, )
+// OpAmp_P4_v1_10(Compensation=3, DeepSleepSupport=true, Mode=1, OutputCurrent=0, Power=1, CY_COMPONENT_NAME=OpAmp_P4_v1_10, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=Opamp, CY_INSTANCE_SHORT_NAME=Opamp, CY_MAJOR_VERSION=1, CY_MINOR_VERSION=10, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.1 Component Pack 1, INSTANCE_NAME=Opamp, )
 module OpAmp_P4_v1_10_1 (
     Vplus,
     Vout,
@@ -140,9 +140,9 @@ module OpAmp_P4_v1_10_1 (
         .vout10(Net_19),
         .rs_bot(Net_29),
         .cmpout(Net_12));
-    defparam cy_psoc4_abuf.deepsleep_available = 0;
+    defparam cy_psoc4_abuf.deepsleep_available = 1;
     defparam cy_psoc4_abuf.has_resistor = 0;
-    defparam cy_psoc4_abuf.needs_dsab = 0;
+    defparam cy_psoc4_abuf.needs_dsab = 1;
 
 	// cy_analog_virtualmux_1 (cy_analog_virtualmux_v1_0)
 	cy_connect_v1_0 cy_analog_virtualmux_1_connect(Net_9, Vout);
