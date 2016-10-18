@@ -98,13 +98,13 @@ void ProcessHeartRateSignal(void)
     static bool firstTime = true;
     static uint32 previousBeatTime = 0;
     static uint32 newBeatTime = 0;
-    int16 adcOut;
+    int16 adcOut, pwmout;
     uint32 twoSampleTime = 0;
 
     /* Get the ADC output */
-    ADC_StartConvert();
-    ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
-    adcOut = ADC_GetResult16(HEART_RATE_CHANNEL);
+//    ADC_StartConvert();
+    //ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
+   // adcOut = ADC_GetResult16(HEART_RATE_CHANNEL);
     
     /* If the ADC output is more than a fixed threshold, consider that a 
      * valid R peak */

@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: ADC_IRQ.c  
+* File Name: Pulse_Count.c  
 * Version 1.70
 *
 *  Description:
@@ -18,14 +18,14 @@
 
 #include <cydevice_trm.h>
 #include <CyLib.h>
-#include <ADC_IRQ.h>
+#include <Pulse_Count.h>
 
-#if !defined(ADC_IRQ__REMOVED) /* Check for removal by optimization */
+#if !defined(Pulse_Count__REMOVED) /* Check for removal by optimization */
 
 /*******************************************************************************
 *  Place your includes, defines and code here 
 ********************************************************************************/
-/* `#START ADC_IRQ_intc` */
+/* `#START Pulse_Count_intc` */
 
 /* `#END` */
 
@@ -36,7 +36,7 @@ CY_ISR_PROTO(IntDefaultHandler);
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_Start
+* Function Name: Pulse_Count_Start
 ********************************************************************************
 *
 * Summary:
@@ -49,24 +49,24 @@ CY_ISR_PROTO(IntDefaultHandler);
 *   None
 *
 *******************************************************************************/
-void ADC_IRQ_Start(void)
+void Pulse_Count_Start(void)
 {
     /* For all we know the interrupt is active. */
-    ADC_IRQ_Disable();
+    Pulse_Count_Disable();
 
-    /* Set the ISR to point to the ADC_IRQ Interrupt. */
-    ADC_IRQ_SetVector(&ADC_IRQ_Interrupt);
+    /* Set the ISR to point to the Pulse_Count Interrupt. */
+    Pulse_Count_SetVector(&Pulse_Count_Interrupt);
 
     /* Set the priority. */
-    ADC_IRQ_SetPriority((uint8)ADC_IRQ_INTC_PRIOR_NUMBER);
+    Pulse_Count_SetPriority((uint8)Pulse_Count_INTC_PRIOR_NUMBER);
 
     /* Enable it. */
-    ADC_IRQ_Enable();
+    Pulse_Count_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_StartEx
+* Function Name: Pulse_Count_StartEx
 ********************************************************************************
 *
 * Summary:
@@ -79,24 +79,24 @@ void ADC_IRQ_Start(void)
 *   None
 *
 *******************************************************************************/
-void ADC_IRQ_StartEx(cyisraddress address)
+void Pulse_Count_StartEx(cyisraddress address)
 {
     /* For all we know the interrupt is active. */
-    ADC_IRQ_Disable();
+    Pulse_Count_Disable();
 
-    /* Set the ISR to point to the ADC_IRQ Interrupt. */
-    ADC_IRQ_SetVector(address);
+    /* Set the ISR to point to the Pulse_Count Interrupt. */
+    Pulse_Count_SetVector(address);
 
     /* Set the priority. */
-    ADC_IRQ_SetPriority((uint8)ADC_IRQ_INTC_PRIOR_NUMBER);
+    Pulse_Count_SetPriority((uint8)Pulse_Count_INTC_PRIOR_NUMBER);
 
     /* Enable it. */
-    ADC_IRQ_Enable();
+    Pulse_Count_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_Stop
+* Function Name: Pulse_Count_Stop
 ********************************************************************************
 *
 * Summary:
@@ -108,22 +108,22 @@ void ADC_IRQ_StartEx(cyisraddress address)
 *   None
 *
 *******************************************************************************/
-void ADC_IRQ_Stop(void)
+void Pulse_Count_Stop(void)
 {
     /* Disable this interrupt. */
-    ADC_IRQ_Disable();
+    Pulse_Count_Disable();
 
     /* Set the ISR to point to the passive one. */
-    ADC_IRQ_SetVector(&IntDefaultHandler);
+    Pulse_Count_SetVector(&IntDefaultHandler);
 }
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_Interrupt
+* Function Name: Pulse_Count_Interrupt
 ********************************************************************************
 *
 * Summary:
-*   The default Interrupt Service Routine for ADC_IRQ.
+*   The default Interrupt Service Routine for Pulse_Count.
 *
 *   Add custom code between the coments to keep the next version of this file
 *   from over writting your code.
@@ -135,23 +135,23 @@ void ADC_IRQ_Stop(void)
 *   None
 *
 *******************************************************************************/
-CY_ISR(ADC_IRQ_Interrupt)
+CY_ISR(Pulse_Count_Interrupt)
 {
     /*  Place your Interrupt code here. */
-    /* `#START ADC_IRQ_Interrupt` */
+    /* `#START Pulse_Count_Interrupt` */
 
     /* `#END` */
 }
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_SetVector
+* Function Name: Pulse_Count_SetVector
 ********************************************************************************
 *
 * Summary:
-*   Change the ISR vector for the Interrupt. Note calling ADC_IRQ_Start
+*   Change the ISR vector for the Interrupt. Note calling Pulse_Count_Start
 *   will override any effect this method would have had. To set the vector 
-*   before the component has been started use ADC_IRQ_StartEx instead.
+*   before the component has been started use Pulse_Count_StartEx instead.
 *
 * Parameters:
 *   address: Address of the ISR to set in the interrupt vector table.
@@ -160,14 +160,14 @@ CY_ISR(ADC_IRQ_Interrupt)
 *   None
 *
 *******************************************************************************/
-void ADC_IRQ_SetVector(cyisraddress address)
+void Pulse_Count_SetVector(cyisraddress address)
 {
-    CyRamVectors[CYINT_IRQ_BASE + ADC_IRQ__INTC_NUMBER] = address;
+    CyRamVectors[CYINT_IRQ_BASE + Pulse_Count__INTC_NUMBER] = address;
 }
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_GetVector
+* Function Name: Pulse_Count_GetVector
 ********************************************************************************
 *
 * Summary:
@@ -180,21 +180,21 @@ void ADC_IRQ_SetVector(cyisraddress address)
 *   Address of the ISR in the interrupt vector table.
 *
 *******************************************************************************/
-cyisraddress ADC_IRQ_GetVector(void)
+cyisraddress Pulse_Count_GetVector(void)
 {
-    return CyRamVectors[CYINT_IRQ_BASE + ADC_IRQ__INTC_NUMBER];
+    return CyRamVectors[CYINT_IRQ_BASE + Pulse_Count__INTC_NUMBER];
 }
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_SetPriority
+* Function Name: Pulse_Count_SetPriority
 ********************************************************************************
 *
 * Summary:
-*   Sets the Priority of the Interrupt. Note calling ADC_IRQ_Start
-*   or ADC_IRQ_StartEx will override any effect this method would 
-*   have had. This method should only be called after ADC_IRQ_Start or 
-*   ADC_IRQ_StartEx has been called. To set the initial
+*   Sets the Priority of the Interrupt. Note calling Pulse_Count_Start
+*   or Pulse_Count_StartEx will override any effect this method would 
+*   have had. This method should only be called after Pulse_Count_Start or 
+*   Pulse_Count_StartEx has been called. To set the initial
 *   priority for the component use the cydwr file in the tool.
 *
 * Parameters:
@@ -204,20 +204,20 @@ cyisraddress ADC_IRQ_GetVector(void)
 *   None
 *
 *******************************************************************************/
-void ADC_IRQ_SetPriority(uint8 priority)
+void Pulse_Count_SetPriority(uint8 priority)
 {
 	uint8 interruptState;
-    uint32 priorityOffset = ((ADC_IRQ__INTC_NUMBER % 4u) * 8u) + 6u;
+    uint32 priorityOffset = ((Pulse_Count__INTC_NUMBER % 4u) * 8u) + 6u;
     
 	interruptState = CyEnterCriticalSection();
-    *ADC_IRQ_INTC_PRIOR = (*ADC_IRQ_INTC_PRIOR & (uint32)(~ADC_IRQ__INTC_PRIOR_MASK)) |
+    *Pulse_Count_INTC_PRIOR = (*Pulse_Count_INTC_PRIOR & (uint32)(~Pulse_Count__INTC_PRIOR_MASK)) |
                                     ((uint32)priority << priorityOffset);
 	CyExitCriticalSection(interruptState);
 }
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_GetPriority
+* Function Name: Pulse_Count_GetPriority
 ********************************************************************************
 *
 * Summary:
@@ -230,19 +230,19 @@ void ADC_IRQ_SetPriority(uint8 priority)
 *   Priority of the interrupt. 0 - 3, 0 being the highest.
 *
 *******************************************************************************/
-uint8 ADC_IRQ_GetPriority(void)
+uint8 Pulse_Count_GetPriority(void)
 {
     uint32 priority;
-	uint32 priorityOffset = ((ADC_IRQ__INTC_NUMBER % 4u) * 8u) + 6u;
+	uint32 priorityOffset = ((Pulse_Count__INTC_NUMBER % 4u) * 8u) + 6u;
 
-    priority = (*ADC_IRQ_INTC_PRIOR & ADC_IRQ__INTC_PRIOR_MASK) >> priorityOffset;
+    priority = (*Pulse_Count_INTC_PRIOR & Pulse_Count__INTC_PRIOR_MASK) >> priorityOffset;
 
     return (uint8)priority;
 }
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_Enable
+* Function Name: Pulse_Count_Enable
 ********************************************************************************
 *
 * Summary:
@@ -255,15 +255,15 @@ uint8 ADC_IRQ_GetPriority(void)
 *   None
 *
 *******************************************************************************/
-void ADC_IRQ_Enable(void)
+void Pulse_Count_Enable(void)
 {
     /* Enable the general interrupt. */
-    *ADC_IRQ_INTC_SET_EN = ADC_IRQ__INTC_MASK;
+    *Pulse_Count_INTC_SET_EN = Pulse_Count__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_GetState
+* Function Name: Pulse_Count_GetState
 ********************************************************************************
 *
 * Summary:
@@ -276,15 +276,15 @@ void ADC_IRQ_Enable(void)
 *   1 if enabled, 0 if disabled.
 *
 *******************************************************************************/
-uint8 ADC_IRQ_GetState(void)
+uint8 Pulse_Count_GetState(void)
 {
     /* Get the state of the general interrupt. */
-    return ((*ADC_IRQ_INTC_SET_EN & (uint32)ADC_IRQ__INTC_MASK) != 0u) ? 1u:0u;
+    return ((*Pulse_Count_INTC_SET_EN & (uint32)Pulse_Count__INTC_MASK) != 0u) ? 1u:0u;
 }
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_Disable
+* Function Name: Pulse_Count_Disable
 ********************************************************************************
 *
 * Summary:
@@ -297,15 +297,15 @@ uint8 ADC_IRQ_GetState(void)
 *   None
 *
 *******************************************************************************/
-void ADC_IRQ_Disable(void)
+void Pulse_Count_Disable(void)
 {
     /* Disable the general interrupt. */
-    *ADC_IRQ_INTC_CLR_EN = ADC_IRQ__INTC_MASK;
+    *Pulse_Count_INTC_CLR_EN = Pulse_Count__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_SetPending
+* Function Name: Pulse_Count_SetPending
 ********************************************************************************
 *
 * Summary:
@@ -319,14 +319,14 @@ void ADC_IRQ_Disable(void)
 *   None
 *
 *******************************************************************************/
-void ADC_IRQ_SetPending(void)
+void Pulse_Count_SetPending(void)
 {
-    *ADC_IRQ_INTC_SET_PD = ADC_IRQ__INTC_MASK;
+    *Pulse_Count_INTC_SET_PD = Pulse_Count__INTC_MASK;
 }
 
 
 /*******************************************************************************
-* Function Name: ADC_IRQ_ClearPending
+* Function Name: Pulse_Count_ClearPending
 ********************************************************************************
 *
 * Summary:
@@ -339,9 +339,9 @@ void ADC_IRQ_SetPending(void)
 *   None
 *
 *******************************************************************************/
-void ADC_IRQ_ClearPending(void)
+void Pulse_Count_ClearPending(void)
 {
-    *ADC_IRQ_INTC_CLR_PD = ADC_IRQ__INTC_MASK;
+    *Pulse_Count_INTC_CLR_PD = Pulse_Count__INTC_MASK;
 }
 
 #endif /* End check for removal by optimization */

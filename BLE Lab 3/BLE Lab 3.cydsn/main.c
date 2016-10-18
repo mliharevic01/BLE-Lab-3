@@ -105,8 +105,9 @@ static void InitializeSystem(void)
     CyGlobalIntEnable; 
 	
     /* Start Opamp and ADC components */
-	Opamp_Start();
-    ADC_Start();
+    PWM_Start();
+//    Opamp_Start();
+   // ADC_Start();
 	
     /* Start BLE component */
     CyBle_Start(GeneralEventHandler);
@@ -166,7 +167,7 @@ int main()
     for(;;)
     {
         /* Wake up ADC from low power mode */
-        ADC_Wakeup();
+        //ADC_Wakeup();
         
         /* Analog Front End. 
          * Detects the input signal and measures Heart Rate 
@@ -174,7 +175,7 @@ int main()
         ProcessHeartRateSignal();
 
         /* Put ADC in low power mode */
-        ADC_Sleep();
+        //ADC_Sleep();
         
         /* Measure the current system timestamp from watchdog timer */
         currentTimestamp = WatchdogTimer_GetTimestamp();        
@@ -237,24 +238,24 @@ int main()
             interruptStatus = CyEnterCriticalSection();
             
             /* Check if the BLE block entered Deep Sleep */
-            if(CYBLE_BLESS_DEEPSLEEP == bleMode)
-            {
+            //if(CYBLE_BLESS_DEEPSLEEP == bleMode)
+           // {
                 /* Check the current state of BLE - System can enter Deep Sleep
                  * only when the BLE block is starting the ECO (during 
                  * pre-processing for a new connection event) or when it is 
                  * idle.
                  */
-                if((CyBle_GetBleSsState() == CYBLE_BLESS_STATE_ECO_ON) ||
+                /*if((CyBle_GetBleSsState() == CYBLE_BLESS_STATE_ECO_ON) ||
                    (CyBle_GetBleSsState() == CYBLE_BLESS_STATE_DEEPSLEEP))
                 {
                     CySysPmDeepSleep();
                 }
-            }
+            }*/
             /* The else condition signifies that the BLE block cannot enter 
              * Deep Sleep and is in Active mode.  
              */
-            else
-            {
+           // else
+            //{
                 /* At this point, the CPU can enter Sleep, but Deep Sleep is not
                  * allowed. 
                  * There is one exception - at a connection event, when the BLE 
@@ -267,11 +268,11 @@ int main()
                  * system Deep Sleep would then be entered. Deep Sleep is the 
                  * preferred low power mode since it takes much lesser current.
                  */
-                if(CyBle_GetBleSsState() != CYBLE_BLESS_STATE_EVENT_CLOSE)
+               /* if(CyBle_GetBleSsState() != CYBLE_BLESS_STATE_EVENT_CLOSE)
                 {
                     CySysPmSleep();
                 }
-            }
+            }*/
             
             /* Exit Critical section - Global interrupts are enabled again */
             CyExitCriticalSection(interruptStatus);

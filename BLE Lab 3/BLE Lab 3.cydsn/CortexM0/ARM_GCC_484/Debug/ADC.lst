@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
   16:.\Generated_Source\PSoC4/ADC.c **** *******************************************************************************/
   17:.\Generated_Source\PSoC4/ADC.c **** 
   18:.\Generated_Source\PSoC4/ADC.c **** #include "ADC.h"
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 2
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 2
 
 
   19:.\Generated_Source\PSoC4/ADC.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
   65:.\Generated_Source\PSoC4/ADC.c ****     /* If not Initialized then initialize all required hardware and software */
   66:.\Generated_Source\PSoC4/ADC.c ****     if(ADC_initVar == 0u)
   48              		.loc 1 66 0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 3
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 3
 
 
   49 0004 064B     		ldr	r3, .L3
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
   89:.\Generated_Source\PSoC4/ADC.c **** *
   90:.\Generated_Source\PSoC4/ADC.c **** * Global variables:
   91:.\Generated_Source\PSoC4/ADC.c **** *  The ADC_offset variable is initialized.
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 4
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 4
 
 
   92:.\Generated_Source\PSoC4/ADC.c **** *
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  135:.\Generated_Source\PSoC4/ADC.c ****         };
  136:.\Generated_Source\PSoC4/ADC.c ****     #endif /* End ADC_TOTAL_CHANNELS_NUM > 1u */
  137:.\Generated_Source\PSoC4/ADC.c **** 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 5
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 5
 
 
  138:.\Generated_Source\PSoC4/ADC.c ****     #if(ADC_IRQ_REMOVE == 0u)
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  155:.\Generated_Source\PSoC4/ADC.c ****         ADC_MUX_SWITCH0_REG |= ADC_DEFAULT_MUX_SWITCH0;
  129              		.loc 1 155 0
  130 0042 4E4B     		ldr	r3, .L15+48
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 6
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 6
 
 
  131 0044 4D4A     		ldr	r2, .L15+48
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  183:.\Generated_Source\PSoC4/ADC.c ****             tmpRegVal |= ADC_DLY_INC;
  184:.\Generated_Source\PSoC4/ADC.c ****         #else
  185:.\Generated_Source\PSoC4/ADC.c ****             tmpRegVal |= ADC_DCEN;
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 7
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 7
 
 
  158              		.loc 1 185 0
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  214:.\Generated_Source\PSoC4/ADC.c ****         #if(ADC_INJ_CHANNEL_ENABLED)
  215:.\Generated_Source\PSoC4/ADC.c ****         if(chNum < ADC_SEQUENCED_CHANNELS_NUM)
  216:.\Generated_Source\PSoC4/ADC.c ****         #endif /* ADC_INJ_CHANNEL_ENABLED */
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 8
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 8
 
 
  217:.\Generated_Source\PSoC4/ADC.c ****         {
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  228:.\Generated_Source\PSoC4/ADC.c ****             }
  229:.\Generated_Source\PSoC4/ADC.c ****         }
  230:.\Generated_Source\PSoC4/ADC.c ****         #if(ADC_INJ_CHANNEL_ENABLED)
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 9
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 9
 
 
  231:.\Generated_Source\PSoC4/ADC.c ****             else
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  262:.\Generated_Source\PSoC4/ADC.c ****             #else
  263:.\Generated_Source\PSoC4/ADC.c ****                 ADC_offset[chNum] = 0;
  250              		.loc 1 263 0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 10
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 10
 
 
  251 0102 254B     		ldr	r3, .L15+76
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  289 013e FB60     		str	r3, [r7, #12]
  290              	.L6:
  197:.\Generated_Source\PSoC4/ADC.c ****     for(chNum = 0u; chNum < ADC_TOTAL_CHANNELS_NUM; chNum++)
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 11
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 11
 
 
  291              		.loc 1 197 0 is_stmt 0 discriminator 1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  286:.\Generated_Source\PSoC4/ADC.c **** *  Enables the clock and analog power for SAR ADC.
  287:.\Generated_Source\PSoC4/ADC.c **** *
  288:.\Generated_Source\PSoC4/ADC.c **** * Parameters:
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 12
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 12
 
 
  289:.\Generated_Source\PSoC4/ADC.c **** *  None.
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  369              	.L17:
  311:.\Generated_Source\PSoC4/ADC.c ****     }
  312:.\Generated_Source\PSoC4/ADC.c **** }
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 13
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 13
 
 
  370              		.loc 1 312 0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  404 000e 1A60     		str	r2, [r3]
  333:.\Generated_Source\PSoC4/ADC.c **** }
  405              		.loc 1 333 0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 14
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 14
 
 
  406 0010 BD46     		mov	sp, r7
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  432              		.loc 1 361 0
  433 0004 024B     		ldr	r3, .L26
  434 0006 0122     		mov	r2, #1
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 15
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 15
 
 
  435 0008 1A60     		str	r2, [r3]
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  464 0004 BD46     		mov	sp, r7
  465              		@ sp needed
  466 0006 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 16
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 16
 
 
  467              		.cfi_endproc
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  490 0008 0023     		mov	r3, #0
  491 000a FB60     		str	r3, [r7, #12]
  418:.\Generated_Source\PSoC4/ADC.c **** 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 17
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 17
 
 
  419:.\Generated_Source\PSoC4/ADC.c ****     if((retMode & (ADC_RETURN_STATUS | ADC_WAIT_FOR_RESULT)) != 0u)
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  443:.\Generated_Source\PSoC4/ADC.c ****             {
  444:.\Generated_Source\PSoC4/ADC.c ****                 /* Clear Injection EOS bit */
  445:.\Generated_Source\PSoC4/ADC.c ****                 ADC_SAR_INTR_REG = ADC_INJ_EOC_MASK;
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 18
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 18
 
 
  446:.\Generated_Source\PSoC4/ADC.c ****             }
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  551 0002 84B0     		sub	sp, sp, #16
  552              		.cfi_def_cfa_offset 24
  553 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 19
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 19
 
 
  554              		.cfi_def_cfa_register 7
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  587              		.loc 1 491 0
  588 0036 181C     		mov	r0, r3
  589 0038 BD46     		mov	sp, r7
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 20
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 20
 
 
  590 003a 04B0     		add	sp, sp, #16
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  619              		.loc 1 516 0
  620 0008 034B     		ldr	r3, .L44
  621 000a 7968     		ldr	r1, [r7, #4]
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 21
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 21
 
 
  622 000c 0122     		mov	r2, #1
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  548:.\Generated_Source\PSoC4/ADC.c **** * Summary:
  549:.\Generated_Source\PSoC4/ADC.c **** *  Sets the low limit parameter for a limit condition.
  550:.\Generated_Source\PSoC4/ADC.c **** *
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 22
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 22
 
 
  551:.\Generated_Source\PSoC4/ADC.c **** * Parameters:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  687              		.code	16
  688              		.thumb_func
  689              		.type	ADC_SetHighLimit, %function
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 23
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 23
 
 
  690              	ADC_SetHighLimit:
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  723              	.L51:
  724              		.align	2
  725              	.L50:
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 24
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 24
 
 
  726 0028 18003A40 		.word	1077542936
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  757 0014 02B0     		add	sp, sp, #8
  758              		@ sp needed
  759 0016 80BD     		pop	{r7, pc}
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 25
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 25
 
 
  760              	.L54:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  629:.\Generated_Source\PSoC4/ADC.c **** }
  792              		.loc 1 629 0
  793 0012 BD46     		mov	sp, r7
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 26
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 26
 
 
  794 0014 02B0     		add	sp, sp, #8
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  822 0006 7860     		str	r0, [r7, #4]
  823 0008 0A1C     		mov	r2, r1
  824 000a BB1C     		add	r3, r7, #2
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 27
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 27
 
 
  825 000c 1A80     		strh	r2, [r3]
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  674:.\Generated_Source\PSoC4/ADC.c **** *  conversion between ADC counts and voltage.
  675:.\Generated_Source\PSoC4/ADC.c **** *
  676:.\Generated_Source\PSoC4/ADC.c **** * Parameters:
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 28
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 28
 
 
  677:.\Generated_Source\PSoC4/ADC.c **** *  chan: ADC channel number.
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  897              	.LFE16:
  898              		.size	ADC_SetGain, .-ADC_SetGain
  899              		.global	__aeabi_idiv
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 29
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 29
 
 
  900              		.section	.text.ADC_CountsTo_mVolts,"ax",%progbits
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  922              		.loc 1 726 0
  923 000e 7B68     		ldr	r3, [r7, #4]
  924 0010 002B     		cmp	r3, #0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 30
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 30
 
 
  925 0012 02D0     		beq	.L67
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  965 0056 08E0     		b	.L70
  966              	.L68:
  967              		.loc 1 740 0 discriminator 2
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 31
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 31
 
 
  968 0058 114B     		ldr	r3, .L73+8
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1016              		.global	__aeabi_ldivmod
  1017              		.section	.text.ADC_CountsTo_uVolts,"ax",%progbits
  1018              		.align	2
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 32
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 32
 
 
  1019              		.global	ADC_CountsTo_uVolts
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1041 000e 1A80     		strh	r2, [r3]
  777:.\Generated_Source\PSoC4/ADC.c ****         int64 uVolts;
  778:.\Generated_Source\PSoC4/ADC.c **** 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 33
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 33
 
 
  779:.\Generated_Source\PSoC4/ADC.c ****         /* Halt CPU in debug mode if channel is out of valid range */
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1081 0058 F868     		ldr	r0, [r7, #12]
  1082 005a 8000     		lsl	r0, r0, #2
  1083 005c 4158     		ldr	r1, [r0, r1]
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 34
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 34
 
 
  1084 005e 0C1C     		mov	r4, r1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  806:.\Generated_Source\PSoC4/ADC.c ****     *
  807:.\Generated_Source\PSoC4/ADC.c ****     * Parameters:
  808:.\Generated_Source\PSoC4/ADC.c ****     *  chan: The ADC channel number.
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 35
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 35
 
 
  809:.\Generated_Source\PSoC4/ADC.c ****     *  Result from the ADC conversion
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1151 001e 154B     		ldr	r3, .L83
  1152 0020 7968     		ldr	r1, [r7, #4]
  1153 0022 4900     		lsl	r1, r1, #1
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 36
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 36
 
 
  1154 0024 CB5A     		ldrh	r3, [r1, r3]
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1203              	.Letext0:
  1204              		.file 2 ".\\Generated_Source\\PSoC4\\cytypes.h"
  1205              		.section	.debug_info,"",%progbits
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 37
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 37
 
 
  1206              	.Ldebug_info0:
@@ -2167,7 +2167,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1209 0006 00000000 		.4byte	.Ldebug_abbrev0
  1210 000a 04       		.byte	0x4
  1211 000b 01       		.uleb128 0x1
- 1212 000c D1020000 		.4byte	.LASF59
+ 1212 000c EC020000 		.4byte	.LASF59
  1213 0010 01       		.byte	0x1
  1214 0011 27000000 		.4byte	.LASF60
  1215 0015 E3000000 		.4byte	.LASF61
@@ -2177,27 +2177,27 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1219 0025 02       		.uleb128 0x2
  1220 0026 01       		.byte	0x1
  1221 0027 06       		.byte	0x6
- 1222 0028 B9020000 		.4byte	.LASF0
+ 1222 0028 D4020000 		.4byte	.LASF0
  1223 002c 02       		.uleb128 0x2
  1224 002d 01       		.byte	0x1
  1225 002e 08       		.byte	0x8
- 1226 002f 0A010000 		.4byte	.LASF1
+ 1226 002f 25010000 		.4byte	.LASF1
  1227 0033 02       		.uleb128 0x2
  1228 0034 02       		.byte	0x2
  1229 0035 05       		.byte	0x5
- 1230 0036 97000000 		.4byte	.LASF2
+ 1230 0036 8B000000 		.4byte	.LASF2
  1231 003a 02       		.uleb128 0x2
  1232 003b 02       		.byte	0x2
  1233 003c 07       		.byte	0x7
- 1234 003d 84000000 		.4byte	.LASF3
+ 1234 003d 78000000 		.4byte	.LASF3
  1235 0041 02       		.uleb128 0x2
  1236 0042 04       		.byte	0x4
  1237 0043 05       		.byte	0x5
- 1238 0044 AB020000 		.4byte	.LASF4
+ 1238 0044 C6020000 		.4byte	.LASF4
  1239 0048 02       		.uleb128 0x2
  1240 0049 04       		.byte	0x4
  1241 004a 07       		.byte	0x7
- 1242 004b 2F010000 		.4byte	.LASF5
+ 1242 004b 4A010000 		.4byte	.LASF5
  1243 004f 02       		.uleb128 0x2
  1244 0050 08       		.byte	0x8
  1245 0051 05       		.byte	0x5
@@ -2205,7 +2205,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1247 0056 02       		.uleb128 0x2
  1248 0057 08       		.byte	0x8
  1249 0058 07       		.byte	0x7
- 1250 0059 EA010000 		.4byte	.LASF7
+ 1250 0059 05020000 		.4byte	.LASF7
  1251 005d 03       		.uleb128 0x3
  1252 005e 04       		.byte	0x4
  1253 005f 05       		.byte	0x5
@@ -2213,37 +2213,37 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1255 0064 02       		.uleb128 0x2
  1256 0065 04       		.byte	0x4
  1257 0066 07       		.byte	0x7
- 1258 0067 CB010000 		.4byte	.LASF8
+ 1258 0067 E6010000 		.4byte	.LASF8
  1259 006b 04       		.uleb128 0x4
- 1260 006c 91020000 		.4byte	.LASF9
+ 1260 006c AC020000 		.4byte	.LASF9
  1261 0070 02       		.byte	0x2
  1262 0071 A1       		.byte	0xa1
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 38
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 38
 
 
  1263 0072 2C000000 		.4byte	0x2c
  1264 0076 04       		.uleb128 0x4
- 1265 0077 A2010000 		.4byte	.LASF10
+ 1265 0077 BD010000 		.4byte	.LASF10
  1266 007b 02       		.byte	0x2
  1267 007c A2       		.byte	0xa2
  1268 007d 3A000000 		.4byte	0x3a
  1269 0081 04       		.uleb128 0x4
- 1270 0082 B3010000 		.4byte	.LASF11
+ 1270 0082 CE010000 		.4byte	.LASF11
  1271 0086 02       		.byte	0x2
  1272 0087 A3       		.byte	0xa3
  1273 0088 48000000 		.4byte	0x48
  1274 008c 04       		.uleb128 0x4
- 1275 008d 29010000 		.4byte	.LASF12
+ 1275 008d 44010000 		.4byte	.LASF12
  1276 0091 02       		.byte	0x2
  1277 0092 A5       		.byte	0xa5
  1278 0093 33000000 		.4byte	0x33
  1279 0097 04       		.uleb128 0x4
- 1280 0098 41010000 		.4byte	.LASF13
+ 1280 0098 5C010000 		.4byte	.LASF13
  1281 009c 02       		.byte	0x2
  1282 009d A6       		.byte	0xa6
  1283 009e 41000000 		.4byte	0x41
  1284 00a2 04       		.uleb128 0x4
- 1285 00a3 C6000000 		.4byte	.LASF14
+ 1285 00a3 BA000000 		.4byte	.LASF14
  1286 00a7 02       		.byte	0x2
  1287 00a8 A7       		.byte	0xa7
  1288 00a9 AD000000 		.4byte	0xad
@@ -2254,16 +2254,16 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1293 00b4 02       		.uleb128 0x2
  1294 00b5 08       		.byte	0x8
  1295 00b6 04       		.byte	0x4
- 1296 00b7 8A010000 		.4byte	.LASF16
+ 1296 00b7 A5010000 		.4byte	.LASF16
  1297 00bb 04       		.uleb128 0x4
- 1298 00bc 4D030000 		.4byte	.LASF17
+ 1298 00bc 68030000 		.4byte	.LASF17
  1299 00c0 02       		.byte	0x2
  1300 00c1 AC       		.byte	0xac
  1301 00c2 4F000000 		.4byte	0x4f
  1302 00c6 02       		.uleb128 0x2
  1303 00c7 01       		.byte	0x1
  1304 00c8 08       		.byte	0x8
- 1305 00c9 B4020000 		.4byte	.LASF18
+ 1305 00c9 CF020000 		.4byte	.LASF18
  1306 00cd 05       		.uleb128 0x5
  1307 00ce 21000000 		.4byte	.LASF19
  1308 00d2 02       		.byte	0x2
@@ -2274,11 +2274,11 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1313 00de 02       		.uleb128 0x2
  1314 00df 04       		.byte	0x4
  1315 00e0 07       		.byte	0x7
- 1316 00e1 2D020000 		.4byte	.LASF20
+ 1316 00e1 48020000 		.4byte	.LASF20
  1317 00e5 07       		.uleb128 0x7
- 1318 00e6 08020000 		.4byte	.LASF24
+ 1318 00e6 23020000 		.4byte	.LASF24
  1319 00ea 01       		.byte	0x1
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 39
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 39
 
 
  1320 00eb 3F       		.byte	0x3f
@@ -2287,7 +2287,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1323 00f4 01       		.uleb128 0x1
  1324 00f5 9C       		.byte	0x9c
  1325 00f6 08       		.uleb128 0x8
- 1326 00f7 12020000 		.4byte	.LASF35
+ 1326 00f7 2D020000 		.4byte	.LASF35
  1327 00fb 01       		.byte	0x1
  1328 00fc 5E       		.byte	0x5e
  1329 00fd 00000000 		.4byte	.LFB3
@@ -2296,7 +2296,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1332 0106 9C       		.byte	0x9c
  1333 0107 36010000 		.4byte	0x136
  1334 010b 09       		.uleb128 0x9
- 1335 010c 73020000 		.4byte	.LASF21
+ 1335 010c 8E020000 		.4byte	.LASF21
  1336 0110 01       		.byte	0x1
  1337 0111 60       		.byte	0x60
  1338 0112 81000000 		.4byte	0x81
@@ -2304,7 +2304,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1340 0117 91       		.byte	0x91
  1341 0118 6C       		.sleb128 -20
  1342 0119 09       		.uleb128 0x9
- 1343 011a D9000000 		.4byte	.LASF22
+ 1343 011a CD000000 		.4byte	.LASF22
  1344 011e 01       		.byte	0x1
  1345 011f 61       		.byte	0x61
  1346 0120 81000000 		.4byte	0x81
@@ -2312,7 +2312,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1348 0125 91       		.byte	0x91
  1349 0126 64       		.sleb128 -28
  1350 0127 09       		.uleb128 0x9
- 1351 0128 E3010000 		.4byte	.LASF23
+ 1351 0128 FE010000 		.4byte	.LASF23
  1352 012c 01       		.byte	0x1
  1353 012d 62       		.byte	0x62
  1354 012e 97000000 		.4byte	0x97
@@ -2321,7 +2321,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1357 0134 68       		.sleb128 -24
  1358 0135 00       		.byte	0
  1359 0136 0A       		.uleb128 0xa
- 1360 0137 D8010000 		.4byte	.LASF25
+ 1360 0137 F3010000 		.4byte	.LASF25
  1361 013b 01       		.byte	0x1
  1362 013c 2701     		.2byte	0x127
  1363 013e 00000000 		.4byte	.LFB4
@@ -2329,7 +2329,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1365 0146 01       		.uleb128 0x1
  1366 0147 9C       		.byte	0x9c
  1367 0148 0B       		.uleb128 0xb
- 1368 0149 53030000 		.4byte	.LASF26
+ 1368 0149 6E030000 		.4byte	.LASF26
  1369 014d 01       		.byte	0x1
  1370 014e 4A01     		.2byte	0x14a
  1371 0150 00000000 		.4byte	.LFB5
@@ -2337,8 +2337,8 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1373 0158 01       		.uleb128 0x1
  1374 0159 9C       		.byte	0x9c
  1375 015a 0B       		.uleb128 0xb
- 1376 015b 5D020000 		.4byte	.LASF27
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 40
+ 1376 015b 78020000 		.4byte	.LASF27
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 40
 
 
  1377 015f 01       		.byte	0x1
@@ -2348,7 +2348,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1381 016a 01       		.uleb128 0x1
  1382 016b 9C       		.byte	0x9c
  1383 016c 0B       		.uleb128 0xb
- 1384 016d 81020000 		.4byte	.LASF28
+ 1384 016d 9C020000 		.4byte	.LASF28
  1385 0171 01       		.byte	0x1
  1386 0172 7D01     		.2byte	0x17d
  1387 0174 00000000 		.4byte	.LFB7
@@ -2356,7 +2356,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1389 017c 01       		.uleb128 0x1
  1390 017d 9C       		.byte	0x9c
  1391 017e 0C       		.uleb128 0xc
- 1392 017f 76010000 		.4byte	.LASF30
+ 1392 017f 91010000 		.4byte	.LASF30
  1393 0183 01       		.byte	0x1
  1394 0184 9F01     		.2byte	0x19f
  1395 0186 81000000 		.4byte	0x81
@@ -2366,7 +2366,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1399 0193 9C       		.byte	0x9c
  1400 0194 B7010000 		.4byte	0x1b7
  1401 0198 0D       		.uleb128 0xd
- 1402 0199 79020000 		.4byte	.LASF32
+ 1402 0199 94020000 		.4byte	.LASF32
  1403 019d 01       		.byte	0x1
  1404 019e 9F01     		.2byte	0x19f
  1405 01a0 81000000 		.4byte	0x81
@@ -2374,7 +2374,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1407 01a5 91       		.byte	0x91
  1408 01a6 6C       		.sleb128 -20
  1409 01a7 0E       		.uleb128 0xe
- 1410 01a8 BF000000 		.4byte	.LASF29
+ 1410 01a8 B3000000 		.4byte	.LASF29
  1411 01ac 01       		.byte	0x1
  1412 01ad A101     		.2byte	0x1a1
  1413 01af 81000000 		.4byte	0x81
@@ -2383,7 +2383,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1416 01b5 74       		.sleb128 -12
  1417 01b6 00       		.byte	0
  1418 01b7 0F       		.uleb128 0xf
- 1419 01b8 47010000 		.4byte	.LASF31
+ 1419 01b8 62010000 		.4byte	.LASF31
  1420 01bc 01       		.byte	0x1
  1421 01bd D501     		.2byte	0x1d5
  1422 01bf 8C000000 		.4byte	0x8c
@@ -2393,18 +2393,18 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1426 01cc 9C       		.byte	0x9c
  1427 01cd F0010000 		.4byte	0x1f0
  1428 01d1 0D       		.uleb128 0xd
- 1429 01d2 21020000 		.4byte	.LASF33
+ 1429 01d2 3C020000 		.4byte	.LASF33
  1430 01d6 01       		.byte	0x1
  1431 01d7 D501     		.2byte	0x1d5
  1432 01d9 81000000 		.4byte	0x81
  1433 01dd 02       		.uleb128 0x2
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 41
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 41
 
 
  1434 01de 91       		.byte	0x91
  1435 01df 6C       		.sleb128 -20
  1436 01e0 0E       		.uleb128 0xe
- 1437 01e1 01020000 		.4byte	.LASF34
+ 1437 01e1 1C020000 		.4byte	.LASF34
  1438 01e5 01       		.byte	0x1
  1439 01e6 D701     		.2byte	0x1d7
  1440 01e8 81000000 		.4byte	0x81
@@ -2413,7 +2413,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1443 01ee 74       		.sleb128 -12
  1444 01ef 00       		.byte	0
  1445 01f0 10       		.uleb128 0x10
- 1446 01f1 57010000 		.4byte	.LASF36
+ 1446 01f1 72010000 		.4byte	.LASF36
  1447 01f5 01       		.byte	0x1
  1448 01f6 0202     		.2byte	0x202
  1449 01f8 00000000 		.4byte	.LFB10
@@ -2422,7 +2422,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1452 0201 9C       		.byte	0x9c
  1453 0202 16020000 		.4byte	0x216
  1454 0206 0D       		.uleb128 0xd
- 1455 0207 6E020000 		.4byte	.LASF37
+ 1455 0207 89020000 		.4byte	.LASF37
  1456 020b 01       		.byte	0x1
  1457 020c 0202     		.2byte	0x202
  1458 020e 81000000 		.4byte	0x81
@@ -2431,7 +2431,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1461 0214 74       		.sleb128 -12
  1462 0215 00       		.byte	0
  1463 0216 10       		.uleb128 0x10
- 1464 0217 AF000000 		.4byte	.LASF38
+ 1464 0217 A3000000 		.4byte	.LASF38
  1465 021b 01       		.byte	0x1
  1466 021c 2E02     		.2byte	0x22e
  1467 021e 00000000 		.4byte	.LFB11
@@ -2440,7 +2440,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1470 0227 9C       		.byte	0x9c
  1471 0228 3C020000 		.4byte	0x23c
  1472 022c 0D       		.uleb128 0xd
- 1473 022d 91010000 		.4byte	.LASF39
+ 1473 022d AC010000 		.4byte	.LASF39
  1474 0231 01       		.byte	0x1
  1475 0232 2E02     		.2byte	0x22e
  1476 0234 81000000 		.4byte	0x81
@@ -2449,7 +2449,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1479 023a 74       		.sleb128 -12
  1480 023b 00       		.byte	0
  1481 023c 10       		.uleb128 0x10
- 1482 023d 18010000 		.4byte	.LASF40
+ 1482 023d 33010000 		.4byte	.LASF40
  1483 0241 01       		.byte	0x1
  1484 0242 4302     		.2byte	0x243
  1485 0244 00000000 		.4byte	.LFB12
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1488 024d 9C       		.byte	0x9c
  1489 024e 62020000 		.4byte	0x262
  1490 0252 0D       		.uleb128 0xd
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 42
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 42
 
 
  1491 0253 53000000 		.4byte	.LASF41
@@ -2470,7 +2470,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1497 0260 74       		.sleb128 -12
  1498 0261 00       		.byte	0
  1499 0262 10       		.uleb128 0x10
- 1500 0263 BA010000 		.4byte	.LASF42
+ 1500 0263 D5010000 		.4byte	.LASF42
  1501 0267 01       		.byte	0x1
  1502 0268 5B02     		.2byte	0x25b
  1503 026a 00000000 		.4byte	.LFB13
@@ -2479,7 +2479,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1506 0273 9C       		.byte	0x9c
  1507 0274 88020000 		.4byte	0x288
  1508 0278 0D       		.uleb128 0xd
- 1509 0279 6E020000 		.4byte	.LASF37
+ 1509 0279 89020000 		.4byte	.LASF37
  1510 027d 01       		.byte	0x1
  1511 027e 5B02     		.2byte	0x25b
  1512 0280 81000000 		.4byte	0x81
@@ -2488,7 +2488,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1515 0286 74       		.sleb128 -12
  1516 0287 00       		.byte	0
  1517 0288 10       		.uleb128 0x10
- 1518 0289 67010000 		.4byte	.LASF43
+ 1518 0289 82010000 		.4byte	.LASF43
  1519 028d 01       		.byte	0x1
  1520 028e 7202     		.2byte	0x272
  1521 0290 00000000 		.4byte	.LFB14
@@ -2497,7 +2497,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1524 0299 9C       		.byte	0x9c
  1525 029a AE020000 		.4byte	0x2ae
  1526 029e 0D       		.uleb128 0xd
- 1527 029f 6E020000 		.4byte	.LASF37
+ 1527 029f 89020000 		.4byte	.LASF37
  1528 02a3 01       		.byte	0x1
  1529 02a4 7202     		.2byte	0x272
  1530 02a6 81000000 		.4byte	0x81
@@ -2506,7 +2506,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1533 02ac 74       		.sleb128 -12
  1534 02ad 00       		.byte	0
  1535 02ae 11       		.uleb128 0x11
- 1536 02af A1000000 		.4byte	.LASF44
+ 1536 02af 95000000 		.4byte	.LASF44
  1537 02b3 01       		.byte	0x1
  1538 02b4 8E02     		.2byte	0x28e
  1539 02b6 00000000 		.4byte	.LFB15
@@ -2515,10 +2515,10 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1542 02bf 9C       		.byte	0x9c
  1543 02c0 E3020000 		.4byte	0x2e3
  1544 02c4 0D       		.uleb128 0xd
- 1545 02c5 21020000 		.4byte	.LASF33
+ 1545 02c5 3C020000 		.4byte	.LASF33
  1546 02c9 01       		.byte	0x1
  1547 02ca 8E02     		.2byte	0x28e
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 43
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 43
 
 
  1548 02cc 81000000 		.4byte	0x81
@@ -2535,7 +2535,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1559 02e1 72       		.sleb128 -14
  1560 02e2 00       		.byte	0
  1561 02e3 11       		.uleb128 0x11
- 1562 02e4 71000000 		.4byte	.LASF46
+ 1562 02e4 D7000000 		.4byte	.LASF46
  1563 02e8 01       		.byte	0x1
  1564 02e9 B002     		.2byte	0x2b0
  1565 02eb 00000000 		.4byte	.LFB16
@@ -2544,7 +2544,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1568 02f4 9C       		.byte	0x9c
  1569 02f5 18030000 		.4byte	0x318
  1570 02f9 0D       		.uleb128 0xd
- 1571 02fa 21020000 		.4byte	.LASF33
+ 1571 02fa 3C020000 		.4byte	.LASF33
  1572 02fe 01       		.byte	0x1
  1573 02ff B002     		.2byte	0x2b0
  1574 0301 81000000 		.4byte	0x81
@@ -2552,7 +2552,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1576 0306 91       		.byte	0x91
  1577 0307 74       		.sleb128 -12
  1578 0308 0D       		.uleb128 0xd
- 1579 0309 9A010000 		.4byte	.LASF47
+ 1579 0309 B5010000 		.4byte	.LASF47
  1580 030d 01       		.byte	0x1
  1581 030e B002     		.2byte	0x2b0
  1582 0310 97000000 		.4byte	0x97
@@ -2571,18 +2571,18 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1595 032d 9C       		.byte	0x9c
  1596 032e 60030000 		.4byte	0x360
  1597 0332 0D       		.uleb128 0xd
- 1598 0333 21020000 		.4byte	.LASF33
+ 1598 0333 3C020000 		.4byte	.LASF33
  1599 0337 01       		.byte	0x1
  1600 0338 D102     		.2byte	0x2d1
  1601 033a 81000000 		.4byte	0x81
  1602 033e 02       		.uleb128 0x2
  1603 033f 91       		.byte	0x91
  1604 0340 6C       		.sleb128 -20
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 44
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 44
 
 
  1605 0341 0D       		.uleb128 0xd
- 1606 0342 A9010000 		.4byte	.LASF49
+ 1606 0342 C4010000 		.4byte	.LASF49
  1607 0346 01       		.byte	0x1
  1608 0347 D102     		.2byte	0x2d1
  1609 0349 8C000000 		.4byte	0x8c
@@ -2590,7 +2590,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1611 034e 91       		.byte	0x91
  1612 034f 6A       		.sleb128 -22
  1613 0350 0E       		.uleb128 0xe
- 1614 0351 26020000 		.4byte	.LASF50
+ 1614 0351 41020000 		.4byte	.LASF50
  1615 0355 01       		.byte	0x1
  1616 0356 D302     		.2byte	0x2d3
  1617 0358 8C000000 		.4byte	0x8c
@@ -2599,7 +2599,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1620 035e 76       		.sleb128 -10
  1621 035f 00       		.byte	0
  1622 0360 0F       		.uleb128 0xf
- 1623 0361 36020000 		.4byte	.LASF51
+ 1623 0361 51020000 		.4byte	.LASF51
  1624 0365 01       		.byte	0x1
  1625 0366 0703     		.2byte	0x307
  1626 0368 97000000 		.4byte	0x97
@@ -2609,7 +2609,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1630 0375 9C       		.byte	0x9c
  1631 0376 A8030000 		.4byte	0x3a8
  1632 037a 0D       		.uleb128 0xd
- 1633 037b 21020000 		.4byte	.LASF33
+ 1633 037b 3C020000 		.4byte	.LASF33
  1634 037f 01       		.byte	0x1
  1635 0380 0703     		.2byte	0x307
  1636 0382 81000000 		.4byte	0x81
@@ -2617,7 +2617,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1638 0387 91       		.byte	0x91
  1639 0388 64       		.sleb128 -28
  1640 0389 0D       		.uleb128 0xd
- 1641 038a A9010000 		.4byte	.LASF49
+ 1641 038a C4010000 		.4byte	.LASF49
  1642 038e 01       		.byte	0x1
  1643 038f 0703     		.2byte	0x307
  1644 0391 8C000000 		.4byte	0x8c
@@ -2625,7 +2625,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1646 0396 91       		.byte	0x91
  1647 0397 62       		.sleb128 -30
  1648 0398 0E       		.uleb128 0xe
- 1649 0399 7D000000 		.4byte	.LASF52
+ 1649 0399 71000000 		.4byte	.LASF52
  1650 039d 01       		.byte	0x1
  1651 039e 0903     		.2byte	0x309
  1652 03a0 BB000000 		.4byte	0xbb
@@ -2634,11 +2634,11 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1655 03a6 68       		.sleb128 -24
  1656 03a7 00       		.byte	0
  1657 03a8 0F       		.uleb128 0xf
- 1658 03a9 4A020000 		.4byte	.LASF53
+ 1658 03a9 65020000 		.4byte	.LASF53
  1659 03ad 01       		.byte	0x1
  1660 03ae 3403     		.2byte	0x334
  1661 03b0 A2000000 		.4byte	0xa2
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 45
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 45
 
 
  1662 03b4 00000000 		.4byte	.LFB19
@@ -2647,7 +2647,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1665 03bd 9C       		.byte	0x9c
  1666 03be F0030000 		.4byte	0x3f0
  1667 03c2 0D       		.uleb128 0xd
- 1668 03c3 21020000 		.4byte	.LASF33
+ 1668 03c3 3C020000 		.4byte	.LASF33
  1669 03c7 01       		.byte	0x1
  1670 03c8 3403     		.2byte	0x334
  1671 03ca 81000000 		.4byte	0x81
@@ -2655,7 +2655,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1673 03cf 91       		.byte	0x91
  1674 03d0 64       		.sleb128 -28
  1675 03d1 0D       		.uleb128 0xd
- 1676 03d2 A9010000 		.4byte	.LASF49
+ 1676 03d2 C4010000 		.4byte	.LASF49
  1677 03d6 01       		.byte	0x1
  1678 03d7 3403     		.2byte	0x334
  1679 03d9 8C000000 		.4byte	0x8c
@@ -2663,7 +2663,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1681 03de 91       		.byte	0x91
  1682 03df 62       		.sleb128 -30
  1683 03e0 0E       		.uleb128 0xe
- 1684 03e1 1B020000 		.4byte	.LASF54
+ 1684 03e1 36020000 		.4byte	.LASF54
  1685 03e5 01       		.byte	0x1
  1686 03e6 3603     		.2byte	0x336
  1687 03e8 A2000000 		.4byte	0xa2
@@ -2689,7 +2689,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1707 0411 14       		.uleb128 0x14
  1708 0412 F0030000 		.4byte	0x3f0
  1709 0416 15       		.uleb128 0x15
- 1710 0417 C5020000 		.4byte	.LASF56
+ 1710 0417 E0020000 		.4byte	.LASF56
  1711 041b 01       		.byte	0x1
  1712 041c 18       		.byte	0x18
  1713 041d 6B000000 		.4byte	0x6b
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1716 0423 00000000 		.4byte	ADC_initVar
  1717 0427 12       		.uleb128 0x12
  1718 0428 8C000000 		.4byte	0x8c
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 46
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 46
 
 
  1719 042c 37040000 		.4byte	0x437
@@ -2707,7 +2707,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1722 0435 00       		.byte	0
  1723 0436 00       		.byte	0
  1724 0437 15       		.uleb128 0x15
- 1725 0438 CE000000 		.4byte	.LASF57
+ 1725 0438 C2000000 		.4byte	.LASF57
  1726 043c 01       		.byte	0x1
  1727 043d 19       		.byte	0x19
  1728 043e 48040000 		.4byte	0x448
@@ -2724,7 +2724,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1739 045b 00       		.byte	0
  1740 045c 00       		.byte	0
  1741 045d 15       		.uleb128 0x15
- 1742 045e 97020000 		.4byte	.LASF58
+ 1742 045e B2020000 		.4byte	.LASF58
  1743 0462 01       		.byte	0x1
  1744 0463 1A       		.byte	0x1a
  1745 0464 6E040000 		.4byte	0x46e
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1773 0013 02       		.uleb128 0x2
  1774 0014 24       		.uleb128 0x24
  1775 0015 00       		.byte	0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 47
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 47
 
 
  1776 0016 0B       		.uleb128 0xb
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1830 004c 00       		.byte	0
  1831 004d 3F       		.uleb128 0x3f
  1832 004e 19       		.uleb128 0x19
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 48
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 48
 
 
  1833 004f 03       		.uleb128 0x3
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1887 0087 02       		.uleb128 0x2
  1888 0088 18       		.uleb128 0x18
  1889 0089 00       		.byte	0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 49
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 49
 
 
  1890 008a 00       		.byte	0
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  1944 00c2 3A       		.uleb128 0x3a
  1945 00c3 0B       		.uleb128 0xb
  1946 00c4 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 50
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 50
 
 
  1947 00c5 05       		.uleb128 0x5
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  2001 00fc 3A       		.uleb128 0x3a
  2002 00fd 0B       		.uleb128 0xb
  2003 00fe 3B       		.uleb128 0x3b
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 51
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 51
 
 
  2004 00ff 05       		.uleb128 0x5
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  2058 0137 19       		.uleb128 0x19
  2059 0138 11       		.uleb128 0x11
  2060 0139 01       		.uleb128 0x1
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 52
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 52
 
 
  2061 013a 12       		.uleb128 0x12
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  2115 0000 A4000000 		.4byte	0xa4
  2116 0004 0200     		.2byte	0x2
  2117 0006 00000000 		.4byte	.Ldebug_info0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 53
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 53
 
 
  2118 000a 04       		.byte	0x4
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  2172 0028 00000000 		.4byte	.LFB7
  2173 002c 08000000 		.4byte	.LFE7
  2174 0030 00000000 		.4byte	.LFB8
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 54
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 54
 
 
  2175 0034 48000000 		.4byte	.LFE8
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  2212      657400
  2213              	.LASF15:
  2214 004d 666C6F61 		.ascii	"float\000"
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 55
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 55
 
 
  2214      7400
@@ -3252,254 +3252,259 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 1
  2218      7473546F 
  2218      5F6D566F 
  2218      6C747300 
- 2219              	.LASF46:
- 2220 0071 4144435F 		.ascii	"ADC_SetGain\000"
- 2220      53657447 
- 2220      61696E00 
- 2221              	.LASF52:
- 2222 007d 75566F6C 		.ascii	"uVolts\000"
- 2222      747300
- 2223              	.LASF3:
- 2224 0084 73686F72 		.ascii	"short unsigned int\000"
- 2224      7420756E 
- 2224      7369676E 
- 2224      65642069 
- 2224      6E7400
- 2225              	.LASF2:
- 2226 0097 73686F72 		.ascii	"short int\000"
- 2226      7420696E 
+ 2219              	.LASF52:
+ 2220 0071 75566F6C 		.ascii	"uVolts\000"
+ 2220      747300
+ 2221              	.LASF3:
+ 2222 0078 73686F72 		.ascii	"short unsigned int\000"
+ 2222      7420756E 
+ 2222      7369676E 
+ 2222      65642069 
+ 2222      6E7400
+ 2223              	.LASF2:
+ 2224 008b 73686F72 		.ascii	"short int\000"
+ 2224      7420696E 
+ 2224      7400
+ 2225              	.LASF44:
+ 2226 0095 4144435F 		.ascii	"ADC_SetOffset\000"
+ 2226      5365744F 
+ 2226      66667365 
  2226      7400
- 2227              	.LASF44:
- 2228 00a1 4144435F 		.ascii	"ADC_SetOffset\000"
- 2228      5365744F 
- 2228      66667365 
- 2228      7400
- 2229              	.LASF38:
- 2230 00af 4144435F 		.ascii	"ADC_SetLowLimit\000"
- 2230      5365744C 
- 2230      6F774C69 
- 2230      6D697400 
- 2231              	.LASF29:
- 2232 00bf 73746174 		.ascii	"status\000"
- 2232      757300
- 2233              	.LASF14:
- 2234 00c6 666C6F61 		.ascii	"float32\000"
- 2234      74333200 
- 2235              	.LASF57:
- 2236 00ce 4144435F 		.ascii	"ADC_offset\000"
- 2236      6F666673 
- 2236      657400
- 2237              	.LASF22:
- 2238 00d9 746D7052 		.ascii	"tmpRegVal\000"
- 2238      65675661 
- 2238      6C00
+ 2227              	.LASF38:
+ 2228 00a3 4144435F 		.ascii	"ADC_SetLowLimit\000"
+ 2228      5365744C 
+ 2228      6F774C69 
+ 2228      6D697400 
+ 2229              	.LASF29:
+ 2230 00b3 73746174 		.ascii	"status\000"
+ 2230      757300
+ 2231              	.LASF14:
+ 2232 00ba 666C6F61 		.ascii	"float32\000"
+ 2232      74333200 
+ 2233              	.LASF57:
+ 2234 00c2 4144435F 		.ascii	"ADC_offset\000"
+ 2234      6F666673 
+ 2234      657400
+ 2235              	.LASF22:
+ 2236 00cd 746D7052 		.ascii	"tmpRegVal\000"
+ 2236      65675661 
+ 2236      6C00
+ 2237              	.LASF46:
+ 2238 00d7 4144435F 		.ascii	"ADC_SetGain\000"
+ 2238      53657447 
+ 2238      61696E00 
  2239              	.LASF61:
- 2240 00e3 443A5C45 		.ascii	"D:\\ECEG_Labs\\BLE Lab 3\\BLE Lab 3.cydsn\000"
- 2240      4345475F 
- 2240      4C616273 
- 2240      5C424C45 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 56
+ 2240 00e3 433A5C55 		.ascii	"C:\\Users\\mliha\\Documents\\Lab_3_Embedded\\BLE La"
+ 2240      73657273 
+ 2240      5C6D6C69 
+ 2240      68615C44 
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 56
 
 
- 2240      204C6162 
- 2241              	.LASF1:
- 2242 010a 756E7369 		.ascii	"unsigned char\000"
- 2242      676E6564 
- 2242      20636861 
- 2242      7200
- 2243              	.LASF40:
- 2244 0118 4144435F 		.ascii	"ADC_SetHighLimit\000"
- 2244      53657448 
- 2244      6967684C 
- 2244      696D6974 
- 2244      00
- 2245              	.LASF12:
- 2246 0129 696E7431 		.ascii	"int16\000"
- 2246      3600
- 2247              	.LASF5:
- 2248 012f 6C6F6E67 		.ascii	"long unsigned int\000"
- 2248      20756E73 
- 2248      69676E65 
- 2248      6420696E 
- 2248      7400
- 2249              	.LASF13:
- 2250 0141 696E7433 		.ascii	"int32\000"
- 2250      3200
- 2251              	.LASF31:
- 2252 0147 4144435F 		.ascii	"ADC_GetResult16\000"
- 2252      47657452 
- 2252      6573756C 
- 2252      74313600 
- 2253              	.LASF36:
- 2254 0157 4144435F 		.ascii	"ADC_SetChanMask\000"
- 2254      53657443 
- 2254      68616E4D 
- 2254      61736B00 
- 2255              	.LASF43:
- 2256 0167 4144435F 		.ascii	"ADC_SetSatMask\000"
- 2256      53657453 
- 2256      61744D61 
- 2256      736B00
- 2257              	.LASF30:
- 2258 0176 4144435F 		.ascii	"ADC_IsEndConversion\000"
- 2258      4973456E 
- 2258      64436F6E 
- 2258      76657273 
- 2258      696F6E00 
- 2259              	.LASF16:
- 2260 018a 646F7562 		.ascii	"double\000"
- 2260      6C6500
- 2261              	.LASF39:
- 2262 0191 6C6F774C 		.ascii	"lowLimit\000"
- 2262      696D6974 
- 2262      00
- 2263              	.LASF47:
- 2264 019a 61646347 		.ascii	"adcGain\000"
- 2264      61696E00 
- 2265              	.LASF10:
- 2266 01a2 75696E74 		.ascii	"uint16\000"
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 57
+ 2240      6F63756D 
+ 2241 0111 6220335C 		.ascii	"b 3\\BLE Lab 3.cydsn\000"
+ 2241      424C4520 
+ 2241      4C616220 
+ 2241      332E6379 
+ 2241      64736E00 
+ 2242              	.LASF1:
+ 2243 0125 756E7369 		.ascii	"unsigned char\000"
+ 2243      676E6564 
+ 2243      20636861 
+ 2243      7200
+ 2244              	.LASF40:
+ 2245 0133 4144435F 		.ascii	"ADC_SetHighLimit\000"
+ 2245      53657448 
+ 2245      6967684C 
+ 2245      696D6974 
+ 2245      00
+ 2246              	.LASF12:
+ 2247 0144 696E7431 		.ascii	"int16\000"
+ 2247      3600
+ 2248              	.LASF5:
+ 2249 014a 6C6F6E67 		.ascii	"long unsigned int\000"
+ 2249      20756E73 
+ 2249      69676E65 
+ 2249      6420696E 
+ 2249      7400
+ 2250              	.LASF13:
+ 2251 015c 696E7433 		.ascii	"int32\000"
+ 2251      3200
+ 2252              	.LASF31:
+ 2253 0162 4144435F 		.ascii	"ADC_GetResult16\000"
+ 2253      47657452 
+ 2253      6573756C 
+ 2253      74313600 
+ 2254              	.LASF36:
+ 2255 0172 4144435F 		.ascii	"ADC_SetChanMask\000"
+ 2255      53657443 
+ 2255      68616E4D 
+ 2255      61736B00 
+ 2256              	.LASF43:
+ 2257 0182 4144435F 		.ascii	"ADC_SetSatMask\000"
+ 2257      53657453 
+ 2257      61744D61 
+ 2257      736B00
+ 2258              	.LASF30:
+ 2259 0191 4144435F 		.ascii	"ADC_IsEndConversion\000"
+ 2259      4973456E 
+ 2259      64436F6E 
+ 2259      76657273 
+ 2259      696F6E00 
+ 2260              	.LASF16:
+ 2261 01a5 646F7562 		.ascii	"double\000"
+ 2261      6C6500
+ 2262              	.LASF39:
+ 2263 01ac 6C6F774C 		.ascii	"lowLimit\000"
+ 2263      696D6974 
+ 2263      00
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 57
 
 
- 2266      313600
- 2267              	.LASF49:
- 2268 01a9 61646343 		.ascii	"adcCounts\000"
- 2268      6F756E74 
- 2268      7300
- 2269              	.LASF11:
- 2270 01b3 75696E74 		.ascii	"uint32\000"
- 2270      333200
- 2271              	.LASF42:
- 2272 01ba 4144435F 		.ascii	"ADC_SetLimitMask\000"
- 2272      5365744C 
- 2272      696D6974 
- 2272      4D61736B 
- 2272      00
- 2273              	.LASF8:
- 2274 01cb 756E7369 		.ascii	"unsigned int\000"
- 2274      676E6564 
- 2274      20696E74 
- 2274      00
- 2275              	.LASF25:
- 2276 01d8 4144435F 		.ascii	"ADC_Enable\000"
- 2276      456E6162 
- 2276      6C6500
- 2277              	.LASF23:
- 2278 01e3 636F756E 		.ascii	"counts\000"
- 2278      747300
- 2279              	.LASF7:
- 2280 01ea 6C6F6E67 		.ascii	"long long unsigned int\000"
- 2280      206C6F6E 
- 2280      6720756E 
- 2280      7369676E 
- 2280      65642069 
- 2281              	.LASF34:
- 2282 0201 72657375 		.ascii	"result\000"
- 2282      6C7400
- 2283              	.LASF24:
- 2284 0208 4144435F 		.ascii	"ADC_Start\000"
- 2284      53746172 
- 2284      7400
- 2285              	.LASF35:
- 2286 0212 4144435F 		.ascii	"ADC_Init\000"
- 2286      496E6974 
- 2286      00
- 2287              	.LASF54:
- 2288 021b 766F6C74 		.ascii	"volts\000"
- 2288      7300
- 2289              	.LASF33:
- 2290 0221 6368616E 		.ascii	"chan\000"
- 2290      00
- 2291              	.LASF50:
- 2292 0226 6D566F6C 		.ascii	"mVolts\000"
- 2292      747300
- 2293              	.LASF20:
- 2294 022d 73697A65 		.ascii	"sizetype\000"
- 2294      74797065 
- 2294      00
- 2295              	.LASF51:
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 58
+ 2264              	.LASF47:
+ 2265 01b5 61646347 		.ascii	"adcGain\000"
+ 2265      61696E00 
+ 2266              	.LASF10:
+ 2267 01bd 75696E74 		.ascii	"uint16\000"
+ 2267      313600
+ 2268              	.LASF49:
+ 2269 01c4 61646343 		.ascii	"adcCounts\000"
+ 2269      6F756E74 
+ 2269      7300
+ 2270              	.LASF11:
+ 2271 01ce 75696E74 		.ascii	"uint32\000"
+ 2271      333200
+ 2272              	.LASF42:
+ 2273 01d5 4144435F 		.ascii	"ADC_SetLimitMask\000"
+ 2273      5365744C 
+ 2273      696D6974 
+ 2273      4D61736B 
+ 2273      00
+ 2274              	.LASF8:
+ 2275 01e6 756E7369 		.ascii	"unsigned int\000"
+ 2275      676E6564 
+ 2275      20696E74 
+ 2275      00
+ 2276              	.LASF25:
+ 2277 01f3 4144435F 		.ascii	"ADC_Enable\000"
+ 2277      456E6162 
+ 2277      6C6500
+ 2278              	.LASF23:
+ 2279 01fe 636F756E 		.ascii	"counts\000"
+ 2279      747300
+ 2280              	.LASF7:
+ 2281 0205 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 2281      206C6F6E 
+ 2281      6720756E 
+ 2281      7369676E 
+ 2281      65642069 
+ 2282              	.LASF34:
+ 2283 021c 72657375 		.ascii	"result\000"
+ 2283      6C7400
+ 2284              	.LASF24:
+ 2285 0223 4144435F 		.ascii	"ADC_Start\000"
+ 2285      53746172 
+ 2285      7400
+ 2286              	.LASF35:
+ 2287 022d 4144435F 		.ascii	"ADC_Init\000"
+ 2287      496E6974 
+ 2287      00
+ 2288              	.LASF54:
+ 2289 0236 766F6C74 		.ascii	"volts\000"
+ 2289      7300
+ 2290              	.LASF33:
+ 2291 023c 6368616E 		.ascii	"chan\000"
+ 2291      00
+ 2292              	.LASF50:
+ 2293 0241 6D566F6C 		.ascii	"mVolts\000"
+ 2293      747300
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 58
 
 
- 2296 0236 4144435F 		.ascii	"ADC_CountsTo_uVolts\000"
- 2296      436F756E 
- 2296      7473546F 
- 2296      5F75566F 
- 2296      6C747300 
- 2297              	.LASF53:
- 2298 024a 4144435F 		.ascii	"ADC_CountsTo_Volts\000"
- 2298      436F756E 
- 2298      7473546F 
- 2298      5F566F6C 
- 2298      747300
- 2299              	.LASF27:
- 2300 025d 4144435F 		.ascii	"ADC_StartConvert\000"
- 2300      53746172 
- 2300      74436F6E 
- 2300      76657274 
- 2300      00
- 2301              	.LASF37:
- 2302 026e 6D61736B 		.ascii	"mask\000"
- 2302      00
- 2303              	.LASF21:
- 2304 0273 63684E75 		.ascii	"chNum\000"
- 2304      6D00
- 2305              	.LASF32:
- 2306 0279 7265744D 		.ascii	"retMode\000"
- 2306      6F646500 
- 2307              	.LASF28:
- 2308 0281 4144435F 		.ascii	"ADC_StopConvert\000"
- 2308      53746F70 
- 2308      436F6E76 
- 2308      65727400 
- 2309              	.LASF9:
- 2310 0291 75696E74 		.ascii	"uint8\000"
- 2310      3800
- 2311              	.LASF58:
- 2312 0297 4144435F 		.ascii	"ADC_countsPer10Volt\000"
- 2312      636F756E 
- 2312      74735065 
- 2312      72313056 
- 2312      6F6C7400 
- 2313              	.LASF4:
- 2314 02ab 6C6F6E67 		.ascii	"long int\000"
- 2314      20696E74 
- 2314      00
- 2315              	.LASF18:
- 2316 02b4 63686172 		.ascii	"char\000"
- 2316      00
- 2317              	.LASF0:
- 2318 02b9 7369676E 		.ascii	"signed char\000"
- 2318      65642063 
- 2318      68617200 
- 2319              	.LASF56:
- 2320 02c5 4144435F 		.ascii	"ADC_initVar\000"
- 2320      696E6974 
- 2320      56617200 
- 2321              	.LASF59:
- 2322 02d1 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccEZMIp0.s 			page 59
+ 2294              	.LASF20:
+ 2295 0248 73697A65 		.ascii	"sizetype\000"
+ 2295      74797065 
+ 2295      00
+ 2296              	.LASF51:
+ 2297 0251 4144435F 		.ascii	"ADC_CountsTo_uVolts\000"
+ 2297      436F756E 
+ 2297      7473546F 
+ 2297      5F75566F 
+ 2297      6C747300 
+ 2298              	.LASF53:
+ 2299 0265 4144435F 		.ascii	"ADC_CountsTo_Volts\000"
+ 2299      436F756E 
+ 2299      7473546F 
+ 2299      5F566F6C 
+ 2299      747300
+ 2300              	.LASF27:
+ 2301 0278 4144435F 		.ascii	"ADC_StartConvert\000"
+ 2301      53746172 
+ 2301      74436F6E 
+ 2301      76657274 
+ 2301      00
+ 2302              	.LASF37:
+ 2303 0289 6D61736B 		.ascii	"mask\000"
+ 2303      00
+ 2304              	.LASF21:
+ 2305 028e 63684E75 		.ascii	"chNum\000"
+ 2305      6D00
+ 2306              	.LASF32:
+ 2307 0294 7265744D 		.ascii	"retMode\000"
+ 2307      6F646500 
+ 2308              	.LASF28:
+ 2309 029c 4144435F 		.ascii	"ADC_StopConvert\000"
+ 2309      53746F70 
+ 2309      436F6E76 
+ 2309      65727400 
+ 2310              	.LASF9:
+ 2311 02ac 75696E74 		.ascii	"uint8\000"
+ 2311      3800
+ 2312              	.LASF58:
+ 2313 02b2 4144435F 		.ascii	"ADC_countsPer10Volt\000"
+ 2313      636F756E 
+ 2313      74735065 
+ 2313      72313056 
+ 2313      6F6C7400 
+ 2314              	.LASF4:
+ 2315 02c6 6C6F6E67 		.ascii	"long int\000"
+ 2315      20696E74 
+ 2315      00
+ 2316              	.LASF18:
+ 2317 02cf 63686172 		.ascii	"char\000"
+ 2317      00
+ 2318              	.LASF0:
+ 2319 02d4 7369676E 		.ascii	"signed char\000"
+ 2319      65642063 
+ 2319      68617200 
+ 2320              	.LASF56:
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfcdcRx.s 			page 59
 
 
- 2322      4320342E 
- 2322      382E3420 
- 2322      32303134 
- 2322      30353236 
- 2323 0304 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 2323      20726576 
- 2323      6973696F 
- 2323      6E203231 
- 2323      31333538 
- 2324 0337 30202D66 		.ascii	"0 -ffunction-sections\000"
- 2324      66756E63 
- 2324      74696F6E 
- 2324      2D736563 
- 2324      74696F6E 
- 2325              	.LASF17:
- 2326 034d 696E7436 		.ascii	"int64\000"
- 2326      3400
- 2327              	.LASF26:
- 2328 0353 4144435F 		.ascii	"ADC_Stop\000"
- 2328      53746F70 
- 2328      00
- 2329              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ 2321 02e0 4144435F 		.ascii	"ADC_initVar\000"
+ 2321      696E6974 
+ 2321      56617200 
+ 2322              	.LASF59:
+ 2323 02ec 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 2323      4320342E 
+ 2323      382E3420 
+ 2323      32303134 
+ 2323      30353236 
+ 2324 031f 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 2324      20726576 
+ 2324      6973696F 
+ 2324      6E203231 
+ 2324      31333538 
+ 2325 0352 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 2325      66756E63 
+ 2325      74696F6E 
+ 2325      2D736563 
+ 2325      74696F6E 
+ 2326              	.LASF17:
+ 2327 0368 696E7436 		.ascii	"int64\000"
+ 2327      3400
+ 2328              	.LASF26:
+ 2329 036e 4144435F 		.ascii	"ADC_Stop\000"
+ 2329      53746F70 
+ 2329      00
+ 2330              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

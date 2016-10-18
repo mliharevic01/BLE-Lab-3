@@ -18,8 +18,7 @@
 #include <cydevice_trm.h>
 #include <cyfitter.h>
 #include <cydisabledsheets.h>
-#include <Heart_Rate_input.h>
-#include <Heart_Rate_input_aliases.h>
+#include <TCPWM.h>
 #include <SW2_Switch.h>
 #include <SW2_Switch_aliases.h>
 #include <Button_output.h>
@@ -44,11 +43,11 @@
 #include <BLE_1_StackGattClient.h>
 #include <BLE_1_Stack.h>
 #include <BLE_1_eventHandler.h>
-#include <Opamp.h>
-#include <ADC.h>
+#include <PWM.h>
+#include <Clock_2.h>
+#include <Clock_1.h>
+#include <Pulse_Count.h>
 #include <BLE_1_bless_isr.h>
-#include <ADC_IRQ.h>
-#include <ADC_intClock.h>
 #include <core_cm0_psoc4.h>
 #include <core_cm0.h>
 #include <CyFlash.h>

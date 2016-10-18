@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
   30:.\Generated_Source\PSoC4/SW2_Switch.c **** ********************************************************************************
   31:.\Generated_Source\PSoC4/SW2_Switch.c **** *
   32:.\Generated_Source\PSoC4/SW2_Switch.c **** * Summary:
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 2
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/SW2_Switch.c **** *  Assign a new value to the digital port's data output register.  
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
   47:.\Generated_Source\PSoC4/SW2_Switch.c **** }
   66              		.loc 1 47 0
   67 003c BD46     		mov	sp, r7
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 3
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 3
 
 
   68 003e 04B0     		add	sp, sp, #16
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
   95              		.cfi_def_cfa_register 7
   96 0006 021C     		mov	r2, r0
   97 0008 FB1D     		add	r3, r7, #7
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 4
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 4
 
 
   98 000a 1A70     		strb	r2, [r3]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
   96:.\Generated_Source\PSoC4/SW2_Switch.c **** *******************************************************************************/
   97:.\Generated_Source\PSoC4/SW2_Switch.c **** uint8 SW2_Switch_Read(void) 
   98:.\Generated_Source\PSoC4/SW2_Switch.c **** {
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 5
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 5
 
 
  131              		.loc 1 98 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  118:.\Generated_Source\PSoC4/SW2_Switch.c **** {
  166              		.loc 1 118 0
  167              		.cfi_startproc
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 6
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 6
 
 
  168 0000 80B5     		push	{r7, lr}
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  140:.\Generated_Source\PSoC4/SW2_Switch.c ****     *******************************************************************************/
  141:.\Generated_Source\PSoC4/SW2_Switch.c ****     uint8 SW2_Switch_ClearInterrupt(void) 
  142:.\Generated_Source\PSoC4/SW2_Switch.c ****     {
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 7
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 7
 
 
  201              		.loc 1 142 0
@@ -416,12 +416,12 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  249 0006 00000000 		.4byte	.Ldebug_abbrev0
  250 000a 04       		.byte	0x4
  251 000b 01       		.uleb128 0x1
- 252 000c FD000000 		.4byte	.LASF24
+ 252 000c 01010000 		.4byte	.LASF24
  253 0010 01       		.byte	0x1
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 8
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 8
 
 
- 254 0011 D4010000 		.4byte	.LASF25
+ 254 0011 EF010000 		.4byte	.LASF25
  255 0015 51000000 		.4byte	.LASF26
  256 0019 00000000 		.4byte	.Ldebug_ranges0+0
  257 001d 00000000 		.4byte	0
@@ -429,35 +429,35 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  259 0025 02       		.uleb128 0x2
  260 0026 01       		.byte	0x1
  261 0027 06       		.byte	0x6
- 262 0028 C8010000 		.4byte	.LASF0
+ 262 0028 CC010000 		.4byte	.LASF0
  263 002c 02       		.uleb128 0x2
  264 002d 01       		.byte	0x1
  265 002e 08       		.byte	0x8
- 266 002f 8F000000 		.4byte	.LASF1
+ 266 002f 93000000 		.4byte	.LASF1
  267 0033 02       		.uleb128 0x2
  268 0034 02       		.byte	0x2
  269 0035 05       		.byte	0x5
- 270 0036 9E010000 		.4byte	.LASF2
+ 270 0036 A2010000 		.4byte	.LASF2
  271 003a 02       		.uleb128 0x2
  272 003b 02       		.byte	0x2
  273 003c 07       		.byte	0x7
- 274 003d B5000000 		.4byte	.LASF3
+ 274 003d B9000000 		.4byte	.LASF3
  275 0041 02       		.uleb128 0x2
  276 0042 04       		.byte	0x4
  277 0043 05       		.byte	0x5
- 278 0044 BF010000 		.4byte	.LASF4
+ 278 0044 C3010000 		.4byte	.LASF4
  279 0048 02       		.uleb128 0x2
  280 0049 04       		.byte	0x4
  281 004a 07       		.byte	0x7
- 282 004b A3000000 		.4byte	.LASF5
+ 282 004b A7000000 		.4byte	.LASF5
  283 004f 02       		.uleb128 0x2
  284 0050 08       		.byte	0x8
  285 0051 05       		.byte	0x5
- 286 0052 7E010000 		.4byte	.LASF6
+ 286 0052 82010000 		.4byte	.LASF6
  287 0056 02       		.uleb128 0x2
  288 0057 08       		.byte	0x8
  289 0058 07       		.byte	0x7
- 290 0059 78000000 		.4byte	.LASF7
+ 290 0059 D8010000 		.4byte	.LASF7
  291 005d 03       		.uleb128 0x3
  292 005e 04       		.byte	0x4
  293 005f 05       		.byte	0x5
@@ -465,32 +465,32 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  295 0064 02       		.uleb128 0x2
  296 0065 04       		.byte	0x4
  297 0066 07       		.byte	0x7
- 298 0067 F0000000 		.4byte	.LASF8
+ 298 0067 F4000000 		.4byte	.LASF8
  299 006b 04       		.uleb128 0x4
- 300 006c B9010000 		.4byte	.LASF9
+ 300 006c BD010000 		.4byte	.LASF9
  301 0070 02       		.byte	0x2
  302 0071 A1       		.byte	0xa1
  303 0072 2C000000 		.4byte	0x2c
  304 0076 04       		.uleb128 0x4
- 305 0077 CF000000 		.4byte	.LASF10
+ 305 0077 D3000000 		.4byte	.LASF10
  306 007b 02       		.byte	0x2
  307 007c A3       		.byte	0xa3
  308 007d 48000000 		.4byte	0x48
  309 0081 02       		.uleb128 0x2
  310 0082 04       		.byte	0x4
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 9
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 9
 
 
  311 0083 04       		.byte	0x4
- 312 0084 4B000000 		.4byte	.LASF11
+ 312 0084 33000000 		.4byte	.LASF11
  313 0088 02       		.uleb128 0x2
  314 0089 08       		.byte	0x8
  315 008a 04       		.byte	0x4
- 316 008b C8000000 		.4byte	.LASF12
+ 316 008b CC000000 		.4byte	.LASF12
  317 008f 02       		.uleb128 0x2
  318 0090 01       		.byte	0x1
  319 0091 08       		.byte	0x8
- 320 0092 99010000 		.4byte	.LASF13
+ 320 0092 9D010000 		.4byte	.LASF13
  321 0096 05       		.uleb128 0x5
  322 0097 17000000 		.4byte	.LASF14
  323 009b 02       		.byte	0x2
@@ -499,7 +499,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  326 00a2 06       		.uleb128 0x6
  327 00a3 76000000 		.4byte	0x76
  328 00a7 07       		.uleb128 0x7
- 329 00a8 A8010000 		.4byte	.LASF15
+ 329 00a8 AC010000 		.4byte	.LASF15
  330 00ac 01       		.byte	0x1
  331 00ad 2A       		.byte	0x2a
  332 00ae 00000000 		.4byte	.LFB0
@@ -516,7 +516,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  343 00c8 91       		.byte	0x91
  344 00c9 6F       		.sleb128 -17
  345 00ca 09       		.uleb128 0x9
- 346 00cb 9D000000 		.4byte	.LASF22
+ 346 00cb A1000000 		.4byte	.LASF22
  347 00cf 01       		.byte	0x1
  348 00d0 2C       		.byte	0x2c
  349 00d1 6B000000 		.4byte	0x6b
@@ -525,7 +525,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  352 00d7 77       		.sleb128 -9
  353 00d8 00       		.byte	0
  354 00d9 07       		.uleb128 0x7
- 355 00da 33000000 		.4byte	.LASF16
+ 355 00da 39000000 		.4byte	.LASF16
  356 00de 01       		.byte	0x1
  357 00df 49       		.byte	0x49
  358 00e0 00000000 		.4byte	.LFB1
@@ -534,11 +534,11 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  361 00e9 9C       		.byte	0x9c
  362 00ea FD000000 		.4byte	0xfd
  363 00ee 08       		.uleb128 0x8
- 364 00ef 79010000 		.4byte	.LASF18
+ 364 00ef 7D010000 		.4byte	.LASF18
  365 00f3 01       		.byte	0x1
  366 00f4 49       		.byte	0x49
  367 00f5 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 10
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 10
 
 
  368 00f9 02       		.uleb128 0x2
@@ -564,7 +564,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  388 0125 01       		.uleb128 0x1
  389 0126 9C       		.byte	0x9c
  390 0127 0B       		.uleb128 0xb
- 391 0128 D6000000 		.4byte	.LASF21
+ 391 0128 DA000000 		.4byte	.LASF21
  392 012c 01       		.byte	0x1
  393 012d 8D       		.byte	0x8d
  394 012e 6B000000 		.4byte	0x6b
@@ -573,7 +573,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  397 013a 01       		.uleb128 0x1
  398 013b 9C       		.byte	0x9c
  399 013c 09       		.uleb128 0x9
- 400 013d 8C010000 		.4byte	.LASF23
+ 400 013d 90010000 		.4byte	.LASF23
  401 0141 01       		.byte	0x1
  402 0142 8F       		.byte	0x8f
  403 0143 6B000000 		.4byte	0x6b
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  422 000b 55       		.uleb128 0x55
  423 000c 17       		.uleb128 0x17
  424 000d 11       		.uleb128 0x11
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 11
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 11
 
 
  425 000e 01       		.uleb128 0x1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  479 0044 35       		.uleb128 0x35
  480 0045 00       		.byte	0
  481 0046 49       		.uleb128 0x49
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 12
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 12
 
 
  482 0047 13       		.uleb128 0x13
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  536 007e 02       		.uleb128 0x2
  537 007f 18       		.uleb128 0x18
  538 0080 00       		.byte	0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 13
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 13
 
 
  539 0081 00       		.byte	0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  593 0004 0200     		.2byte	0x2
  594 0006 00000000 		.4byte	.Ldebug_info0
  595 000a 04       		.byte	0x4
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 14
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 14
 
 
  596 000b 00       		.byte	0
@@ -834,130 +834,135 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 1
  635      53776974 
  635      63685F52 
  635      65616400 
- 636              	.LASF16:
- 637 0033 5357325F 		.ascii	"SW2_Switch_SetDriveMode\000"
- 637      53776974 
- 637      63685F53 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 15
+ 636              	.LASF11:
+ 637 0033 666C6F61 		.ascii	"float\000"
+ 637      7400
+ 638              	.LASF16:
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 15
 
 
- 637      65744472 
- 637      6976654D 
- 638              	.LASF11:
- 639 004b 666C6F61 		.ascii	"float\000"
- 639      7400
+ 639 0039 5357325F 		.ascii	"SW2_Switch_SetDriveMode\000"
+ 639      53776974 
+ 639      63685F53 
+ 639      65744472 
+ 639      6976654D 
  640              	.LASF26:
- 641 0051 443A5C45 		.ascii	"D:\\ECEG_Labs\\BLE Lab 3\\BLE Lab 3.cydsn\000"
- 641      4345475F 
- 641      4C616273 
- 641      5C424C45 
- 641      204C6162 
- 642              	.LASF7:
- 643 0078 6C6F6E67 		.ascii	"long long unsigned int\000"
- 643      206C6F6E 
- 643      6720756E 
- 643      7369676E 
- 643      65642069 
- 644              	.LASF1:
- 645 008f 756E7369 		.ascii	"unsigned char\000"
- 645      676E6564 
- 645      20636861 
- 645      7200
- 646              	.LASF22:
- 647 009d 64725661 		.ascii	"drVal\000"
- 647      6C00
- 648              	.LASF5:
- 649 00a3 6C6F6E67 		.ascii	"long unsigned int\000"
- 649      20756E73 
- 649      69676E65 
- 649      6420696E 
- 649      7400
- 650              	.LASF3:
- 651 00b5 73686F72 		.ascii	"short unsigned int\000"
- 651      7420756E 
- 651      7369676E 
- 651      65642069 
- 651      6E7400
- 652              	.LASF12:
- 653 00c8 646F7562 		.ascii	"double\000"
- 653      6C6500
- 654              	.LASF10:
- 655 00cf 75696E74 		.ascii	"uint32\000"
- 655      333200
- 656              	.LASF21:
- 657 00d6 5357325F 		.ascii	"SW2_Switch_ClearInterrupt\000"
- 657      53776974 
- 657      63685F43 
- 657      6C656172 
- 657      496E7465 
- 658              	.LASF8:
- 659 00f0 756E7369 		.ascii	"unsigned int\000"
- 659      676E6564 
- 659      20696E74 
- 659      00
- 660              	.LASF24:
- 661 00fd 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 661      4320342E 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 16
+ 641 0051 433A5C55 		.ascii	"C:\\Users\\mliha\\Documents\\Lab_3_Embedded\\BLE La"
+ 641      73657273 
+ 641      5C6D6C69 
+ 641      68615C44 
+ 641      6F63756D 
+ 642 007f 6220335C 		.ascii	"b 3\\BLE Lab 3.cydsn\000"
+ 642      424C4520 
+ 642      4C616220 
+ 642      332E6379 
+ 642      64736E00 
+ 643              	.LASF1:
+ 644 0093 756E7369 		.ascii	"unsigned char\000"
+ 644      676E6564 
+ 644      20636861 
+ 644      7200
+ 645              	.LASF22:
+ 646 00a1 64725661 		.ascii	"drVal\000"
+ 646      6C00
+ 647              	.LASF5:
+ 648 00a7 6C6F6E67 		.ascii	"long unsigned int\000"
+ 648      20756E73 
+ 648      69676E65 
+ 648      6420696E 
+ 648      7400
+ 649              	.LASF3:
+ 650 00b9 73686F72 		.ascii	"short unsigned int\000"
+ 650      7420756E 
+ 650      7369676E 
+ 650      65642069 
+ 650      6E7400
+ 651              	.LASF12:
+ 652 00cc 646F7562 		.ascii	"double\000"
+ 652      6C6500
+ 653              	.LASF10:
+ 654 00d3 75696E74 		.ascii	"uint32\000"
+ 654      333200
+ 655              	.LASF21:
+ 656 00da 5357325F 		.ascii	"SW2_Switch_ClearInterrupt\000"
+ 656      53776974 
+ 656      63685F43 
+ 656      6C656172 
+ 656      496E7465 
+ 657              	.LASF8:
+ 658 00f4 756E7369 		.ascii	"unsigned int\000"
+ 658      676E6564 
+ 658      20696E74 
+ 658      00
+ 659              	.LASF24:
+ 660 0101 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 660      4320342E 
+ 660      382E3420 
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 16
 
 
- 661      382E3420 
- 661      32303134 
- 661      30353236 
- 662 0130 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 662      20726576 
- 662      6973696F 
- 662      6E203231 
- 662      31333538 
- 663 0163 30202D66 		.ascii	"0 -ffunction-sections\000"
- 663      66756E63 
- 663      74696F6E 
- 663      2D736563 
- 663      74696F6E 
- 664              	.LASF18:
- 665 0179 6D6F6465 		.ascii	"mode\000"
- 665      00
- 666              	.LASF6:
- 667 017e 6C6F6E67 		.ascii	"long long int\000"
- 667      206C6F6E 
- 667      6720696E 
- 667      7400
- 668              	.LASF23:
- 669 018c 6D61736B 		.ascii	"maskedStatus\000"
- 669      65645374 
- 669      61747573 
- 669      00
- 670              	.LASF13:
- 671 0199 63686172 		.ascii	"char\000"
- 671      00
- 672              	.LASF2:
- 673 019e 73686F72 		.ascii	"short int\000"
- 673      7420696E 
- 673      7400
- 674              	.LASF15:
- 675 01a8 5357325F 		.ascii	"SW2_Switch_Write\000"
- 675      53776974 
- 675      63685F57 
- 675      72697465 
- 675      00
- 676              	.LASF9:
- 677 01b9 75696E74 		.ascii	"uint8\000"
- 677      3800
- 678              	.LASF4:
- 679 01bf 6C6F6E67 		.ascii	"long int\000"
- 679      20696E74 
- 679      00
- 680              	.LASF0:
- 681 01c8 7369676E 		.ascii	"signed char\000"
- 681      65642063 
- 681      68617200 
- 682              	.LASF25:
- 683 01d4 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\SW2_Switch.c\000"
- 683      6E657261 
- 683      7465645F 
- 683      536F7572 
- 683      63655C50 
- 684              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccFGRvyj.s 			page 17
+ 660      32303134 
+ 660      30353236 
+ 661 0134 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 661      20726576 
+ 661      6973696F 
+ 661      6E203231 
+ 661      31333538 
+ 662 0167 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 662      66756E63 
+ 662      74696F6E 
+ 662      2D736563 
+ 662      74696F6E 
+ 663              	.LASF18:
+ 664 017d 6D6F6465 		.ascii	"mode\000"
+ 664      00
+ 665              	.LASF6:
+ 666 0182 6C6F6E67 		.ascii	"long long int\000"
+ 666      206C6F6E 
+ 666      6720696E 
+ 666      7400
+ 667              	.LASF23:
+ 668 0190 6D61736B 		.ascii	"maskedStatus\000"
+ 668      65645374 
+ 668      61747573 
+ 668      00
+ 669              	.LASF13:
+ 670 019d 63686172 		.ascii	"char\000"
+ 670      00
+ 671              	.LASF2:
+ 672 01a2 73686F72 		.ascii	"short int\000"
+ 672      7420696E 
+ 672      7400
+ 673              	.LASF15:
+ 674 01ac 5357325F 		.ascii	"SW2_Switch_Write\000"
+ 674      53776974 
+ 674      63685F57 
+ 674      72697465 
+ 674      00
+ 675              	.LASF9:
+ 676 01bd 75696E74 		.ascii	"uint8\000"
+ 676      3800
+ 677              	.LASF4:
+ 678 01c3 6C6F6E67 		.ascii	"long int\000"
+ 678      20696E74 
+ 678      00
+ 679              	.LASF0:
+ 680 01cc 7369676E 		.ascii	"signed char\000"
+ 680      65642063 
+ 680      68617200 
+ 681              	.LASF7:
+ 682 01d8 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 682      206C6F6E 
+ 682      6720756E 
+ 682      7369676E 
+ 682      65642069 
+ 683              	.LASF25:
+ 684 01ef 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\SW2_Switch.c\000"
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccfIUOfY.s 			page 17
 
 
+ 684      6E657261 
+ 684      7465645F 
+ 684      536F7572 
+ 684      63655C50 
+ 685              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

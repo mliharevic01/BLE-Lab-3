@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
   30:.\Generated_Source\PSoC4/Led_Connected_Blue.c **** ********************************************************************************
   31:.\Generated_Source\PSoC4/Led_Connected_Blue.c **** *
   32:.\Generated_Source\PSoC4/Led_Connected_Blue.c **** * Summary:
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 2
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/Led_Connected_Blue.c **** *  Assign a new value to the digital port's data output register.  
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
   47:.\Generated_Source\PSoC4/Led_Connected_Blue.c **** }
   66              		.loc 1 47 0
   67 003c BD46     		mov	sp, r7
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 3
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 3
 
 
   68 003e 04B0     		add	sp, sp, #16
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
   95              		.cfi_def_cfa_register 7
   96 0006 021C     		mov	r2, r0
   97 0008 FB1D     		add	r3, r7, #7
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 4
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 4
 
 
   98 000a 1A70     		strb	r2, [r3]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
   96:.\Generated_Source\PSoC4/Led_Connected_Blue.c **** *******************************************************************************/
   97:.\Generated_Source\PSoC4/Led_Connected_Blue.c **** uint8 Led_Connected_Blue_Read(void) 
   98:.\Generated_Source\PSoC4/Led_Connected_Blue.c **** {
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 5
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 5
 
 
  131              		.loc 1 98 0
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  118:.\Generated_Source\PSoC4/Led_Connected_Blue.c **** {
  166              		.loc 1 118 0
  167              		.cfi_startproc
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 6
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 6
 
 
  168 0000 80B5     		push	{r7, lr}
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  140:.\Generated_Source\PSoC4/Led_Connected_Blue.c ****     *******************************************************************************/
  141:.\Generated_Source\PSoC4/Led_Connected_Blue.c ****     uint8 Led_Connected_Blue_ClearInterrupt(void) 
  142:.\Generated_Source\PSoC4/Led_Connected_Blue.c ****     {
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 7
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 7
 
 
  201              		.loc 1 142 0
@@ -416,12 +416,12 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  249 0006 00000000 		.4byte	.Ldebug_abbrev0
  250 000a 04       		.byte	0x4
  251 000b 01       		.uleb128 0x1
- 252 000c F6000000 		.4byte	.LASF24
+ 252 000c FA000000 		.4byte	.LASF24
  253 0010 01       		.byte	0x1
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 8
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 8
 
 
- 254 0011 FC010000 		.4byte	.LASF25
+ 254 0011 17020000 		.4byte	.LASF25
  255 0015 25000000 		.4byte	.LASF26
  256 0019 00000000 		.4byte	.Ldebug_ranges0+0
  257 001d 00000000 		.4byte	0
@@ -429,35 +429,35 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  259 0025 02       		.uleb128 0x2
  260 0026 01       		.byte	0x1
  261 0027 06       		.byte	0x6
- 262 0028 F0010000 		.4byte	.LASF0
+ 262 0028 F4010000 		.4byte	.LASF0
  263 002c 02       		.uleb128 0x2
  264 002d 01       		.byte	0x1
  265 002e 08       		.byte	0x8
- 266 002f 63000000 		.4byte	.LASF1
+ 266 002f 67000000 		.4byte	.LASF1
  267 0033 02       		.uleb128 0x2
  268 0034 02       		.byte	0x2
  269 0035 05       		.byte	0x5
- 270 0036 BF010000 		.4byte	.LASF2
+ 270 0036 C3010000 		.4byte	.LASF2
  271 003a 02       		.uleb128 0x2
  272 003b 02       		.byte	0x2
  273 003c 07       		.byte	0x7
- 274 003d 89000000 		.4byte	.LASF3
+ 274 003d 8D000000 		.4byte	.LASF3
  275 0041 02       		.uleb128 0x2
  276 0042 04       		.byte	0x4
  277 0043 05       		.byte	0x5
- 278 0044 E7010000 		.4byte	.LASF4
+ 278 0044 EB010000 		.4byte	.LASF4
  279 0048 02       		.uleb128 0x2
  280 0049 04       		.byte	0x4
  281 004a 07       		.byte	0x7
- 282 004b 77000000 		.4byte	.LASF5
+ 282 004b 7B000000 		.4byte	.LASF5
  283 004f 02       		.uleb128 0x2
  284 0050 08       		.byte	0x8
  285 0051 05       		.byte	0x5
- 286 0052 99010000 		.4byte	.LASF6
+ 286 0052 9D010000 		.4byte	.LASF6
  287 0056 02       		.uleb128 0x2
  288 0057 08       		.byte	0x8
  289 0058 07       		.byte	0x7
- 290 0059 4C000000 		.4byte	.LASF7
+ 290 0059 00020000 		.4byte	.LASF7
  291 005d 03       		.uleb128 0x3
  292 005e 04       		.byte	0x4
  293 005f 05       		.byte	0x5
@@ -465,20 +465,20 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  295 0064 02       		.uleb128 0x2
  296 0065 04       		.byte	0x4
  297 0066 07       		.byte	0x7
- 298 0067 CA000000 		.4byte	.LASF8
+ 298 0067 CE000000 		.4byte	.LASF8
  299 006b 04       		.uleb128 0x4
- 300 006c E1010000 		.4byte	.LASF9
+ 300 006c E5010000 		.4byte	.LASF9
  301 0070 02       		.byte	0x2
  302 0071 A1       		.byte	0xa1
  303 0072 2C000000 		.4byte	0x2c
  304 0076 04       		.uleb128 0x4
- 305 0077 C3000000 		.4byte	.LASF10
+ 305 0077 C7000000 		.4byte	.LASF10
  306 007b 02       		.byte	0x2
  307 007c A3       		.byte	0xa3
  308 007d 48000000 		.4byte	0x48
  309 0081 02       		.uleb128 0x2
  310 0082 04       		.byte	0x4
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 9
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 9
 
 
  311 0083 04       		.byte	0x4
@@ -486,11 +486,11 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  313 0088 02       		.uleb128 0x2
  314 0089 08       		.byte	0x8
  315 008a 04       		.byte	0x4
- 316 008b BC000000 		.4byte	.LASF12
+ 316 008b C0000000 		.4byte	.LASF12
  317 008f 02       		.uleb128 0x2
  318 0090 01       		.byte	0x1
  319 0091 08       		.byte	0x8
- 320 0092 B4010000 		.4byte	.LASF13
+ 320 0092 B8010000 		.4byte	.LASF13
  321 0096 05       		.uleb128 0x5
  322 0097 00000000 		.4byte	.LASF14
  323 009b 02       		.byte	0x2
@@ -508,7 +508,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  335 00b7 9C       		.byte	0x9c
  336 00b8 D9000000 		.4byte	0xd9
  337 00bc 08       		.uleb128 0x8
- 338 00bd B9010000 		.4byte	.LASF17
+ 338 00bd BD010000 		.4byte	.LASF17
  339 00c1 01       		.byte	0x1
  340 00c2 2A       		.byte	0x2a
  341 00c3 6B000000 		.4byte	0x6b
@@ -516,7 +516,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  343 00c8 91       		.byte	0x91
  344 00c9 6F       		.sleb128 -17
  345 00ca 09       		.uleb128 0x9
- 346 00cb 71000000 		.4byte	.LASF22
+ 346 00cb 75000000 		.4byte	.LASF22
  347 00cf 01       		.byte	0x1
  348 00d0 2C       		.byte	0x2c
  349 00d1 6B000000 		.4byte	0x6b
@@ -525,7 +525,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  352 00d7 77       		.sleb128 -9
  353 00d8 00       		.byte	0
  354 00d9 07       		.uleb128 0x7
- 355 00da 9C000000 		.4byte	.LASF16
+ 355 00da A0000000 		.4byte	.LASF16
  356 00de 01       		.byte	0x1
  357 00df 49       		.byte	0x49
  358 00e0 00000000 		.4byte	.LFB1
@@ -534,11 +534,11 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  361 00e9 9C       		.byte	0x9c
  362 00ea FD000000 		.4byte	0xfd
  363 00ee 08       		.uleb128 0x8
- 364 00ef 94010000 		.4byte	.LASF18
+ 364 00ef 98010000 		.4byte	.LASF18
  365 00f3 01       		.byte	0x1
  366 00f4 49       		.byte	0x49
  367 00f5 6B000000 		.4byte	0x6b
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 10
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 10
 
 
  368 00f9 02       		.uleb128 0x2
@@ -546,7 +546,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  370 00fb 77       		.sleb128 -9
  371 00fc 00       		.byte	0
  372 00fd 0A       		.uleb128 0xa
- 373 00fe C9010000 		.4byte	.LASF19
+ 373 00fe CD010000 		.4byte	.LASF19
  374 0102 01       		.byte	0x1
  375 0103 61       		.byte	0x61
  376 0104 6B000000 		.4byte	0x6b
@@ -555,7 +555,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  379 0110 01       		.uleb128 0x1
  380 0111 9C       		.byte	0x9c
  381 0112 0A       		.uleb128 0xa
- 382 0113 D7000000 		.4byte	.LASF20
+ 382 0113 DB000000 		.4byte	.LASF20
  383 0117 01       		.byte	0x1
  384 0118 75       		.byte	0x75
  385 0119 6B000000 		.4byte	0x6b
@@ -564,7 +564,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  388 0125 01       		.uleb128 0x1
  389 0126 9C       		.byte	0x9c
  390 0127 0B       		.uleb128 0xb
- 391 0128 72010000 		.4byte	.LASF21
+ 391 0128 76010000 		.4byte	.LASF21
  392 012c 01       		.byte	0x1
  393 012d 8D       		.byte	0x8d
  394 012e 6B000000 		.4byte	0x6b
@@ -573,7 +573,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  397 013a 01       		.uleb128 0x1
  398 013b 9C       		.byte	0x9c
  399 013c 09       		.uleb128 0x9
- 400 013d A7010000 		.4byte	.LASF23
+ 400 013d AB010000 		.4byte	.LASF23
  401 0141 01       		.byte	0x1
  402 0142 8F       		.byte	0x8f
  403 0143 6B000000 		.4byte	0x6b
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  422 000b 55       		.uleb128 0x55
  423 000c 17       		.uleb128 0x17
  424 000d 11       		.uleb128 0x11
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 11
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 11
 
 
  425 000e 01       		.uleb128 0x1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  479 0044 35       		.uleb128 0x35
  480 0045 00       		.byte	0
  481 0046 49       		.uleb128 0x49
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 12
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 12
 
 
  482 0047 13       		.uleb128 0x13
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  536 007e 02       		.uleb128 0x2
  537 007f 18       		.uleb128 0x18
  538 0080 00       		.byte	0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 13
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 13
 
 
  539 0081 00       		.byte	0
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  593 0004 0200     		.2byte	0x2
  594 0006 00000000 		.4byte	.Ldebug_info0
  595 000a 04       		.byte	0x4
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 14
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 14
 
 
  596 000b 00       		.byte	0
@@ -830,135 +830,140 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 1
  633 001f 666C6F61 		.ascii	"float\000"
  633      7400
  634              	.LASF26:
- 635 0025 443A5C45 		.ascii	"D:\\ECEG_Labs\\BLE Lab 3\\BLE Lab 3.cydsn\000"
- 635      4345475F 
- 635      4C616273 
- 635      5C424C45 
- 635      204C6162 
- 636              	.LASF7:
- 637 004c 6C6F6E67 		.ascii	"long long unsigned int\000"
- 637      206C6F6E 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 15
+ 635 0025 433A5C55 		.ascii	"C:\\Users\\mliha\\Documents\\Lab_3_Embedded\\BLE La"
+ 635      73657273 
+ 635      5C6D6C69 
+ 635      68615C44 
+ 635      6F63756D 
+ 636 0053 6220335C 		.ascii	"b 3\\BLE Lab 3.cydsn\000"
+ 636      424C4520 
+ 636      4C616220 
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 15
 
 
- 637      6720756E 
- 637      7369676E 
- 637      65642069 
- 638              	.LASF1:
- 639 0063 756E7369 		.ascii	"unsigned char\000"
- 639      676E6564 
- 639      20636861 
- 639      7200
- 640              	.LASF22:
- 641 0071 64725661 		.ascii	"drVal\000"
- 641      6C00
- 642              	.LASF5:
- 643 0077 6C6F6E67 		.ascii	"long unsigned int\000"
- 643      20756E73 
- 643      69676E65 
- 643      6420696E 
- 643      7400
- 644              	.LASF3:
- 645 0089 73686F72 		.ascii	"short unsigned int\000"
- 645      7420756E 
- 645      7369676E 
- 645      65642069 
- 645      6E7400
- 646              	.LASF16:
- 647 009c 4C65645F 		.ascii	"Led_Connected_Blue_SetDriveMode\000"
- 647      436F6E6E 
- 647      65637465 
- 647      645F426C 
- 647      75655F53 
- 648              	.LASF12:
- 649 00bc 646F7562 		.ascii	"double\000"
- 649      6C6500
- 650              	.LASF10:
- 651 00c3 75696E74 		.ascii	"uint32\000"
- 651      333200
- 652              	.LASF8:
- 653 00ca 756E7369 		.ascii	"unsigned int\000"
- 653      676E6564 
- 653      20696E74 
- 653      00
- 654              	.LASF20:
- 655 00d7 4C65645F 		.ascii	"Led_Connected_Blue_ReadDataReg\000"
- 655      436F6E6E 
- 655      65637465 
- 655      645F426C 
- 655      75655F52 
- 656              	.LASF24:
- 657 00f6 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 657      4320342E 
- 657      382E3420 
- 657      32303134 
- 657      30353236 
- 658 0129 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 658      20726576 
- 658      6973696F 
- 658      6E203231 
- 658      31333538 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 16
+ 636      332E6379 
+ 636      64736E00 
+ 637              	.LASF1:
+ 638 0067 756E7369 		.ascii	"unsigned char\000"
+ 638      676E6564 
+ 638      20636861 
+ 638      7200
+ 639              	.LASF22:
+ 640 0075 64725661 		.ascii	"drVal\000"
+ 640      6C00
+ 641              	.LASF5:
+ 642 007b 6C6F6E67 		.ascii	"long unsigned int\000"
+ 642      20756E73 
+ 642      69676E65 
+ 642      6420696E 
+ 642      7400
+ 643              	.LASF3:
+ 644 008d 73686F72 		.ascii	"short unsigned int\000"
+ 644      7420756E 
+ 644      7369676E 
+ 644      65642069 
+ 644      6E7400
+ 645              	.LASF16:
+ 646 00a0 4C65645F 		.ascii	"Led_Connected_Blue_SetDriveMode\000"
+ 646      436F6E6E 
+ 646      65637465 
+ 646      645F426C 
+ 646      75655F53 
+ 647              	.LASF12:
+ 648 00c0 646F7562 		.ascii	"double\000"
+ 648      6C6500
+ 649              	.LASF10:
+ 650 00c7 75696E74 		.ascii	"uint32\000"
+ 650      333200
+ 651              	.LASF8:
+ 652 00ce 756E7369 		.ascii	"unsigned int\000"
+ 652      676E6564 
+ 652      20696E74 
+ 652      00
+ 653              	.LASF20:
+ 654 00db 4C65645F 		.ascii	"Led_Connected_Blue_ReadDataReg\000"
+ 654      436F6E6E 
+ 654      65637465 
+ 654      645F426C 
+ 654      75655F52 
+ 655              	.LASF24:
+ 656 00fa 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 656      4320342E 
+ 656      382E3420 
+ 656      32303134 
+ 656      30353236 
+ 657 012d 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 657      20726576 
+ 657      6973696F 
+ 657      6E203231 
+ 657      31333538 
+ 658 0160 30202D66 		.ascii	"0 -ffunction-sections\000"
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 16
 
 
- 659 015c 30202D66 		.ascii	"0 -ffunction-sections\000"
- 659      66756E63 
- 659      74696F6E 
- 659      2D736563 
- 659      74696F6E 
- 660              	.LASF21:
- 661 0172 4C65645F 		.ascii	"Led_Connected_Blue_ClearInterrupt\000"
- 661      436F6E6E 
- 661      65637465 
- 661      645F426C 
- 661      75655F43 
- 662              	.LASF18:
- 663 0194 6D6F6465 		.ascii	"mode\000"
- 663      00
- 664              	.LASF6:
- 665 0199 6C6F6E67 		.ascii	"long long int\000"
- 665      206C6F6E 
- 665      6720696E 
- 665      7400
- 666              	.LASF23:
- 667 01a7 6D61736B 		.ascii	"maskedStatus\000"
- 667      65645374 
- 667      61747573 
- 667      00
- 668              	.LASF13:
- 669 01b4 63686172 		.ascii	"char\000"
- 669      00
- 670              	.LASF17:
- 671 01b9 76616C75 		.ascii	"value\000"
- 671      6500
- 672              	.LASF2:
- 673 01bf 73686F72 		.ascii	"short int\000"
- 673      7420696E 
- 673      7400
- 674              	.LASF19:
- 675 01c9 4C65645F 		.ascii	"Led_Connected_Blue_Read\000"
- 675      436F6E6E 
- 675      65637465 
- 675      645F426C 
- 675      75655F52 
- 676              	.LASF9:
- 677 01e1 75696E74 		.ascii	"uint8\000"
- 677      3800
- 678              	.LASF4:
- 679 01e7 6C6F6E67 		.ascii	"long int\000"
- 679      20696E74 
- 679      00
- 680              	.LASF0:
- 681 01f0 7369676E 		.ascii	"signed char\000"
- 681      65642063 
- 681      68617200 
- 682              	.LASF25:
- 683 01fc 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\Led_Connected_Blue.c\000"
- 683      6E657261 
- 683      7465645F 
- 683      536F7572 
- 683      63655C50 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccTjetUM.s 			page 17
+ 658      66756E63 
+ 658      74696F6E 
+ 658      2D736563 
+ 658      74696F6E 
+ 659              	.LASF21:
+ 660 0176 4C65645F 		.ascii	"Led_Connected_Blue_ClearInterrupt\000"
+ 660      436F6E6E 
+ 660      65637465 
+ 660      645F426C 
+ 660      75655F43 
+ 661              	.LASF18:
+ 662 0198 6D6F6465 		.ascii	"mode\000"
+ 662      00
+ 663              	.LASF6:
+ 664 019d 6C6F6E67 		.ascii	"long long int\000"
+ 664      206C6F6E 
+ 664      6720696E 
+ 664      7400
+ 665              	.LASF23:
+ 666 01ab 6D61736B 		.ascii	"maskedStatus\000"
+ 666      65645374 
+ 666      61747573 
+ 666      00
+ 667              	.LASF13:
+ 668 01b8 63686172 		.ascii	"char\000"
+ 668      00
+ 669              	.LASF17:
+ 670 01bd 76616C75 		.ascii	"value\000"
+ 670      6500
+ 671              	.LASF2:
+ 672 01c3 73686F72 		.ascii	"short int\000"
+ 672      7420696E 
+ 672      7400
+ 673              	.LASF19:
+ 674 01cd 4C65645F 		.ascii	"Led_Connected_Blue_Read\000"
+ 674      436F6E6E 
+ 674      65637465 
+ 674      645F426C 
+ 674      75655F52 
+ 675              	.LASF9:
+ 676 01e5 75696E74 		.ascii	"uint8\000"
+ 676      3800
+ 677              	.LASF4:
+ 678 01eb 6C6F6E67 		.ascii	"long int\000"
+ 678      20696E74 
+ 678      00
+ 679              	.LASF0:
+ 680 01f4 7369676E 		.ascii	"signed char\000"
+ 680      65642063 
+ 680      68617200 
+ 681              	.LASF7:
+ 682 0200 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 682      206C6F6E 
+ 682      6720756E 
+ 682      7369676E 
+ 682      65642069 
+ 683              	.LASF25:
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccmLicGg.s 			page 17
 
 
- 684              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ 684 0217 2E5C4765 		.ascii	".\\Generated_Source\\PSoC4\\Led_Connected_Blue.c\000"
+ 684      6E657261 
+ 684      7465645F 
+ 684      536F7572 
+ 684      63655C50 
+ 685              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

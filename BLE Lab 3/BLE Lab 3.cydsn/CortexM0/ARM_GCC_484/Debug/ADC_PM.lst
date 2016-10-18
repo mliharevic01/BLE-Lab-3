@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
   26:.\Generated_Source\PSoC4/ADC_PM.c ****     ADC_DISABLED
   27:.\Generated_Source\PSoC4/ADC_PM.c **** };
   28:.\Generated_Source\PSoC4/ADC_PM.c **** 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 2
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 2
 
 
   29:.\Generated_Source\PSoC4/ADC_PM.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
   60:.\Generated_Source\PSoC4/ADC_PM.c **** * Return:
   61:.\Generated_Source\PSoC4/ADC_PM.c **** *  None.
   62:.\Generated_Source\PSoC4/ADC_PM.c **** *
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 3
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 3
 
 
   63:.\Generated_Source\PSoC4/ADC_PM.c **** *******************************************************************************/
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
   80              		.cfi_offset 7, -8
   81              		.cfi_offset 14, -4
   82 0002 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 4
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 4
 
 
   83              		.cfi_def_cfa_register 7
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  106:.\Generated_Source\PSoC4/ADC_PM.c ****     }
  107:.\Generated_Source\PSoC4/ADC_PM.c ****     else
  108:.\Generated_Source\PSoC4/ADC_PM.c ****     {
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 5
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 5
 
 
  109:.\Generated_Source\PSoC4/ADC_PM.c ****         ADC_backup.enableState = ADC_DISABLED;
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  150 0000 80B5     		push	{r7, lr}
  151              		.cfi_def_cfa_offset 8
  152              		.cfi_offset 7, -8
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 6
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 6
 
 
  153              		.cfi_offset 14, -4
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  197              	.Ldebug_info0:
  198 0000 20010000 		.4byte	0x120
  199 0004 0400     		.2byte	0x4
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 7
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 7
 
 
  200 0006 00000000 		.4byte	.Ldebug_abbrev0
@@ -367,14 +367,14 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  203 000c AD000000 		.4byte	.LASF21
  204 0010 01       		.byte	0x1
  205 0011 2D000000 		.4byte	.LASF22
- 206 0015 96010000 		.4byte	.LASF23
+ 206 0015 A6010000 		.4byte	.LASF23
  207 0019 00000000 		.4byte	.Ldebug_ranges0+0
  208 001d 00000000 		.4byte	0
  209 0021 00000000 		.4byte	.Ldebug_line0
  210 0025 02       		.uleb128 0x2
  211 0026 01       		.byte	0x1
  212 0027 06       		.byte	0x6
- 213 0028 8A010000 		.4byte	.LASF0
+ 213 0028 94010000 		.4byte	.LASF0
  214 002c 02       		.uleb128 0x2
  215 002d 01       		.byte	0x1
  216 002e 08       		.byte	0x8
@@ -382,11 +382,11 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  218 0033 02       		.uleb128 0x2
  219 0034 02       		.byte	0x2
  220 0035 05       		.byte	0x5
- 221 0036 C3010000 		.4byte	.LASF2
+ 221 0036 5E010000 		.4byte	.LASF2
  222 003a 02       		.uleb128 0x2
  223 003b 02       		.byte	0x2
  224 003c 07       		.byte	0x7
- 225 003d 77010000 		.4byte	.LASF3
+ 225 003d 81010000 		.4byte	.LASF3
  226 0041 02       		.uleb128 0x2
  227 0042 04       		.byte	0x4
  228 0043 05       		.byte	0x5
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  254 0072 2C000000 		.4byte	0x2c
  255 0076 04       		.uleb128 0x4
  256 0077 0E000000 		.4byte	.LASF10
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 8
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 8
 
 
  257 007b 02       		.byte	0x2
@@ -427,17 +427,17 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  260 0081 02       		.uleb128 0x2
  261 0082 04       		.byte	0x4
  262 0083 04       		.byte	0x4
- 263 0084 BD010000 		.4byte	.LASF11
+ 263 0084 A0010000 		.4byte	.LASF11
  264 0088 02       		.uleb128 0x2
  265 0089 08       		.byte	0x8
  266 008a 04       		.byte	0x4
- 267 008b 6A010000 		.4byte	.LASF12
+ 267 008b 74010000 		.4byte	.LASF12
  268 008f 02       		.uleb128 0x2
  269 0090 01       		.byte	0x1
  270 0091 08       		.byte	0x8
  271 0092 46010000 		.4byte	.LASF13
  272 0096 05       		.uleb128 0x5
- 273 0097 71010000 		.4byte	.LASF14
+ 273 0097 7B010000 		.4byte	.LASF14
  274 009b 02       		.byte	0x2
  275 009c 4D01     		.2byte	0x14d
  276 009e A2000000 		.4byte	0xa2
@@ -446,14 +446,14 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  279 00a7 02       		.uleb128 0x2
  280 00a8 04       		.byte	0x4
  281 00a9 07       		.byte	0x7
- 282 00aa CD010000 		.4byte	.LASF15
+ 282 00aa E8010000 		.4byte	.LASF15
  283 00ae 07       		.uleb128 0x7
  284 00af 01       		.byte	0x1
  285 00b0 03       		.byte	0x3
  286 00b1 1E       		.byte	0x1e
  287 00b2 C3000000 		.4byte	0xc3
  288 00b6 08       		.uleb128 0x8
- 289 00b7 5E010000 		.4byte	.LASF24
+ 289 00b7 68010000 		.4byte	.LASF24
  290 00bb 03       		.byte	0x3
  291 00bc 20       		.byte	0x20
  292 00bd 6B000000 		.4byte	0x6b
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  311 00e5 40       		.byte	0x40
  312 00e6 00000000 		.4byte	.LFB3
  313 00ea 08000000 		.4byte	.LFE3-.LFB3
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 9
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 9
 
 
  314 00ee 01       		.uleb128 0x1
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  368 0019 0B       		.uleb128 0xb
  369 001a 03       		.uleb128 0x3
  370 001b 0E       		.uleb128 0xe
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 10
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 10
 
 
  371 001c 00       		.byte	0
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  425 0052 0B       		.uleb128 0xb
  426 0053 01       		.uleb128 0x1
  427 0054 13       		.uleb128 0x13
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 11
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 11
 
 
  428 0055 00       		.byte	0
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  482 008c 01       		.uleb128 0x1
  483 008d 12       		.uleb128 0x12
  484 008e 06       		.uleb128 0x6
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 12
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 12
 
 
  485 008f 40       		.uleb128 0x40
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  539 0000 AC000000 		.section	.debug_str,"MS",%progbits,1
  539      02004E00 
  539      00000201 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 13
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 13
 
 
  539      FB0E0D00 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  561      57616B65 
  561      757000
  562              	.LASF21:
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 14
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 14
 
 
  563 00ad 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
@@ -817,44 +817,49 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 1
  575 0155 6C6F6E67 		.ascii	"long int\000"
  575      20696E74 
  575      00
- 576              	.LASF24:
- 577 015e 656E6162 		.ascii	"enableState\000"
- 577      6C655374 
- 577      61746500 
- 578              	.LASF12:
- 579 016a 646F7562 		.ascii	"double\000"
- 579      6C6500
- 580              	.LASF14:
- 581 0171 72656733 		.ascii	"reg32\000"
- 581      3200
- 582              	.LASF3:
- 583 0177 73686F72 		.ascii	"short unsigned int\000"
- 583      7420756E 
- 583      7369676E 
- 583      65642069 
- 583      6E7400
- 584              	.LASF0:
- 585 018a 7369676E 		.ascii	"signed char\000"
- 585      65642063 
- 585      68617200 
- 586              	.LASF23:
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccYlBUEd.s 			page 15
+ 576              	.LASF2:
+ 577 015e 73686F72 		.ascii	"short int\000"
+ 577      7420696E 
+ 577      7400
+ 578              	.LASF24:
+ 579 0168 656E6162 		.ascii	"enableState\000"
+ 579      6C655374 
+ 579      61746500 
+ 580              	.LASF12:
+ 581 0174 646F7562 		.ascii	"double\000"
+ 581      6C6500
+ 582              	.LASF14:
+ 583 017b 72656733 		.ascii	"reg32\000"
+ 583      3200
+ 584              	.LASF3:
+ 585 0181 73686F72 		.ascii	"short unsigned int\000"
+ 585      7420756E 
+ 585      7369676E 
+ 585      65642069 
+ 585      6E7400
+ 586              	.LASF0:
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccrQGhYH.s 			page 15
 
 
- 587 0196 443A5C45 		.ascii	"D:\\ECEG_Labs\\BLE Lab 3\\BLE Lab 3.cydsn\000"
- 587      4345475F 
- 587      4C616273 
- 587      5C424C45 
- 587      204C6162 
+ 587 0194 7369676E 		.ascii	"signed char\000"
+ 587      65642063 
+ 587      68617200 
  588              	.LASF11:
- 589 01bd 666C6F61 		.ascii	"float\000"
+ 589 01a0 666C6F61 		.ascii	"float\000"
  589      7400
- 590              	.LASF2:
- 591 01c3 73686F72 		.ascii	"short int\000"
- 591      7420696E 
- 591      7400
- 592              	.LASF15:
- 593 01cd 73697A65 		.ascii	"sizetype\000"
- 593      74797065 
- 593      00
- 594              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ 590              	.LASF23:
+ 591 01a6 433A5C55 		.ascii	"C:\\Users\\mliha\\Documents\\Lab_3_Embedded\\BLE La"
+ 591      73657273 
+ 591      5C6D6C69 
+ 591      68615C44 
+ 591      6F63756D 
+ 592 01d4 6220335C 		.ascii	"b 3\\BLE Lab 3.cydsn\000"
+ 592      424C4520 
+ 592      4C616220 
+ 592      332E6379 
+ 592      64736E00 
+ 593              	.LASF15:
+ 594 01e8 73697A65 		.ascii	"sizetype\000"
+ 594      74797065 
+ 594      00
+ 595              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

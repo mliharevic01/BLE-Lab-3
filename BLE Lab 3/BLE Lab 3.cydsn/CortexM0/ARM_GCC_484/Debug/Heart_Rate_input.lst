@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
   30:.\Generated_Source\PSoC4/Heart_Rate_input.c **** ********************************************************************************
   31:.\Generated_Source\PSoC4/Heart_Rate_input.c **** *
   32:.\Generated_Source\PSoC4/Heart_Rate_input.c **** * Summary:
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 2
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 2
 
 
   33:.\Generated_Source\PSoC4/Heart_Rate_input.c **** *  Assign a new value to the digital port's data output register.  
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
   66 003c 1A60     		str	r2, [r3]
   47:.\Generated_Source\PSoC4/Heart_Rate_input.c **** }
   67              		.loc 1 47 0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 3
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 3
 
 
   68 003e BD46     		mov	sp, r7
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
   95 0004 00AF     		add	r7, sp, #0
   96              		.cfi_def_cfa_register 7
   97 0006 021C     		mov	r2, r0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 4
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 4
 
 
   98 0008 FB1D     		add	r3, r7, #7
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
   95:.\Generated_Source\PSoC4/Heart_Rate_input.c **** *  
   96:.\Generated_Source\PSoC4/Heart_Rate_input.c **** *******************************************************************************/
   97:.\Generated_Source\PSoC4/Heart_Rate_input.c **** uint8 Heart_Rate_input_Read(void) 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 5
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 5
 
 
   98:.\Generated_Source\PSoC4/Heart_Rate_input.c **** {
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  117:.\Generated_Source\PSoC4/Heart_Rate_input.c **** uint8 Heart_Rate_input_ReadDataReg(void) 
  118:.\Generated_Source\PSoC4/Heart_Rate_input.c **** {
  167              		.loc 1 118 0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 6
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 6
 
 
  168              		.cfi_startproc
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  139:.\Generated_Source\PSoC4/Heart_Rate_input.c ****     *  
  140:.\Generated_Source\PSoC4/Heart_Rate_input.c ****     *******************************************************************************/
  141:.\Generated_Source\PSoC4/Heart_Rate_input.c ****     uint8 Heart_Rate_input_ClearInterrupt(void) 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 7
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 7
 
 
  142:.\Generated_Source\PSoC4/Heart_Rate_input.c ****     {
@@ -415,10 +415,10 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  248 0006 00000000 		.4byte	.Ldebug_abbrev0
  249 000a 04       		.byte	0x4
  250 000b 01       		.uleb128 0x1
- 251 000c D0000000 		.4byte	.LASF24
+ 251 000c D4000000 		.4byte	.LASF24
  252 0010 01       		.byte	0x1
  253 0011 0C000000 		.4byte	.LASF25
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 8
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 8
 
 
  254 0015 3E000000 		.4byte	.LASF26
@@ -428,35 +428,35 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  258 0025 02       		.uleb128 0x2
  259 0026 01       		.byte	0x1
  260 0027 06       		.byte	0x6
- 261 0028 F2010000 		.4byte	.LASF0
+ 261 0028 F6010000 		.4byte	.LASF0
  262 002c 02       		.uleb128 0x2
  263 002d 01       		.byte	0x1
  264 002e 08       		.byte	0x8
- 265 002f 7C000000 		.4byte	.LASF1
+ 265 002f 80000000 		.4byte	.LASF1
  266 0033 02       		.uleb128 0x2
  267 0034 02       		.byte	0x2
  268 0035 05       		.byte	0x5
- 269 0036 BC010000 		.4byte	.LASF2
+ 269 0036 C0010000 		.4byte	.LASF2
  270 003a 02       		.uleb128 0x2
  271 003b 02       		.byte	0x2
  272 003c 07       		.byte	0x7
- 273 003d A2000000 		.4byte	.LASF3
+ 273 003d A6000000 		.4byte	.LASF3
  274 0041 02       		.uleb128 0x2
  275 0042 04       		.byte	0x4
  276 0043 05       		.byte	0x5
- 277 0044 E9010000 		.4byte	.LASF4
+ 277 0044 ED010000 		.4byte	.LASF4
  278 0048 02       		.uleb128 0x2
  279 0049 04       		.byte	0x4
  280 004a 07       		.byte	0x7
- 281 004b 90000000 		.4byte	.LASF5
+ 281 004b 94000000 		.4byte	.LASF5
  282 004f 02       		.uleb128 0x2
  283 0050 08       		.byte	0x8
  284 0051 05       		.byte	0x5
- 285 0052 9C010000 		.4byte	.LASF6
+ 285 0052 A0010000 		.4byte	.LASF6
  286 0056 02       		.uleb128 0x2
  287 0057 08       		.byte	0x8
  288 0058 07       		.byte	0x7
- 289 0059 65000000 		.4byte	.LASF7
+ 289 0059 22020000 		.4byte	.LASF7
  290 005d 03       		.uleb128 0x3
  291 005e 04       		.byte	0x4
  292 005f 05       		.byte	0x5
@@ -464,32 +464,32 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  294 0064 02       		.uleb128 0x2
  295 0065 04       		.byte	0x4
  296 0066 07       		.byte	0x7
- 297 0067 C3000000 		.4byte	.LASF8
+ 297 0067 C7000000 		.4byte	.LASF8
  298 006b 04       		.uleb128 0x4
- 299 006c C6010000 		.4byte	.LASF9
+ 299 006c CA010000 		.4byte	.LASF9
  300 0070 02       		.byte	0x2
  301 0071 A1       		.byte	0xa1
  302 0072 2C000000 		.4byte	0x2c
  303 0076 04       		.uleb128 0x4
- 304 0077 BC000000 		.4byte	.LASF10
+ 304 0077 C0000000 		.4byte	.LASF10
  305 007b 02       		.byte	0x2
  306 007c A3       		.byte	0xa3
  307 007d 48000000 		.4byte	0x48
  308 0081 02       		.uleb128 0x2
  309 0082 04       		.byte	0x4
  310 0083 04       		.byte	0x4
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 9
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 9
 
 
  311 0084 38000000 		.4byte	.LASF11
  312 0088 02       		.uleb128 0x2
  313 0089 08       		.byte	0x8
  314 008a 04       		.byte	0x4
- 315 008b B5000000 		.4byte	.LASF12
+ 315 008b B9000000 		.4byte	.LASF12
  316 008f 02       		.uleb128 0x2
  317 0090 01       		.byte	0x1
  318 0091 08       		.byte	0x8
- 319 0092 B7010000 		.4byte	.LASF13
+ 319 0092 BB010000 		.4byte	.LASF13
  320 0096 05       		.uleb128 0x5
  321 0097 00000000 		.4byte	.LASF14
  322 009b 02       		.byte	0x2
@@ -498,7 +498,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  325 00a2 06       		.uleb128 0x6
  326 00a3 76000000 		.4byte	0x76
  327 00a7 07       		.uleb128 0x7
- 328 00a8 85010000 		.4byte	.LASF15
+ 328 00a8 89010000 		.4byte	.LASF15
  329 00ac 01       		.byte	0x1
  330 00ad 2A       		.byte	0x2a
  331 00ae 00000000 		.4byte	.LFB0
@@ -515,7 +515,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  342 00c8 91       		.byte	0x91
  343 00c9 6F       		.sleb128 -17
  344 00ca 09       		.uleb128 0x9
- 345 00cb 8A000000 		.4byte	.LASF22
+ 345 00cb 8E000000 		.4byte	.LASF22
  346 00cf 01       		.byte	0x1
  347 00d0 2C       		.byte	0x2c
  348 00d1 6B000000 		.4byte	0x6b
@@ -524,7 +524,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  351 00d7 77       		.sleb128 -9
  352 00d8 00       		.byte	0
  353 00d9 07       		.uleb128 0x7
- 354 00da 67010000 		.4byte	.LASF16
+ 354 00da 6B010000 		.4byte	.LASF16
  355 00de 01       		.byte	0x1
  356 00df 49       		.byte	0x49
  357 00e0 00000000 		.4byte	.LFB1
@@ -533,19 +533,19 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  360 00e9 9C       		.byte	0x9c
  361 00ea FD000000 		.4byte	0xfd
  362 00ee 08       		.uleb128 0x8
- 363 00ef 4C010000 		.4byte	.LASF18
+ 363 00ef 50010000 		.4byte	.LASF18
  364 00f3 01       		.byte	0x1
  365 00f4 49       		.byte	0x49
  366 00f5 6B000000 		.4byte	0x6b
  367 00f9 02       		.uleb128 0x2
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 10
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 10
 
 
  368 00fa 91       		.byte	0x91
  369 00fb 77       		.sleb128 -9
  370 00fc 00       		.byte	0
  371 00fd 0A       		.uleb128 0xa
- 372 00fe 51010000 		.4byte	.LASF19
+ 372 00fe 55010000 		.4byte	.LASF19
  373 0102 01       		.byte	0x1
  374 0103 61       		.byte	0x61
  375 0104 6B000000 		.4byte	0x6b
@@ -554,7 +554,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  378 0110 01       		.uleb128 0x1
  379 0111 9C       		.byte	0x9c
  380 0112 0A       		.uleb128 0xa
- 381 0113 CC010000 		.4byte	.LASF20
+ 381 0113 D0010000 		.4byte	.LASF20
  382 0117 01       		.byte	0x1
  383 0118 75       		.byte	0x75
  384 0119 6B000000 		.4byte	0x6b
@@ -563,7 +563,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  387 0125 01       		.uleb128 0x1
  388 0126 9C       		.byte	0x9c
  389 0127 0B       		.uleb128 0xb
- 390 0128 FE010000 		.4byte	.LASF21
+ 390 0128 02020000 		.4byte	.LASF21
  391 012c 01       		.byte	0x1
  392 012d 8D       		.byte	0x8d
  393 012e 6B000000 		.4byte	0x6b
@@ -572,7 +572,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  396 013a 01       		.uleb128 0x1
  397 013b 9C       		.byte	0x9c
  398 013c 09       		.uleb128 0x9
- 399 013d AA010000 		.4byte	.LASF23
+ 399 013d AE010000 		.4byte	.LASF23
  400 0141 01       		.byte	0x1
  401 0142 8F       		.byte	0x8f
  402 0143 6B000000 		.4byte	0x6b
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  422 000c 17       		.uleb128 0x17
  423 000d 11       		.uleb128 0x11
  424 000e 01       		.uleb128 0x1
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 11
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 11
 
 
  425 000f 10       		.uleb128 0x10
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  479 0045 00       		.byte	0
  480 0046 49       		.uleb128 0x49
  481 0047 13       		.uleb128 0x13
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 12
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 12
 
 
  482 0048 00       		.byte	0
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  536 007f 18       		.uleb128 0x18
  537 0080 00       		.byte	0
  538 0081 00       		.byte	0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 13
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 13
 
 
  539 0082 0A       		.uleb128 0xa
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  593 0006 00000000 		.4byte	.Ldebug_info0
  594 000a 04       		.byte	0x4
  595 000b 00       		.byte	0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 14
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 14
 
 
  596 000c 0000     		.2byte	0
@@ -832,132 +832,137 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 1
  634 0038 666C6F61 		.ascii	"float\000"
  634      7400
  635              	.LASF26:
- 636 003e 443A5C45 		.ascii	"D:\\ECEG_Labs\\BLE Lab 3\\BLE Lab 3.cydsn\000"
- 636      4345475F 
- 636      4C616273 
- 636      5C424C45 
- 636      204C6162 
- 637              	.LASF7:
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 15
+ 636 003e 433A5C55 		.ascii	"C:\\Users\\mliha\\Documents\\Lab_3_Embedded\\BLE La"
+ 636      73657273 
+ 636      5C6D6C69 
+ 636      68615C44 
+ 636      6F63756D 
+ 637 006c 6220335C 		.ascii	"b 3\\BLE Lab 3.cydsn\000"
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 15
 
 
- 638 0065 6C6F6E67 		.ascii	"long long unsigned int\000"
- 638      206C6F6E 
- 638      6720756E 
- 638      7369676E 
- 638      65642069 
- 639              	.LASF1:
- 640 007c 756E7369 		.ascii	"unsigned char\000"
- 640      676E6564 
- 640      20636861 
- 640      7200
- 641              	.LASF22:
- 642 008a 64725661 		.ascii	"drVal\000"
- 642      6C00
- 643              	.LASF5:
- 644 0090 6C6F6E67 		.ascii	"long unsigned int\000"
- 644      20756E73 
- 644      69676E65 
- 644      6420696E 
- 644      7400
- 645              	.LASF3:
- 646 00a2 73686F72 		.ascii	"short unsigned int\000"
- 646      7420756E 
- 646      7369676E 
- 646      65642069 
- 646      6E7400
- 647              	.LASF12:
- 648 00b5 646F7562 		.ascii	"double\000"
- 648      6C6500
- 649              	.LASF10:
- 650 00bc 75696E74 		.ascii	"uint32\000"
- 650      333200
- 651              	.LASF8:
- 652 00c3 756E7369 		.ascii	"unsigned int\000"
- 652      676E6564 
- 652      20696E74 
- 652      00
- 653              	.LASF24:
- 654 00d0 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 654      4320342E 
- 654      382E3420 
- 654      32303134 
- 654      30353236 
- 655 0103 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 655      20726576 
- 655      6973696F 
- 655      6E203231 
- 655      31333538 
- 656 0136 30202D66 		.ascii	"0 -ffunction-sections\000"
- 656      66756E63 
- 656      74696F6E 
- 656      2D736563 
- 656      74696F6E 
- 657              	.LASF18:
- 658 014c 6D6F6465 		.ascii	"mode\000"
- 658      00
- 659              	.LASF19:
- 660 0151 48656172 		.ascii	"Heart_Rate_input_Read\000"
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 16
+ 637      424C4520 
+ 637      4C616220 
+ 637      332E6379 
+ 637      64736E00 
+ 638              	.LASF1:
+ 639 0080 756E7369 		.ascii	"unsigned char\000"
+ 639      676E6564 
+ 639      20636861 
+ 639      7200
+ 640              	.LASF22:
+ 641 008e 64725661 		.ascii	"drVal\000"
+ 641      6C00
+ 642              	.LASF5:
+ 643 0094 6C6F6E67 		.ascii	"long unsigned int\000"
+ 643      20756E73 
+ 643      69676E65 
+ 643      6420696E 
+ 643      7400
+ 644              	.LASF3:
+ 645 00a6 73686F72 		.ascii	"short unsigned int\000"
+ 645      7420756E 
+ 645      7369676E 
+ 645      65642069 
+ 645      6E7400
+ 646              	.LASF12:
+ 647 00b9 646F7562 		.ascii	"double\000"
+ 647      6C6500
+ 648              	.LASF10:
+ 649 00c0 75696E74 		.ascii	"uint32\000"
+ 649      333200
+ 650              	.LASF8:
+ 651 00c7 756E7369 		.ascii	"unsigned int\000"
+ 651      676E6564 
+ 651      20696E74 
+ 651      00
+ 652              	.LASF24:
+ 653 00d4 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 653      4320342E 
+ 653      382E3420 
+ 653      32303134 
+ 653      30353236 
+ 654 0107 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 654      20726576 
+ 654      6973696F 
+ 654      6E203231 
+ 654      31333538 
+ 655 013a 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 655      66756E63 
+ 655      74696F6E 
+ 655      2D736563 
+ 655      74696F6E 
+ 656              	.LASF18:
+ 657 0150 6D6F6465 		.ascii	"mode\000"
+ 657      00
+ 658              	.LASF19:
+ 659 0155 48656172 		.ascii	"Heart_Rate_input_Read\000"
+ 659      745F5261 
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 16
 
 
- 660      745F5261 
- 660      74655F69 
- 660      6E707574 
- 660      5F526561 
- 661              	.LASF16:
- 662 0167 48656172 		.ascii	"Heart_Rate_input_SetDriveMode\000"
- 662      745F5261 
- 662      74655F69 
- 662      6E707574 
- 662      5F536574 
- 663              	.LASF15:
- 664 0185 48656172 		.ascii	"Heart_Rate_input_Write\000"
- 664      745F5261 
- 664      74655F69 
- 664      6E707574 
- 664      5F577269 
- 665              	.LASF6:
- 666 019c 6C6F6E67 		.ascii	"long long int\000"
- 666      206C6F6E 
- 666      6720696E 
- 666      7400
- 667              	.LASF23:
- 668 01aa 6D61736B 		.ascii	"maskedStatus\000"
- 668      65645374 
- 668      61747573 
- 668      00
- 669              	.LASF13:
- 670 01b7 63686172 		.ascii	"char\000"
- 670      00
- 671              	.LASF2:
- 672 01bc 73686F72 		.ascii	"short int\000"
- 672      7420696E 
- 672      7400
- 673              	.LASF9:
- 674 01c6 75696E74 		.ascii	"uint8\000"
- 674      3800
- 675              	.LASF20:
- 676 01cc 48656172 		.ascii	"Heart_Rate_input_ReadDataReg\000"
- 676      745F5261 
- 676      74655F69 
- 676      6E707574 
- 676      5F526561 
- 677              	.LASF4:
- 678 01e9 6C6F6E67 		.ascii	"long int\000"
- 678      20696E74 
- 678      00
- 679              	.LASF0:
- 680 01f2 7369676E 		.ascii	"signed char\000"
- 680      65642063 
- 680      68617200 
- 681              	.LASF21:
- 682 01fe 48656172 		.ascii	"Heart_Rate_input_ClearInterrupt\000"
- 682      745F5261 
- 682      74655F69 
- 682      6E707574 
- 682      5F436C65 
- 683              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccbB8Jid.s 			page 17
+ 659      74655F69 
+ 659      6E707574 
+ 659      5F526561 
+ 660              	.LASF16:
+ 661 016b 48656172 		.ascii	"Heart_Rate_input_SetDriveMode\000"
+ 661      745F5261 
+ 661      74655F69 
+ 661      6E707574 
+ 661      5F536574 
+ 662              	.LASF15:
+ 663 0189 48656172 		.ascii	"Heart_Rate_input_Write\000"
+ 663      745F5261 
+ 663      74655F69 
+ 663      6E707574 
+ 663      5F577269 
+ 664              	.LASF6:
+ 665 01a0 6C6F6E67 		.ascii	"long long int\000"
+ 665      206C6F6E 
+ 665      6720696E 
+ 665      7400
+ 666              	.LASF23:
+ 667 01ae 6D61736B 		.ascii	"maskedStatus\000"
+ 667      65645374 
+ 667      61747573 
+ 667      00
+ 668              	.LASF13:
+ 669 01bb 63686172 		.ascii	"char\000"
+ 669      00
+ 670              	.LASF2:
+ 671 01c0 73686F72 		.ascii	"short int\000"
+ 671      7420696E 
+ 671      7400
+ 672              	.LASF9:
+ 673 01ca 75696E74 		.ascii	"uint8\000"
+ 673      3800
+ 674              	.LASF20:
+ 675 01d0 48656172 		.ascii	"Heart_Rate_input_ReadDataReg\000"
+ 675      745F5261 
+ 675      74655F69 
+ 675      6E707574 
+ 675      5F526561 
+ 676              	.LASF4:
+ 677 01ed 6C6F6E67 		.ascii	"long int\000"
+ 677      20696E74 
+ 677      00
+ 678              	.LASF0:
+ 679 01f6 7369676E 		.ascii	"signed char\000"
+ 679      65642063 
+ 679      68617200 
+ 680              	.LASF21:
+ 681 0202 48656172 		.ascii	"Heart_Rate_input_ClearInterrupt\000"
+ 681      745F5261 
+ 681      74655F69 
+ 681      6E707574 
+ 681      5F436C65 
+ 682              	.LASF7:
+ 683 0222 6C6F6E67 		.ascii	"long long unsigned int\000"
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccV4sUiQ.s 			page 17
 
 
+ 683      206C6F6E 
+ 683      6720756E 
+ 683      7369676E 
+ 683      65642069 
+ 684              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
