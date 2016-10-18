@@ -1,3 +1,37 @@
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/ADC.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.c 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.h : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.c : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/ADC_INT.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_INT.c 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_INT.c : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/ADC_IRQ.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_IRQ.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_IRQ.c 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_IRQ.h : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_IRQ.c : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/ADC_PM.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_PM.c 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_PM.c : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/ADC_intClock.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_intClock.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_intClock.c 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_intClock.h : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/ADC_intClock.c : 
+
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/BLE_1.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_HAL_PVT.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_STACK_PVT.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_Stack.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGap.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGatt.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattClient.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattDb.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackGattServer.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackHostMain.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_StackL2cap.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_bless_isr.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_dis.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_eventHandler.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_gatt.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_hrs.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyFlash.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.c 
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.h : 
@@ -33,14 +67,6 @@ C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1_hrs.h : 
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyFlash.h : 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h : 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h : 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h : 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h : 
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/BLE_1.c : 
 
@@ -88,12 +114,6 @@ C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Clock_1.c : 
 
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/Clock_2.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Clock_2.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Clock_2.c 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Clock_2.h : 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Clock_2.c : 
-
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/Cm0Start.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Cm0Start.c 
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter_cfg.h : 
@@ -107,6 +127,14 @@ C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/CyLib.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.c 
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.c : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/Heart_Rate_input.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input_aliases.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input.c 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input.h : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input_aliases.h : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Heart_Rate_input.c : 
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/Led_Advertising_Green.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green_aliases.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Advertising_Green.c 
 
@@ -124,6 +152,16 @@ C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Led_Connected_Blue.c : 
 
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/Opamp.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.c 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.c : 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/Opamp_PM.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp_PM.c 
+
+C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Opamp_PM.c : 
+
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/PWM.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/PWM.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/PWM.c 
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/PWM.h : 
@@ -134,12 +172,6 @@ C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/A
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/PWM_PM.c : 
 
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/Pulse_Count.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Pulse_Count.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Pulse_Count.c 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Pulse_Count.h : 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Pulse_Count.c : 
-
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/SW2_Switch.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch_aliases.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cypins.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch.c 
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch.h : 
@@ -147,16 +179,6 @@ C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch_aliases.h : 
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/SW2_Switch.c : 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/TCPWM.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/TCPWM.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/TCPWM.c 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/TCPWM.h : 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/TCPWM.c : 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/TCPWM_PM.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/TCPWM.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/TCPWM_PM.c 
-
-C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/TCPWM_PM.c : 
 
 C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/CortexM0/ARM_GCC_484/Debug/Wakeup_ISR.o : C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/CyLib.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Wakeup_ISR.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cydevice_trm.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cyfitter.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/cytypes.h C:/Users/mliha/Documents/Lab_3_Embedded/BLE\ Lab\ 3/BLE\ Lab\ 3.cydsn/Generated_Source/PSoC4/Wakeup_ISR.c 
 

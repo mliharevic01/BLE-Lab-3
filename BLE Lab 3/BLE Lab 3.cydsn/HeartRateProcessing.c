@@ -102,13 +102,13 @@ void ProcessHeartRateSignal(void)
     uint32 twoSampleTime = 0;
 
     /* Get the ADC output */
-//    ADC_StartConvert();
-    //ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
-   // adcOut = ADC_GetResult16(HEART_RATE_CHANNEL);
+    ADC_StartConvert();
+    ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
+    adcOut = ADC_GetResult16(HEART_RATE_CHANNEL);
     
     /* If the ADC output is more than a fixed threshold, consider that a 
      * valid R peak */
-    if (adcOut > ADC_THRESHOLD)
+    if (PWM_ReadCounter()>PWM_ReadCompare())
     {
         /* Check if the R peak just started - i.e. identify the rising 
          * edge of the R peak */

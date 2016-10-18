@@ -1,9 +1,9 @@
 /*******************************************************************************
-* File Name: TCPWM.c
+* File Name: PWM_1.c
 * Version 2.0
 *
 * Description:
-*  This file provides the source code to the API for the TCPWM
+*  This file provides the source code to the API for the PWM_1
 *  component
 *
 * Note:
@@ -16,17 +16,17 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#include "TCPWM.h"
+#include "PWM_1.h"
 
-uint8 TCPWM_initVar = 0u;
+uint8 PWM_1_initVar = 0u;
 
 
 /*******************************************************************************
-* Function Name: TCPWM_Init
+* Function Name: PWM_1_Init
 ********************************************************************************
 *
 * Summary:
-*  Initialize/Restore default TCPWM configuration.
+*  Initialize/Restore default PWM_1 configuration.
 *
 * Parameters:
 *  None
@@ -35,137 +35,137 @@ uint8 TCPWM_initVar = 0u;
 *  None
 *
 *******************************************************************************/
-void TCPWM_Init(void)
+void PWM_1_Init(void)
 {
 
     /* Set values from customizer to CTRL */
-    #if (TCPWM__QUAD == TCPWM_CONFIG)
-        TCPWM_CONTROL_REG = TCPWM_CTRL_QUAD_BASE_CONFIG;
+    #if (PWM_1__QUAD == PWM_1_CONFIG)
+        PWM_1_CONTROL_REG = PWM_1_CTRL_QUAD_BASE_CONFIG;
         
         /* Set values from customizer to CTRL1 */
-        TCPWM_TRIG_CONTROL1_REG  = TCPWM_QUAD_SIGNALS_MODES;
+        PWM_1_TRIG_CONTROL1_REG  = PWM_1_QUAD_SIGNALS_MODES;
 
         /* Set values from customizer to INTR */
-        TCPWM_SetInterruptMode(TCPWM_QUAD_INTERRUPT_MASK);
+        PWM_1_SetInterruptMode(PWM_1_QUAD_INTERRUPT_MASK);
         
          /* Set other values */
-        TCPWM_SetCounterMode(TCPWM_COUNT_DOWN);
-        TCPWM_WritePeriod(TCPWM_QUAD_PERIOD_INIT_VALUE);
-        TCPWM_WriteCounter(TCPWM_QUAD_PERIOD_INIT_VALUE);
-    #endif  /* (TCPWM__QUAD == TCPWM_CONFIG) */
+        PWM_1_SetCounterMode(PWM_1_COUNT_DOWN);
+        PWM_1_WritePeriod(PWM_1_QUAD_PERIOD_INIT_VALUE);
+        PWM_1_WriteCounter(PWM_1_QUAD_PERIOD_INIT_VALUE);
+    #endif  /* (PWM_1__QUAD == PWM_1_CONFIG) */
 
-    #if (TCPWM__TIMER == TCPWM_CONFIG)
-        TCPWM_CONTROL_REG = TCPWM_CTRL_TIMER_BASE_CONFIG;
+    #if (PWM_1__TIMER == PWM_1_CONFIG)
+        PWM_1_CONTROL_REG = PWM_1_CTRL_TIMER_BASE_CONFIG;
         
         /* Set values from customizer to CTRL1 */
-        TCPWM_TRIG_CONTROL1_REG  = TCPWM_TIMER_SIGNALS_MODES;
+        PWM_1_TRIG_CONTROL1_REG  = PWM_1_TIMER_SIGNALS_MODES;
     
         /* Set values from customizer to INTR */
-        TCPWM_SetInterruptMode(TCPWM_TC_INTERRUPT_MASK);
+        PWM_1_SetInterruptMode(PWM_1_TC_INTERRUPT_MASK);
         
         /* Set other values from customizer */
-        TCPWM_WritePeriod(TCPWM_TC_PERIOD_VALUE );
+        PWM_1_WritePeriod(PWM_1_TC_PERIOD_VALUE );
 
-        #if (TCPWM__COMPARE == TCPWM_TC_COMP_CAP_MODE)
-            TCPWM_WriteCompare(TCPWM_TC_COMPARE_VALUE);
+        #if (PWM_1__COMPARE == PWM_1_TC_COMP_CAP_MODE)
+            PWM_1_WriteCompare(PWM_1_TC_COMPARE_VALUE);
 
-            #if (1u == TCPWM_TC_COMPARE_SWAP)
-                TCPWM_SetCompareSwap(1u);
-                TCPWM_WriteCompareBuf(TCPWM_TC_COMPARE_BUF_VALUE);
-            #endif  /* (1u == TCPWM_TC_COMPARE_SWAP) */
-        #endif  /* (TCPWM__COMPARE == TCPWM_TC_COMP_CAP_MODE) */
+            #if (1u == PWM_1_TC_COMPARE_SWAP)
+                PWM_1_SetCompareSwap(1u);
+                PWM_1_WriteCompareBuf(PWM_1_TC_COMPARE_BUF_VALUE);
+            #endif  /* (1u == PWM_1_TC_COMPARE_SWAP) */
+        #endif  /* (PWM_1__COMPARE == PWM_1_TC_COMP_CAP_MODE) */
 
         /* Initialize counter value */
-        #if (TCPWM_CY_TCPWM_V2 && TCPWM_TIMER_UPDOWN_CNT_USED && !TCPWM_CY_TCPWM_4000)
-            TCPWM_WriteCounter(1u);
-        #elif(TCPWM__COUNT_DOWN == TCPWM_TC_COUNTER_MODE)
-            TCPWM_WriteCounter(TCPWM_TC_PERIOD_VALUE);
+        #if (PWM_1_CY_TCPWM_V2 && PWM_1_TIMER_UPDOWN_CNT_USED && !PWM_1_CY_TCPWM_4000)
+            PWM_1_WriteCounter(1u);
+        #elif(PWM_1__COUNT_DOWN == PWM_1_TC_COUNTER_MODE)
+            PWM_1_WriteCounter(PWM_1_TC_PERIOD_VALUE);
         #else
-            TCPWM_WriteCounter(0u);
-        #endif /* (TCPWM_CY_TCPWM_V2 && TCPWM_TIMER_UPDOWN_CNT_USED && !TCPWM_CY_TCPWM_4000) */
-    #endif  /* (TCPWM__TIMER == TCPWM_CONFIG) */
+            PWM_1_WriteCounter(0u);
+        #endif /* (PWM_1_CY_TCPWM_V2 && PWM_1_TIMER_UPDOWN_CNT_USED && !PWM_1_CY_TCPWM_4000) */
+    #endif  /* (PWM_1__TIMER == PWM_1_CONFIG) */
 
-    #if (TCPWM__PWM_SEL == TCPWM_CONFIG)
-        TCPWM_CONTROL_REG = TCPWM_CTRL_PWM_BASE_CONFIG;
+    #if (PWM_1__PWM_SEL == PWM_1_CONFIG)
+        PWM_1_CONTROL_REG = PWM_1_CTRL_PWM_BASE_CONFIG;
 
-        #if (TCPWM__PWM_PR == TCPWM_PWM_MODE)
-            TCPWM_CONTROL_REG |= TCPWM_CTRL_PWM_RUN_MODE;
-            TCPWM_WriteCounter(TCPWM_PWM_PR_INIT_VALUE);
+        #if (PWM_1__PWM_PR == PWM_1_PWM_MODE)
+            PWM_1_CONTROL_REG |= PWM_1_CTRL_PWM_RUN_MODE;
+            PWM_1_WriteCounter(PWM_1_PWM_PR_INIT_VALUE);
         #else
-            TCPWM_CONTROL_REG |= TCPWM_CTRL_PWM_ALIGN | TCPWM_CTRL_PWM_KILL_EVENT;
+            PWM_1_CONTROL_REG |= PWM_1_CTRL_PWM_ALIGN | PWM_1_CTRL_PWM_KILL_EVENT;
             
             /* Initialize counter value */
-            #if (TCPWM_CY_TCPWM_V2 && TCPWM_PWM_UPDOWN_CNT_USED && !TCPWM_CY_TCPWM_4000)
-                TCPWM_WriteCounter(1u);
-            #elif (TCPWM__RIGHT == TCPWM_PWM_ALIGN)
-                TCPWM_WriteCounter(TCPWM_PWM_PERIOD_VALUE);
+            #if (PWM_1_CY_TCPWM_V2 && PWM_1_PWM_UPDOWN_CNT_USED && !PWM_1_CY_TCPWM_4000)
+                PWM_1_WriteCounter(1u);
+            #elif (PWM_1__RIGHT == PWM_1_PWM_ALIGN)
+                PWM_1_WriteCounter(PWM_1_PWM_PERIOD_VALUE);
             #else 
-                TCPWM_WriteCounter(0u);
-            #endif  /* (TCPWM_CY_TCPWM_V2 && TCPWM_PWM_UPDOWN_CNT_USED && !TCPWM_CY_TCPWM_4000) */
-        #endif  /* (TCPWM__PWM_PR == TCPWM_PWM_MODE) */
+                PWM_1_WriteCounter(0u);
+            #endif  /* (PWM_1_CY_TCPWM_V2 && PWM_1_PWM_UPDOWN_CNT_USED && !PWM_1_CY_TCPWM_4000) */
+        #endif  /* (PWM_1__PWM_PR == PWM_1_PWM_MODE) */
 
-        #if (TCPWM__PWM_DT == TCPWM_PWM_MODE)
-            TCPWM_CONTROL_REG |= TCPWM_CTRL_PWM_DEAD_TIME_CYCLE;
-        #endif  /* (TCPWM__PWM_DT == TCPWM_PWM_MODE) */
+        #if (PWM_1__PWM_DT == PWM_1_PWM_MODE)
+            PWM_1_CONTROL_REG |= PWM_1_CTRL_PWM_DEAD_TIME_CYCLE;
+        #endif  /* (PWM_1__PWM_DT == PWM_1_PWM_MODE) */
 
-        #if (TCPWM__PWM == TCPWM_PWM_MODE)
-            TCPWM_CONTROL_REG |= TCPWM_CTRL_PWM_PRESCALER;
-        #endif  /* (TCPWM__PWM == TCPWM_PWM_MODE) */
+        #if (PWM_1__PWM == PWM_1_PWM_MODE)
+            PWM_1_CONTROL_REG |= PWM_1_CTRL_PWM_PRESCALER;
+        #endif  /* (PWM_1__PWM == PWM_1_PWM_MODE) */
 
         /* Set values from customizer to CTRL1 */
-        TCPWM_TRIG_CONTROL1_REG  = TCPWM_PWM_SIGNALS_MODES;
+        PWM_1_TRIG_CONTROL1_REG  = PWM_1_PWM_SIGNALS_MODES;
     
         /* Set values from customizer to INTR */
-        TCPWM_SetInterruptMode(TCPWM_PWM_INTERRUPT_MASK);
+        PWM_1_SetInterruptMode(PWM_1_PWM_INTERRUPT_MASK);
 
         /* Set values from customizer to CTRL2 */
-        #if (TCPWM__PWM_PR == TCPWM_PWM_MODE)
-            TCPWM_TRIG_CONTROL2_REG =
-                    (TCPWM_CC_MATCH_NO_CHANGE    |
-                    TCPWM_OVERLOW_NO_CHANGE      |
-                    TCPWM_UNDERFLOW_NO_CHANGE);
+        #if (PWM_1__PWM_PR == PWM_1_PWM_MODE)
+            PWM_1_TRIG_CONTROL2_REG =
+                    (PWM_1_CC_MATCH_NO_CHANGE    |
+                    PWM_1_OVERLOW_NO_CHANGE      |
+                    PWM_1_UNDERFLOW_NO_CHANGE);
         #else
-            #if (TCPWM__LEFT == TCPWM_PWM_ALIGN)
-                TCPWM_TRIG_CONTROL2_REG = TCPWM_PWM_MODE_LEFT;
-            #endif  /* ( TCPWM_PWM_LEFT == TCPWM_PWM_ALIGN) */
+            #if (PWM_1__LEFT == PWM_1_PWM_ALIGN)
+                PWM_1_TRIG_CONTROL2_REG = PWM_1_PWM_MODE_LEFT;
+            #endif  /* ( PWM_1_PWM_LEFT == PWM_1_PWM_ALIGN) */
 
-            #if (TCPWM__RIGHT == TCPWM_PWM_ALIGN)
-                TCPWM_TRIG_CONTROL2_REG = TCPWM_PWM_MODE_RIGHT;
-            #endif  /* ( TCPWM_PWM_RIGHT == TCPWM_PWM_ALIGN) */
+            #if (PWM_1__RIGHT == PWM_1_PWM_ALIGN)
+                PWM_1_TRIG_CONTROL2_REG = PWM_1_PWM_MODE_RIGHT;
+            #endif  /* ( PWM_1_PWM_RIGHT == PWM_1_PWM_ALIGN) */
 
-            #if (TCPWM__CENTER == TCPWM_PWM_ALIGN)
-                TCPWM_TRIG_CONTROL2_REG = TCPWM_PWM_MODE_CENTER;
-            #endif  /* ( TCPWM_PWM_CENTER == TCPWM_PWM_ALIGN) */
+            #if (PWM_1__CENTER == PWM_1_PWM_ALIGN)
+                PWM_1_TRIG_CONTROL2_REG = PWM_1_PWM_MODE_CENTER;
+            #endif  /* ( PWM_1_PWM_CENTER == PWM_1_PWM_ALIGN) */
 
-            #if (TCPWM__ASYMMETRIC == TCPWM_PWM_ALIGN)
-                TCPWM_TRIG_CONTROL2_REG = TCPWM_PWM_MODE_ASYM;
-            #endif  /* (TCPWM__ASYMMETRIC == TCPWM_PWM_ALIGN) */
-        #endif  /* (TCPWM__PWM_PR == TCPWM_PWM_MODE) */
+            #if (PWM_1__ASYMMETRIC == PWM_1_PWM_ALIGN)
+                PWM_1_TRIG_CONTROL2_REG = PWM_1_PWM_MODE_ASYM;
+            #endif  /* (PWM_1__ASYMMETRIC == PWM_1_PWM_ALIGN) */
+        #endif  /* (PWM_1__PWM_PR == PWM_1_PWM_MODE) */
 
         /* Set other values from customizer */
-        TCPWM_WritePeriod(TCPWM_PWM_PERIOD_VALUE );
-        TCPWM_WriteCompare(TCPWM_PWM_COMPARE_VALUE);
+        PWM_1_WritePeriod(PWM_1_PWM_PERIOD_VALUE );
+        PWM_1_WriteCompare(PWM_1_PWM_COMPARE_VALUE);
 
-        #if (1u == TCPWM_PWM_COMPARE_SWAP)
-            TCPWM_SetCompareSwap(1u);
-            TCPWM_WriteCompareBuf(TCPWM_PWM_COMPARE_BUF_VALUE);
-        #endif  /* (1u == TCPWM_PWM_COMPARE_SWAP) */
+        #if (1u == PWM_1_PWM_COMPARE_SWAP)
+            PWM_1_SetCompareSwap(1u);
+            PWM_1_WriteCompareBuf(PWM_1_PWM_COMPARE_BUF_VALUE);
+        #endif  /* (1u == PWM_1_PWM_COMPARE_SWAP) */
 
-        #if (1u == TCPWM_PWM_PERIOD_SWAP)
-            TCPWM_SetPeriodSwap(1u);
-            TCPWM_WritePeriodBuf(TCPWM_PWM_PERIOD_BUF_VALUE);
-        #endif  /* (1u == TCPWM_PWM_PERIOD_SWAP) */
-    #endif  /* (TCPWM__PWM_SEL == TCPWM_CONFIG) */
+        #if (1u == PWM_1_PWM_PERIOD_SWAP)
+            PWM_1_SetPeriodSwap(1u);
+            PWM_1_WritePeriodBuf(PWM_1_PWM_PERIOD_BUF_VALUE);
+        #endif  /* (1u == PWM_1_PWM_PERIOD_SWAP) */
+    #endif  /* (PWM_1__PWM_SEL == PWM_1_CONFIG) */
     
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_Enable
+* Function Name: PWM_1_Enable
 ********************************************************************************
 *
 * Summary:
-*  Enables the TCPWM.
+*  Enables the PWM_1.
 *
 * Parameters:
 *  None
@@ -174,36 +174,36 @@ void TCPWM_Init(void)
 *  None
 *
 *******************************************************************************/
-void TCPWM_Enable(void)
+void PWM_1_Enable(void)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
-    TCPWM_BLOCK_CONTROL_REG |= TCPWM_MASK;
+    PWM_1_BLOCK_CONTROL_REG |= PWM_1_MASK;
     CyExitCriticalSection(enableInterrupts);
 
     /* Start Timer or PWM if start input is absent */
-    #if (TCPWM__PWM_SEL == TCPWM_CONFIG)
-        #if (0u == TCPWM_PWM_START_SIGNAL_PRESENT)
-            TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_START);
-        #endif /* (0u == TCPWM_PWM_START_SIGNAL_PRESENT) */
-    #endif /* (TCPWM__PWM_SEL == TCPWM_CONFIG) */
+    #if (PWM_1__PWM_SEL == PWM_1_CONFIG)
+        #if (0u == PWM_1_PWM_START_SIGNAL_PRESENT)
+            PWM_1_TriggerCommand(PWM_1_MASK, PWM_1_CMD_START);
+        #endif /* (0u == PWM_1_PWM_START_SIGNAL_PRESENT) */
+    #endif /* (PWM_1__PWM_SEL == PWM_1_CONFIG) */
 
-    #if (TCPWM__TIMER == TCPWM_CONFIG)
-        #if (0u == TCPWM_TC_START_SIGNAL_PRESENT)
-            TCPWM_TriggerCommand(TCPWM_MASK, TCPWM_CMD_START);
-        #endif /* (0u == TCPWM_TC_START_SIGNAL_PRESENT) */
-    #endif /* (TCPWM__TIMER == TCPWM_CONFIG) */
+    #if (PWM_1__TIMER == PWM_1_CONFIG)
+        #if (0u == PWM_1_TC_START_SIGNAL_PRESENT)
+            PWM_1_TriggerCommand(PWM_1_MASK, PWM_1_CMD_START);
+        #endif /* (0u == PWM_1_TC_START_SIGNAL_PRESENT) */
+    #endif /* (PWM_1__TIMER == PWM_1_CONFIG) */
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_Start
+* Function Name: PWM_1_Start
 ********************************************************************************
 *
 * Summary:
-*  Initializes the TCPWM with default customizer
-*  values when called the first time and enables the TCPWM.
+*  Initializes the PWM_1 with default customizer
+*  values when called the first time and enables the PWM_1.
 *  For subsequent calls the configuration is left unchanged and the component is
 *  just enabled.
 *
@@ -214,31 +214,31 @@ void TCPWM_Enable(void)
 *  None
 *
 * Global variables:
-*  TCPWM_initVar: global variable is used to indicate initial
+*  PWM_1_initVar: global variable is used to indicate initial
 *  configuration of this component.  The variable is initialized to zero and set
-*  to 1 the first time TCPWM_Start() is called. This allows
+*  to 1 the first time PWM_1_Start() is called. This allows
 *  enabling/disabling a component without re-initialization in all subsequent
-*  calls to the TCPWM_Start() routine.
+*  calls to the PWM_1_Start() routine.
 *
 *******************************************************************************/
-void TCPWM_Start(void)
+void PWM_1_Start(void)
 {
-    if (0u == TCPWM_initVar)
+    if (0u == PWM_1_initVar)
     {
-        TCPWM_Init();
-        TCPWM_initVar = 1u;
+        PWM_1_Init();
+        PWM_1_initVar = 1u;
     }
 
-    TCPWM_Enable();
+    PWM_1_Enable();
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_Stop
+* Function Name: PWM_1_Stop
 ********************************************************************************
 *
 * Summary:
-*  Disables the TCPWM.
+*  Disables the PWM_1.
 *
 * Parameters:
 *  None
@@ -247,58 +247,58 @@ void TCPWM_Start(void)
 *  None
 *
 *******************************************************************************/
-void TCPWM_Stop(void)
+void PWM_1_Stop(void)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_BLOCK_CONTROL_REG &= (uint32)~TCPWM_MASK;
+    PWM_1_BLOCK_CONTROL_REG &= (uint32)~PWM_1_MASK;
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetMode
+* Function Name: PWM_1_SetMode
 ********************************************************************************
 *
 * Summary:
-*  Sets the operation mode of the TCPWM. This function is used when
-*  configured as a generic TCPWM and the actual mode of operation is
+*  Sets the operation mode of the PWM_1. This function is used when
+*  configured as a generic PWM_1 and the actual mode of operation is
 *  set at runtime. The mode must be set while the component is disabled.
 *
 * Parameters:
-*  mode: Mode for the TCPWM to operate in
+*  mode: Mode for the PWM_1 to operate in
 *   Values:
-*   - TCPWM_MODE_TIMER_COMPARE - Timer / Counter with
+*   - PWM_1_MODE_TIMER_COMPARE - Timer / Counter with
 *                                                 compare capability
-*         - TCPWM_MODE_TIMER_CAPTURE - Timer / Counter with
+*         - PWM_1_MODE_TIMER_CAPTURE - Timer / Counter with
 *                                                 capture capability
-*         - TCPWM_MODE_QUAD - Quadrature decoder
-*         - TCPWM_MODE_PWM - PWM
-*         - TCPWM_MODE_PWM_DT - PWM with dead time
-*         - TCPWM_MODE_PWM_PR - PWM with pseudo random capability
+*         - PWM_1_MODE_QUAD - Quadrature decoder
+*         - PWM_1_MODE_PWM - PWM
+*         - PWM_1_MODE_PWM_DT - PWM with dead time
+*         - PWM_1_MODE_PWM_PR - PWM with pseudo random capability
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetMode(uint32 mode)
+void PWM_1_SetMode(uint32 mode)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_CONTROL_REG &= (uint32)~TCPWM_MODE_MASK;
-    TCPWM_CONTROL_REG |= mode;
+    PWM_1_CONTROL_REG &= (uint32)~PWM_1_MODE_MASK;
+    PWM_1_CONTROL_REG |= mode;
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetQDMode
+* Function Name: PWM_1_SetQDMode
 ********************************************************************************
 *
 * Summary:
@@ -308,30 +308,30 @@ void TCPWM_SetMode(uint32 mode)
 * Parameters:
 *  qdMode: Quadrature Decoder mode
 *   Values:
-*         - TCPWM_MODE_X1 - Counts on phi 1 rising
-*         - TCPWM_MODE_X2 - Counts on both edges of phi1 (2x faster)
-*         - TCPWM_MODE_X4 - Counts on both edges of phi1 and phi2
+*         - PWM_1_MODE_X1 - Counts on phi 1 rising
+*         - PWM_1_MODE_X2 - Counts on both edges of phi1 (2x faster)
+*         - PWM_1_MODE_X4 - Counts on both edges of phi1 and phi2
 *                                        (4x faster)
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetQDMode(uint32 qdMode)
+void PWM_1_SetQDMode(uint32 qdMode)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_CONTROL_REG &= (uint32)~TCPWM_QUAD_MODE_MASK;
-    TCPWM_CONTROL_REG |= qdMode;
+    PWM_1_CONTROL_REG &= (uint32)~PWM_1_QUAD_MODE_MASK;
+    PWM_1_CONTROL_REG |= qdMode;
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetPrescaler
+* Function Name: PWM_1_SetPrescaler
 ********************************************************************************
 *
 * Summary:
@@ -341,40 +341,40 @@ void TCPWM_SetQDMode(uint32 qdMode)
 * Parameters:
 *  prescaler: Prescaler divider value
 *   Values:
-*         - TCPWM_PRESCALE_DIVBY1    - Divide by 1 (no prescaling)
-*         - TCPWM_PRESCALE_DIVBY2    - Divide by 2
-*         - TCPWM_PRESCALE_DIVBY4    - Divide by 4
-*         - TCPWM_PRESCALE_DIVBY8    - Divide by 8
-*         - TCPWM_PRESCALE_DIVBY16   - Divide by 16
-*         - TCPWM_PRESCALE_DIVBY32   - Divide by 32
-*         - TCPWM_PRESCALE_DIVBY64   - Divide by 64
-*         - TCPWM_PRESCALE_DIVBY128  - Divide by 128
+*         - PWM_1_PRESCALE_DIVBY1    - Divide by 1 (no prescaling)
+*         - PWM_1_PRESCALE_DIVBY2    - Divide by 2
+*         - PWM_1_PRESCALE_DIVBY4    - Divide by 4
+*         - PWM_1_PRESCALE_DIVBY8    - Divide by 8
+*         - PWM_1_PRESCALE_DIVBY16   - Divide by 16
+*         - PWM_1_PRESCALE_DIVBY32   - Divide by 32
+*         - PWM_1_PRESCALE_DIVBY64   - Divide by 64
+*         - PWM_1_PRESCALE_DIVBY128  - Divide by 128
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetPrescaler(uint32 prescaler)
+void PWM_1_SetPrescaler(uint32 prescaler)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_CONTROL_REG &= (uint32)~TCPWM_PRESCALER_MASK;
-    TCPWM_CONTROL_REG |= prescaler;
+    PWM_1_CONTROL_REG &= (uint32)~PWM_1_PRESCALER_MASK;
+    PWM_1_CONTROL_REG |= prescaler;
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetOneShot
+* Function Name: PWM_1_SetOneShot
 ********************************************************************************
 *
 * Summary:
-*  Writes the register that controls whether the TCPWM runs
+*  Writes the register that controls whether the PWM_1 runs
 *  continuously or stops when terminal count is reached.  By default the
-*  TCPWM operates in the continuous mode.
+*  PWM_1 operates in the continuous mode.
 *
 * Parameters:
 *  oneShotEnable
@@ -386,22 +386,22 @@ void TCPWM_SetPrescaler(uint32 prescaler)
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetOneShot(uint32 oneShotEnable)
+void PWM_1_SetOneShot(uint32 oneShotEnable)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_CONTROL_REG &= (uint32)~TCPWM_ONESHOT_MASK;
-    TCPWM_CONTROL_REG |= ((uint32)((oneShotEnable & TCPWM_1BIT_MASK) <<
-                                                               TCPWM_ONESHOT_SHIFT));
+    PWM_1_CONTROL_REG &= (uint32)~PWM_1_ONESHOT_MASK;
+    PWM_1_CONTROL_REG |= ((uint32)((oneShotEnable & PWM_1_1BIT_MASK) <<
+                                                               PWM_1_ONESHOT_SHIFT));
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetPWMMode
+* Function Name: PWM_1_SetPWMMode
 ********************************************************************************
 *
 * Summary:
@@ -440,15 +440,15 @@ void TCPWM_SetOneShot(uint32 oneShotEnable)
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetPWMMode(uint32 modeMask)
+void PWM_1_SetPWMMode(uint32 modeMask)
 {
-    TCPWM_TRIG_CONTROL2_REG = (modeMask & TCPWM_6BIT_MASK);
+    PWM_1_TRIG_CONTROL2_REG = (modeMask & PWM_1_6BIT_MASK);
 }
 
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetPWMSyncKill
+* Function Name: PWM_1_SetPWMSyncKill
 ********************************************************************************
 *
 * Summary:
@@ -476,22 +476,22 @@ void TCPWM_SetPWMMode(uint32 modeMask)
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetPWMSyncKill(uint32 syncKillEnable)
+void PWM_1_SetPWMSyncKill(uint32 syncKillEnable)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_CONTROL_REG &= (uint32)~TCPWM_PWM_SYNC_KILL_MASK;
-    TCPWM_CONTROL_REG |= ((uint32)((syncKillEnable & TCPWM_1BIT_MASK)  <<
-                                               TCPWM_PWM_SYNC_KILL_SHIFT));
+    PWM_1_CONTROL_REG &= (uint32)~PWM_1_PWM_SYNC_KILL_MASK;
+    PWM_1_CONTROL_REG |= ((uint32)((syncKillEnable & PWM_1_1BIT_MASK)  <<
+                                               PWM_1_PWM_SYNC_KILL_SHIFT));
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetPWMStopOnKill
+* Function Name: PWM_1_SetPWMStopOnKill
 ********************************************************************************
 *
 * Summary:
@@ -510,22 +510,22 @@ void TCPWM_SetPWMSyncKill(uint32 syncKillEnable)
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetPWMStopOnKill(uint32 stopOnKillEnable)
+void PWM_1_SetPWMStopOnKill(uint32 stopOnKillEnable)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_CONTROL_REG &= (uint32)~TCPWM_PWM_STOP_KILL_MASK;
-    TCPWM_CONTROL_REG |= ((uint32)((stopOnKillEnable & TCPWM_1BIT_MASK)  <<
-                                                         TCPWM_PWM_STOP_KILL_SHIFT));
+    PWM_1_CONTROL_REG &= (uint32)~PWM_1_PWM_STOP_KILL_MASK;
+    PWM_1_CONTROL_REG |= ((uint32)((stopOnKillEnable & PWM_1_1BIT_MASK)  <<
+                                                         PWM_1_PWM_STOP_KILL_SHIFT));
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetPWMDeadTime
+* Function Name: PWM_1_SetPWMDeadTime
 ********************************************************************************
 *
 * Summary:
@@ -543,22 +543,22 @@ void TCPWM_SetPWMStopOnKill(uint32 stopOnKillEnable)
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetPWMDeadTime(uint32 deadTime)
+void PWM_1_SetPWMDeadTime(uint32 deadTime)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_CONTROL_REG &= (uint32)~TCPWM_PRESCALER_MASK;
-    TCPWM_CONTROL_REG |= ((uint32)((deadTime & TCPWM_8BIT_MASK) <<
-                                                          TCPWM_PRESCALER_SHIFT));
+    PWM_1_CONTROL_REG &= (uint32)~PWM_1_PRESCALER_MASK;
+    PWM_1_CONTROL_REG |= ((uint32)((deadTime & PWM_1_8BIT_MASK) <<
+                                                          PWM_1_PRESCALER_SHIFT));
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetPWMInvert
+* Function Name: PWM_1_SetPWMInvert
 ********************************************************************************
 *
 * Summary:
@@ -569,21 +569,21 @@ void TCPWM_SetPWMDeadTime(uint32 deadTime)
 * Parameters:
 *  mask: Mask of outputs to invert.
 *   Values:
-*         - TCPWM_INVERT_LINE   - Inverts the line output
-*         - TCPWM_INVERT_LINE_N - Inverts the line_n output
+*         - PWM_1_INVERT_LINE   - Inverts the line output
+*         - PWM_1_INVERT_LINE_N - Inverts the line_n output
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetPWMInvert(uint32 mask)
+void PWM_1_SetPWMInvert(uint32 mask)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_CONTROL_REG &= (uint32)~TCPWM_INV_OUT_MASK;
-    TCPWM_CONTROL_REG |= mask;
+    PWM_1_CONTROL_REG &= (uint32)~PWM_1_INV_OUT_MASK;
+    PWM_1_CONTROL_REG |= mask;
 
     CyExitCriticalSection(enableInterrupts);
 }
@@ -591,7 +591,7 @@ void TCPWM_SetPWMInvert(uint32 mask)
 
 
 /*******************************************************************************
-* Function Name: TCPWM_WriteCounter
+* Function Name: PWM_1_WriteCounter
 ********************************************************************************
 *
 * Summary:
@@ -606,14 +606,14 @@ void TCPWM_SetPWMInvert(uint32 mask)
 *  None
 *
 *******************************************************************************/
-void TCPWM_WriteCounter(uint32 count)
+void PWM_1_WriteCounter(uint32 count)
 {
-    TCPWM_COUNTER_REG = (count & TCPWM_16BIT_MASK);
+    PWM_1_COUNTER_REG = (count & PWM_1_16BIT_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_ReadCounter
+* Function Name: PWM_1_ReadCounter
 ********************************************************************************
 *
 * Summary:
@@ -626,14 +626,14 @@ void TCPWM_WriteCounter(uint32 count)
 *  Current counter value
 *
 *******************************************************************************/
-uint32 TCPWM_ReadCounter(void)
+uint32 PWM_1_ReadCounter(void)
 {
-    return (TCPWM_COUNTER_REG & TCPWM_16BIT_MASK);
+    return (PWM_1_COUNTER_REG & PWM_1_16BIT_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetCounterMode
+* Function Name: PWM_1_SetCounterMode
 ********************************************************************************
 *
 * Summary:
@@ -643,11 +643,11 @@ uint32 TCPWM_ReadCounter(void)
 * Parameters:
 *  counterMode: Enumerated counter type values
 *   Values:
-*     - TCPWM_COUNT_UP       - Counts up
-*     - TCPWM_COUNT_DOWN     - Counts down
-*     - TCPWM_COUNT_UPDOWN0  - Counts up and down. Terminal count
+*     - PWM_1_COUNT_UP       - Counts up
+*     - PWM_1_COUNT_DOWN     - Counts down
+*     - PWM_1_COUNT_UPDOWN0  - Counts up and down. Terminal count
 *                                         generated when counter reaches 0
-*     - TCPWM_COUNT_UPDOWN1  - Counts up and down. Terminal count
+*     - PWM_1_COUNT_UPDOWN1  - Counts up and down. Terminal count
 *                                         generated both when counter reaches 0
 *                                         and period
 *
@@ -655,21 +655,21 @@ uint32 TCPWM_ReadCounter(void)
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetCounterMode(uint32 counterMode)
+void PWM_1_SetCounterMode(uint32 counterMode)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_CONTROL_REG &= (uint32)~TCPWM_UPDOWN_MASK;
-    TCPWM_CONTROL_REG |= counterMode;
+    PWM_1_CONTROL_REG &= (uint32)~PWM_1_UPDOWN_MASK;
+    PWM_1_CONTROL_REG |= counterMode;
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_WritePeriod
+* Function Name: PWM_1_WritePeriod
 ********************************************************************************
 *
 * Summary:
@@ -684,14 +684,14 @@ void TCPWM_SetCounterMode(uint32 counterMode)
 *  None
 *
 *******************************************************************************/
-void TCPWM_WritePeriod(uint32 period)
+void PWM_1_WritePeriod(uint32 period)
 {
-    TCPWM_PERIOD_REG = (period & TCPWM_16BIT_MASK);
+    PWM_1_PERIOD_REG = (period & PWM_1_16BIT_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_ReadPeriod
+* Function Name: PWM_1_ReadPeriod
 ********************************************************************************
 *
 * Summary:
@@ -704,14 +704,14 @@ void TCPWM_WritePeriod(uint32 period)
 *  Period value
 *
 *******************************************************************************/
-uint32 TCPWM_ReadPeriod(void)
+uint32 PWM_1_ReadPeriod(void)
 {
-    return (TCPWM_PERIOD_REG & TCPWM_16BIT_MASK);
+    return (PWM_1_PERIOD_REG & PWM_1_16BIT_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetCompareSwap
+* Function Name: PWM_1_SetCompareSwap
 ********************************************************************************
 *
 * Summary:
@@ -730,21 +730,21 @@ uint32 TCPWM_ReadPeriod(void)
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetCompareSwap(uint32 swapEnable)
+void PWM_1_SetCompareSwap(uint32 swapEnable)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_CONTROL_REG &= (uint32)~TCPWM_RELOAD_CC_MASK;
-    TCPWM_CONTROL_REG |= (swapEnable & TCPWM_1BIT_MASK);
+    PWM_1_CONTROL_REG &= (uint32)~PWM_1_RELOAD_CC_MASK;
+    PWM_1_CONTROL_REG |= (swapEnable & PWM_1_1BIT_MASK);
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_WritePeriodBuf
+* Function Name: PWM_1_WritePeriodBuf
 ********************************************************************************
 *
 * Summary:
@@ -757,14 +757,14 @@ void TCPWM_SetCompareSwap(uint32 swapEnable)
 *  None
 *
 *******************************************************************************/
-void TCPWM_WritePeriodBuf(uint32 periodBuf)
+void PWM_1_WritePeriodBuf(uint32 periodBuf)
 {
-    TCPWM_PERIOD_BUF_REG = (periodBuf & TCPWM_16BIT_MASK);
+    PWM_1_PERIOD_BUF_REG = (periodBuf & PWM_1_16BIT_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_ReadPeriodBuf
+* Function Name: PWM_1_ReadPeriodBuf
 ********************************************************************************
 *
 * Summary:
@@ -777,14 +777,14 @@ void TCPWM_WritePeriodBuf(uint32 periodBuf)
 *  Period value
 *
 *******************************************************************************/
-uint32 TCPWM_ReadPeriodBuf(void)
+uint32 PWM_1_ReadPeriodBuf(void)
 {
-    return (TCPWM_PERIOD_BUF_REG & TCPWM_16BIT_MASK);
+    return (PWM_1_PERIOD_BUF_REG & PWM_1_16BIT_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetPeriodSwap
+* Function Name: PWM_1_SetPeriodSwap
 ********************************************************************************
 *
 * Summary:
@@ -803,22 +803,22 @@ uint32 TCPWM_ReadPeriodBuf(void)
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetPeriodSwap(uint32 swapEnable)
+void PWM_1_SetPeriodSwap(uint32 swapEnable)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_CONTROL_REG &= (uint32)~TCPWM_RELOAD_PERIOD_MASK;
-    TCPWM_CONTROL_REG |= ((uint32)((swapEnable & TCPWM_1BIT_MASK) <<
-                                                            TCPWM_RELOAD_PERIOD_SHIFT));
+    PWM_1_CONTROL_REG &= (uint32)~PWM_1_RELOAD_PERIOD_MASK;
+    PWM_1_CONTROL_REG |= ((uint32)((swapEnable & PWM_1_1BIT_MASK) <<
+                                                            PWM_1_RELOAD_PERIOD_SHIFT));
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_WriteCompare
+* Function Name: PWM_1_WriteCompare
 ********************************************************************************
 *
 * Summary:
@@ -832,20 +832,20 @@ void TCPWM_SetPeriodSwap(uint32 swapEnable)
 *  None
 *
 *******************************************************************************/
-void TCPWM_WriteCompare(uint32 compare)
+void PWM_1_WriteCompare(uint32 compare)
 {
-    #if (TCPWM_CY_TCPWM_4000)
+    #if (PWM_1_CY_TCPWM_4000)
         uint32 currentMode;
-    #endif /* (TCPWM_CY_TCPWM_4000) */
+    #endif /* (PWM_1_CY_TCPWM_4000) */
 
-    #if (TCPWM_CY_TCPWM_4000)
-        currentMode = ((TCPWM_CONTROL_REG & TCPWM_UPDOWN_MASK) >> TCPWM_UPDOWN_SHIFT);
+    #if (PWM_1_CY_TCPWM_4000)
+        currentMode = ((PWM_1_CONTROL_REG & PWM_1_UPDOWN_MASK) >> PWM_1_UPDOWN_SHIFT);
 
-        if (((uint32)TCPWM__COUNT_DOWN == currentMode) && (0xFFFFu != compare))
+        if (((uint32)PWM_1__COUNT_DOWN == currentMode) && (0xFFFFu != compare))
         {
             compare++;
         }
-        else if (((uint32)TCPWM__COUNT_UP == currentMode) && (0u != compare))
+        else if (((uint32)PWM_1__COUNT_UP == currentMode) && (0u != compare))
         {
             compare--;
         }
@@ -854,14 +854,14 @@ void TCPWM_WriteCompare(uint32 compare)
         }
         
     
-    #endif /* (TCPWM_CY_TCPWM_4000) */
+    #endif /* (PWM_1_CY_TCPWM_4000) */
     
-    TCPWM_COMP_CAP_REG = (compare & TCPWM_16BIT_MASK);
+    PWM_1_COMP_CAP_REG = (compare & PWM_1_16BIT_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_ReadCompare
+* Function Name: PWM_1_ReadCompare
 ********************************************************************************
 *
 * Summary:
@@ -875,23 +875,23 @@ void TCPWM_WriteCompare(uint32 compare)
 *  Compare value
 *
 *******************************************************************************/
-uint32 TCPWM_ReadCompare(void)
+uint32 PWM_1_ReadCompare(void)
 {
-    #if (TCPWM_CY_TCPWM_4000)
+    #if (PWM_1_CY_TCPWM_4000)
         uint32 currentMode;
         uint32 regVal;
-    #endif /* (TCPWM_CY_TCPWM_4000) */
+    #endif /* (PWM_1_CY_TCPWM_4000) */
 
-    #if (TCPWM_CY_TCPWM_4000)
-        currentMode = ((TCPWM_CONTROL_REG & TCPWM_UPDOWN_MASK) >> TCPWM_UPDOWN_SHIFT);
+    #if (PWM_1_CY_TCPWM_4000)
+        currentMode = ((PWM_1_CONTROL_REG & PWM_1_UPDOWN_MASK) >> PWM_1_UPDOWN_SHIFT);
         
-        regVal = TCPWM_COMP_CAP_REG;
+        regVal = PWM_1_COMP_CAP_REG;
         
-        if (((uint32)TCPWM__COUNT_DOWN == currentMode) && (0u != regVal))
+        if (((uint32)PWM_1__COUNT_DOWN == currentMode) && (0u != regVal))
         {
             regVal--;
         }
-        else if (((uint32)TCPWM__COUNT_UP == currentMode) && (0xFFFFu != regVal))
+        else if (((uint32)PWM_1__COUNT_UP == currentMode) && (0xFFFFu != regVal))
         {
             regVal++;
         }
@@ -899,15 +899,15 @@ uint32 TCPWM_ReadCompare(void)
         {
         }
 
-        return (regVal & TCPWM_16BIT_MASK);
+        return (regVal & PWM_1_16BIT_MASK);
     #else
-        return (TCPWM_COMP_CAP_REG & TCPWM_16BIT_MASK);
-    #endif /* (TCPWM_CY_TCPWM_4000) */
+        return (PWM_1_COMP_CAP_REG & PWM_1_16BIT_MASK);
+    #endif /* (PWM_1_CY_TCPWM_4000) */
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_WriteCompareBuf
+* Function Name: PWM_1_WriteCompareBuf
 ********************************************************************************
 *
 * Summary:
@@ -921,34 +921,34 @@ uint32 TCPWM_ReadCompare(void)
 *  None
 *
 *******************************************************************************/
-void TCPWM_WriteCompareBuf(uint32 compareBuf)
+void PWM_1_WriteCompareBuf(uint32 compareBuf)
 {
-    #if (TCPWM_CY_TCPWM_4000)
+    #if (PWM_1_CY_TCPWM_4000)
         uint32 currentMode;
-    #endif /* (TCPWM_CY_TCPWM_4000) */
+    #endif /* (PWM_1_CY_TCPWM_4000) */
 
-    #if (TCPWM_CY_TCPWM_4000)
-        currentMode = ((TCPWM_CONTROL_REG & TCPWM_UPDOWN_MASK) >> TCPWM_UPDOWN_SHIFT);
+    #if (PWM_1_CY_TCPWM_4000)
+        currentMode = ((PWM_1_CONTROL_REG & PWM_1_UPDOWN_MASK) >> PWM_1_UPDOWN_SHIFT);
 
-        if (((uint32)TCPWM__COUNT_DOWN == currentMode) && (0xFFFFu != compareBuf))
+        if (((uint32)PWM_1__COUNT_DOWN == currentMode) && (0xFFFFu != compareBuf))
         {
             compareBuf++;
         }
-        else if (((uint32)TCPWM__COUNT_UP == currentMode) && (0u != compareBuf))
+        else if (((uint32)PWM_1__COUNT_UP == currentMode) && (0u != compareBuf))
         {
             compareBuf --;
         }
         else
         {
         }
-    #endif /* (TCPWM_CY_TCPWM_4000) */
+    #endif /* (PWM_1_CY_TCPWM_4000) */
     
-    TCPWM_COMP_CAP_BUF_REG = (compareBuf & TCPWM_16BIT_MASK);
+    PWM_1_COMP_CAP_BUF_REG = (compareBuf & PWM_1_16BIT_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_ReadCompareBuf
+* Function Name: PWM_1_ReadCompareBuf
 ********************************************************************************
 *
 * Summary:
@@ -962,23 +962,23 @@ void TCPWM_WriteCompareBuf(uint32 compareBuf)
 *  Compare buffer value
 *
 *******************************************************************************/
-uint32 TCPWM_ReadCompareBuf(void)
+uint32 PWM_1_ReadCompareBuf(void)
 {
-    #if (TCPWM_CY_TCPWM_4000)
+    #if (PWM_1_CY_TCPWM_4000)
         uint32 currentMode;
         uint32 regVal;
-    #endif /* (TCPWM_CY_TCPWM_4000) */
+    #endif /* (PWM_1_CY_TCPWM_4000) */
 
-    #if (TCPWM_CY_TCPWM_4000)
-        currentMode = ((TCPWM_CONTROL_REG & TCPWM_UPDOWN_MASK) >> TCPWM_UPDOWN_SHIFT);
+    #if (PWM_1_CY_TCPWM_4000)
+        currentMode = ((PWM_1_CONTROL_REG & PWM_1_UPDOWN_MASK) >> PWM_1_UPDOWN_SHIFT);
 
-        regVal = TCPWM_COMP_CAP_BUF_REG;
+        regVal = PWM_1_COMP_CAP_BUF_REG;
         
-        if (((uint32)TCPWM__COUNT_DOWN == currentMode) && (0u != regVal))
+        if (((uint32)PWM_1__COUNT_DOWN == currentMode) && (0u != regVal))
         {
             regVal--;
         }
-        else if (((uint32)TCPWM__COUNT_UP == currentMode) && (0xFFFFu != regVal))
+        else if (((uint32)PWM_1__COUNT_UP == currentMode) && (0xFFFFu != regVal))
         {
             regVal++;
         }
@@ -986,15 +986,15 @@ uint32 TCPWM_ReadCompareBuf(void)
         {
         }
 
-        return (regVal & TCPWM_16BIT_MASK);
+        return (regVal & PWM_1_16BIT_MASK);
     #else
-        return (TCPWM_COMP_CAP_BUF_REG & TCPWM_16BIT_MASK);
-    #endif /* (TCPWM_CY_TCPWM_4000) */
+        return (PWM_1_COMP_CAP_BUF_REG & PWM_1_16BIT_MASK);
+    #endif /* (PWM_1_CY_TCPWM_4000) */
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_ReadCapture
+* Function Name: PWM_1_ReadCapture
 ********************************************************************************
 *
 * Summary:
@@ -1008,14 +1008,14 @@ uint32 TCPWM_ReadCompareBuf(void)
 *  Capture value
 *
 *******************************************************************************/
-uint32 TCPWM_ReadCapture(void)
+uint32 PWM_1_ReadCapture(void)
 {
-    return (TCPWM_COMP_CAP_REG & TCPWM_16BIT_MASK);
+    return (PWM_1_COMP_CAP_REG & PWM_1_16BIT_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_ReadCaptureBuf
+* Function Name: PWM_1_ReadCaptureBuf
 ********************************************************************************
 *
 * Summary:
@@ -1029,14 +1029,14 @@ uint32 TCPWM_ReadCapture(void)
 *  Capture buffer value
 *
 *******************************************************************************/
-uint32 TCPWM_ReadCaptureBuf(void)
+uint32 PWM_1_ReadCaptureBuf(void)
 {
-    return (TCPWM_COMP_CAP_BUF_REG & TCPWM_16BIT_MASK);
+    return (PWM_1_COMP_CAP_BUF_REG & PWM_1_16BIT_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetCaptureMode
+* Function Name: PWM_1_SetCaptureMode
 ********************************************************************************
 *
 * Summary:
@@ -1047,30 +1047,30 @@ uint32 TCPWM_ReadCaptureBuf(void)
 * Parameters:
 *  triggerMode: Enumerated trigger mode value
 *   Values:
-*     - TCPWM_TRIG_LEVEL     - Level
-*     - TCPWM_TRIG_RISING    - Rising edge
-*     - TCPWM_TRIG_FALLING   - Falling edge
-*     - TCPWM_TRIG_BOTH      - Both rising and falling edge
+*     - PWM_1_TRIG_LEVEL     - Level
+*     - PWM_1_TRIG_RISING    - Rising edge
+*     - PWM_1_TRIG_FALLING   - Falling edge
+*     - PWM_1_TRIG_BOTH      - Both rising and falling edge
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetCaptureMode(uint32 triggerMode)
+void PWM_1_SetCaptureMode(uint32 triggerMode)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_TRIG_CONTROL1_REG &= (uint32)~TCPWM_CAPTURE_MASK;
-    TCPWM_TRIG_CONTROL1_REG |= triggerMode;
+    PWM_1_TRIG_CONTROL1_REG &= (uint32)~PWM_1_CAPTURE_MASK;
+    PWM_1_TRIG_CONTROL1_REG |= triggerMode;
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetReloadMode
+* Function Name: PWM_1_SetReloadMode
 ********************************************************************************
 *
 * Summary:
@@ -1080,30 +1080,30 @@ void TCPWM_SetCaptureMode(uint32 triggerMode)
 * Parameters:
 *  triggerMode: Enumerated trigger mode value
 *   Values:
-*     - TCPWM_TRIG_LEVEL     - Level
-*     - TCPWM_TRIG_RISING    - Rising edge
-*     - TCPWM_TRIG_FALLING   - Falling edge
-*     - TCPWM_TRIG_BOTH      - Both rising and falling edge
+*     - PWM_1_TRIG_LEVEL     - Level
+*     - PWM_1_TRIG_RISING    - Rising edge
+*     - PWM_1_TRIG_FALLING   - Falling edge
+*     - PWM_1_TRIG_BOTH      - Both rising and falling edge
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetReloadMode(uint32 triggerMode)
+void PWM_1_SetReloadMode(uint32 triggerMode)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_TRIG_CONTROL1_REG &= (uint32)~TCPWM_RELOAD_MASK;
-    TCPWM_TRIG_CONTROL1_REG |= ((uint32)(triggerMode << TCPWM_RELOAD_SHIFT));
+    PWM_1_TRIG_CONTROL1_REG &= (uint32)~PWM_1_RELOAD_MASK;
+    PWM_1_TRIG_CONTROL1_REG |= ((uint32)(triggerMode << PWM_1_RELOAD_SHIFT));
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetStartMode
+* Function Name: PWM_1_SetStartMode
 ********************************************************************************
 *
 * Summary:
@@ -1113,30 +1113,30 @@ void TCPWM_SetReloadMode(uint32 triggerMode)
 * Parameters:
 *  triggerMode: Enumerated trigger mode value
 *   Values:
-*     - TCPWM_TRIG_LEVEL     - Level
-*     - TCPWM_TRIG_RISING    - Rising edge
-*     - TCPWM_TRIG_FALLING   - Falling edge
-*     - TCPWM_TRIG_BOTH      - Both rising and falling edge
+*     - PWM_1_TRIG_LEVEL     - Level
+*     - PWM_1_TRIG_RISING    - Rising edge
+*     - PWM_1_TRIG_FALLING   - Falling edge
+*     - PWM_1_TRIG_BOTH      - Both rising and falling edge
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetStartMode(uint32 triggerMode)
+void PWM_1_SetStartMode(uint32 triggerMode)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_TRIG_CONTROL1_REG &= (uint32)~TCPWM_START_MASK;
-    TCPWM_TRIG_CONTROL1_REG |= ((uint32)(triggerMode << TCPWM_START_SHIFT));
+    PWM_1_TRIG_CONTROL1_REG &= (uint32)~PWM_1_START_MASK;
+    PWM_1_TRIG_CONTROL1_REG |= ((uint32)(triggerMode << PWM_1_START_SHIFT));
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetStopMode
+* Function Name: PWM_1_SetStopMode
 ********************************************************************************
 *
 * Summary:
@@ -1145,30 +1145,30 @@ void TCPWM_SetStartMode(uint32 triggerMode)
 * Parameters:
 *  triggerMode: Enumerated trigger mode value
 *   Values:
-*     - TCPWM_TRIG_LEVEL     - Level
-*     - TCPWM_TRIG_RISING    - Rising edge
-*     - TCPWM_TRIG_FALLING   - Falling edge
-*     - TCPWM_TRIG_BOTH      - Both rising and falling edge
+*     - PWM_1_TRIG_LEVEL     - Level
+*     - PWM_1_TRIG_RISING    - Rising edge
+*     - PWM_1_TRIG_FALLING   - Falling edge
+*     - PWM_1_TRIG_BOTH      - Both rising and falling edge
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetStopMode(uint32 triggerMode)
+void PWM_1_SetStopMode(uint32 triggerMode)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_TRIG_CONTROL1_REG &= (uint32)~TCPWM_STOP_MASK;
-    TCPWM_TRIG_CONTROL1_REG |= ((uint32)(triggerMode << TCPWM_STOP_SHIFT));
+    PWM_1_TRIG_CONTROL1_REG &= (uint32)~PWM_1_STOP_MASK;
+    PWM_1_TRIG_CONTROL1_REG |= ((uint32)(triggerMode << PWM_1_STOP_SHIFT));
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetCountMode
+* Function Name: PWM_1_SetCountMode
 ********************************************************************************
 *
 * Summary:
@@ -1178,30 +1178,30 @@ void TCPWM_SetStopMode(uint32 triggerMode)
 * Parameters:
 *  triggerMode: Enumerated trigger mode value
 *   Values:
-*     - TCPWM_TRIG_LEVEL     - Level
-*     - TCPWM_TRIG_RISING    - Rising edge
-*     - TCPWM_TRIG_FALLING   - Falling edge
-*     - TCPWM_TRIG_BOTH      - Both rising and falling edge
+*     - PWM_1_TRIG_LEVEL     - Level
+*     - PWM_1_TRIG_RISING    - Rising edge
+*     - PWM_1_TRIG_FALLING   - Falling edge
+*     - PWM_1_TRIG_BOTH      - Both rising and falling edge
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetCountMode(uint32 triggerMode)
+void PWM_1_SetCountMode(uint32 triggerMode)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_TRIG_CONTROL1_REG &= (uint32)~TCPWM_COUNT_MASK;
-    TCPWM_TRIG_CONTROL1_REG |= ((uint32)(triggerMode << TCPWM_COUNT_SHIFT));
+    PWM_1_TRIG_CONTROL1_REG &= (uint32)~PWM_1_COUNT_MASK;
+    PWM_1_TRIG_CONTROL1_REG |= ((uint32)(triggerMode << PWM_1_COUNT_SHIFT));
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_TriggerCommand
+* Function Name: PWM_1_TriggerCommand
 ********************************************************************************
 *
 * Summary:
@@ -1218,33 +1218,33 @@ void TCPWM_SetCountMode(uint32 triggerMode)
 *  command: Enumerated command values. Capture command only applicable for
 *           Timer/Counter with Capture and PWM modes.
 *   Values:
-*     - TCPWM_CMD_CAPTURE    - Trigger Capture command
-*     - TCPWM_CMD_RELOAD     - Trigger Reload command
-*     - TCPWM_CMD_STOP       - Trigger Stop command
-*     - TCPWM_CMD_START      - Trigger Start command
+*     - PWM_1_CMD_CAPTURE    - Trigger Capture command
+*     - PWM_1_CMD_RELOAD     - Trigger Reload command
+*     - PWM_1_CMD_STOP       - Trigger Stop command
+*     - PWM_1_CMD_START      - Trigger Start command
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_TriggerCommand(uint32 mask, uint32 command)
+void PWM_1_TriggerCommand(uint32 mask, uint32 command)
 {
     uint8 enableInterrupts;
 
     enableInterrupts = CyEnterCriticalSection();
 
-    TCPWM_COMMAND_REG = ((uint32)(mask << command));
+    PWM_1_COMMAND_REG = ((uint32)(mask << command));
 
     CyExitCriticalSection(enableInterrupts);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_ReadStatus
+* Function Name: PWM_1_ReadStatus
 ********************************************************************************
 *
 * Summary:
-*  Reads the status of the TCPWM.
+*  Reads the status of the PWM_1.
 *
 * Parameters:
 *  None
@@ -1252,19 +1252,19 @@ void TCPWM_TriggerCommand(uint32 mask, uint32 command)
 * Return:
 *  Status
 *   Values:
-*     - TCPWM_STATUS_DOWN    - Set if counting down
-*     - TCPWM_STATUS_RUNNING - Set if counter is running
+*     - PWM_1_STATUS_DOWN    - Set if counting down
+*     - PWM_1_STATUS_RUNNING - Set if counter is running
 *
 *******************************************************************************/
-uint32 TCPWM_ReadStatus(void)
+uint32 PWM_1_ReadStatus(void)
 {
-    return ((TCPWM_STATUS_REG >> TCPWM_RUNNING_STATUS_SHIFT) |
-            (TCPWM_STATUS_REG & TCPWM_STATUS_DOWN));
+    return ((PWM_1_STATUS_REG >> PWM_1_RUNNING_STATUS_SHIFT) |
+            (PWM_1_STATUS_REG & PWM_1_STATUS_DOWN));
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetInterruptMode
+* Function Name: PWM_1_SetInterruptMode
 ********************************************************************************
 *
 * Summary:
@@ -1274,21 +1274,21 @@ uint32 TCPWM_ReadStatus(void)
 * Parameters:
 *   interruptMask: Mask of bits to be enabled
 *   Values:
-*     - TCPWM_INTR_MASK_TC       - Terminal count mask
-*     - TCPWM_INTR_MASK_CC_MATCH - Compare count / capture mask
+*     - PWM_1_INTR_MASK_TC       - Terminal count mask
+*     - PWM_1_INTR_MASK_CC_MATCH - Compare count / capture mask
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetInterruptMode(uint32 interruptMask)
+void PWM_1_SetInterruptMode(uint32 interruptMask)
 {
-    TCPWM_INTERRUPT_MASK_REG =  interruptMask;
+    PWM_1_INTERRUPT_MASK_REG =  interruptMask;
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_GetInterruptSourceMasked
+* Function Name: PWM_1_GetInterruptSourceMasked
 ********************************************************************************
 *
 * Summary:
@@ -1300,18 +1300,18 @@ void TCPWM_SetInterruptMode(uint32 interruptMask)
 * Return:
 *  Masked interrupt source
 *   Values:
-*     - TCPWM_INTR_MASK_TC       - Terminal count mask
-*     - TCPWM_INTR_MASK_CC_MATCH - Compare count / capture mask
+*     - PWM_1_INTR_MASK_TC       - Terminal count mask
+*     - PWM_1_INTR_MASK_CC_MATCH - Compare count / capture mask
 *
 *******************************************************************************/
-uint32 TCPWM_GetInterruptSourceMasked(void)
+uint32 PWM_1_GetInterruptSourceMasked(void)
 {
-    return (TCPWM_INTERRUPT_MASKED_REG);
+    return (PWM_1_INTERRUPT_MASKED_REG);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_GetInterruptSource
+* Function Name: PWM_1_GetInterruptSource
 ********************************************************************************
 *
 * Summary:
@@ -1323,18 +1323,18 @@ uint32 TCPWM_GetInterruptSourceMasked(void)
 * Return:
 *  Interrupt request value
 *   Values:
-*     - TCPWM_INTR_MASK_TC       - Terminal count mask
-*     - TCPWM_INTR_MASK_CC_MATCH - Compare count / capture mask
+*     - PWM_1_INTR_MASK_TC       - Terminal count mask
+*     - PWM_1_INTR_MASK_CC_MATCH - Compare count / capture mask
 *
 *******************************************************************************/
-uint32 TCPWM_GetInterruptSource(void)
+uint32 PWM_1_GetInterruptSource(void)
 {
-    return (TCPWM_INTERRUPT_REQ_REG);
+    return (PWM_1_INTERRUPT_REQ_REG);
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_ClearInterrupt
+* Function Name: PWM_1_ClearInterrupt
 ********************************************************************************
 *
 * Summary:
@@ -1343,21 +1343,21 @@ uint32 TCPWM_GetInterruptSource(void)
 * Parameters:
 *   interruptMask: Mask of interrupts to clear
 *   Values:
-*     - TCPWM_INTR_MASK_TC       - Terminal count mask
-*     - TCPWM_INTR_MASK_CC_MATCH - Compare count / capture mask
+*     - PWM_1_INTR_MASK_TC       - Terminal count mask
+*     - PWM_1_INTR_MASK_CC_MATCH - Compare count / capture mask
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_ClearInterrupt(uint32 interruptMask)
+void PWM_1_ClearInterrupt(uint32 interruptMask)
 {
-    TCPWM_INTERRUPT_REQ_REG = interruptMask;
+    PWM_1_INTERRUPT_REQ_REG = interruptMask;
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SetInterrupt
+* Function Name: PWM_1_SetInterrupt
 ********************************************************************************
 *
 * Summary:
@@ -1366,16 +1366,16 @@ void TCPWM_ClearInterrupt(uint32 interruptMask)
 * Parameters:
 *   interruptMask: Mask of interrupts to set
 *   Values:
-*     - TCPWM_INTR_MASK_TC       - Terminal count mask
-*     - TCPWM_INTR_MASK_CC_MATCH - Compare count / capture mask
+*     - PWM_1_INTR_MASK_TC       - Terminal count mask
+*     - PWM_1_INTR_MASK_CC_MATCH - Compare count / capture mask
 *
 * Return:
 *  None
 *
 *******************************************************************************/
-void TCPWM_SetInterrupt(uint32 interruptMask)
+void PWM_1_SetInterrupt(uint32 interruptMask)
 {
-    TCPWM_INTERRUPT_SET_REG = interruptMask;
+    PWM_1_INTERRUPT_SET_REG = interruptMask;
 }
 
 

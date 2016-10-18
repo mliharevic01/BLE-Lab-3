@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: TCPWM_PM.c
+* File Name: PWM_1_PM.c
 * Version 2.0
 *
 * Description:
@@ -16,13 +16,13 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#include "TCPWM.h"
+#include "PWM_1.h"
 
-static TCPWM_BACKUP_STRUCT TCPWM_backup;
+static PWM_1_BACKUP_STRUCT PWM_1_backup;
 
 
 /*******************************************************************************
-* Function Name: TCPWM_SaveConfig
+* Function Name: PWM_1_SaveConfig
 ********************************************************************************
 *
 * Summary:
@@ -35,14 +35,14 @@ static TCPWM_BACKUP_STRUCT TCPWM_backup;
 *  None
 *
 *******************************************************************************/
-void TCPWM_SaveConfig(void)
+void PWM_1_SaveConfig(void)
 {
 
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_Sleep
+* Function Name: PWM_1_Sleep
 ********************************************************************************
 *
 * Summary:
@@ -55,24 +55,24 @@ void TCPWM_SaveConfig(void)
 *  None
 *
 *******************************************************************************/
-void TCPWM_Sleep(void)
+void PWM_1_Sleep(void)
 {
-    if(0u != (TCPWM_BLOCK_CONTROL_REG & TCPWM_MASK))
+    if(0u != (PWM_1_BLOCK_CONTROL_REG & PWM_1_MASK))
     {
-        TCPWM_backup.enableState = 1u;
+        PWM_1_backup.enableState = 1u;
     }
     else
     {
-        TCPWM_backup.enableState = 0u;
+        PWM_1_backup.enableState = 0u;
     }
 
-    TCPWM_Stop();
-    TCPWM_SaveConfig();
+    PWM_1_Stop();
+    PWM_1_SaveConfig();
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_RestoreConfig
+* Function Name: PWM_1_RestoreConfig
 ********************************************************************************
 *
 * Summary:
@@ -85,14 +85,14 @@ void TCPWM_Sleep(void)
 *  None
 *
 *******************************************************************************/
-void TCPWM_RestoreConfig(void)
+void PWM_1_RestoreConfig(void)
 {
 
 }
 
 
 /*******************************************************************************
-* Function Name: TCPWM_Wakeup
+* Function Name: PWM_1_Wakeup
 ********************************************************************************
 *
 * Summary:
@@ -105,13 +105,13 @@ void TCPWM_RestoreConfig(void)
 *  None
 *
 *******************************************************************************/
-void TCPWM_Wakeup(void)
+void PWM_1_Wakeup(void)
 {
-    TCPWM_RestoreConfig();
+    PWM_1_RestoreConfig();
 
-    if(0u != TCPWM_backup.enableState)
+    if(0u != PWM_1_backup.enableState)
     {
-        TCPWM_Enable();
+        PWM_1_Enable();
     }
 }
 

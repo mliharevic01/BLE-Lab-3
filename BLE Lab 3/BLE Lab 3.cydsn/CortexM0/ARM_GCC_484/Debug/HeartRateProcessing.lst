@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 1
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 1
 
 
    1              		.cpu cortex-m0
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 1
   23:.\HeartRateProcessing.c **** * with a Cypress integrated circuit as specified in the applicable agreement.
   24:.\HeartRateProcessing.c **** * Any reproduction, modification, translation, compilation, or representation of
   25:.\HeartRateProcessing.c **** * this software except as specified above is prohibited without the express
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 2
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 2
 
 
   26:.\HeartRateProcessing.c **** * written permission of Cypress.
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 1
   80:.\HeartRateProcessing.c **** * None
   81:.\HeartRateProcessing.c **** *
   82:.\HeartRateProcessing.c **** * Theory:
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 3
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 3
 
 
   83:.\HeartRateProcessing.c **** * This function acts as a simple model for heart rate measurement.
@@ -137,52 +137,63 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 1
   96:.\HeartRateProcessing.c **** {
   33              		.loc 1 96 0
   34              		.cfi_startproc
-  35 0000 80B5     		push	{r7, lr}
-  36              		.cfi_def_cfa_offset 8
-  37              		.cfi_offset 7, -8
-  38              		.cfi_offset 14, -4
-  39 0002 82B0     		sub	sp, sp, #8
-  40              		.cfi_def_cfa_offset 16
-  41 0004 00AF     		add	r7, sp, #0
-  42              		.cfi_def_cfa_register 7
+  35 0000 90B5     		push	{r4, r7, lr}
+  36              		.cfi_def_cfa_offset 12
+  37              		.cfi_offset 4, -12
+  38              		.cfi_offset 7, -8
+  39              		.cfi_offset 14, -4
+  40 0002 83B0     		sub	sp, sp, #12
+  41              		.cfi_def_cfa_offset 24
+  42 0004 00AF     		add	r7, sp, #0
+  43              		.cfi_def_cfa_register 7
   97:.\HeartRateProcessing.c ****     static bool newBeat = true;
   98:.\HeartRateProcessing.c ****     static bool firstTime = true;
   99:.\HeartRateProcessing.c ****     static uint32 previousBeatTime = 0;
  100:.\HeartRateProcessing.c ****     static uint32 newBeatTime = 0;
  101:.\HeartRateProcessing.c ****     int16 adcOut, pwmout;
  102:.\HeartRateProcessing.c ****     uint32 twoSampleTime = 0;
-  43              		.loc 1 102 0
-  44 0006 0023     		mov	r3, #0
-  45 0008 7B60     		str	r3, [r7, #4]
+  44              		.loc 1 102 0
+  45 0006 0023     		mov	r3, #0
+  46 0008 7B60     		str	r3, [r7, #4]
  103:.\HeartRateProcessing.c **** 
  104:.\HeartRateProcessing.c ****     /* Get the ADC output */
- 105:.\HeartRateProcessing.c **** //    ADC_StartConvert();
- 106:.\HeartRateProcessing.c ****     //ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
- 107:.\HeartRateProcessing.c ****    // adcOut = ADC_GetResult16(HEART_RATE_CHANNEL);
+ 105:.\HeartRateProcessing.c ****     ADC_StartConvert();
+  47              		.loc 1 105 0
+  48 000a FFF7FEFF 		bl	ADC_StartConvert
+ 106:.\HeartRateProcessing.c ****     ADC_IsEndConversion(ADC_WAIT_FOR_RESULT);
+  49              		.loc 1 106 0
+  50 000e 0220     		mov	r0, #2
+  51 0010 FFF7FEFF 		bl	ADC_IsEndConversion
+ 107:.\HeartRateProcessing.c ****     adcOut = ADC_GetResult16(HEART_RATE_CHANNEL);
+  52              		.loc 1 107 0
+  53 0014 BC1C     		add	r4, r7, #2
+  54 0016 0020     		mov	r0, #0
+  55 0018 FFF7FEFF 		bl	ADC_GetResult16
+  56 001c 031C     		mov	r3, r0
+  57 001e 2380     		strh	r3, [r4]
  108:.\HeartRateProcessing.c ****     
  109:.\HeartRateProcessing.c ****     /* If the ADC output is more than a fixed threshold, consider that a 
  110:.\HeartRateProcessing.c ****      * valid R peak */
- 111:.\HeartRateProcessing.c ****     if (adcOut > ADC_THRESHOLD)
-  46              		.loc 1 111 0
-  47 000a BB1C     		add	r3, r7, #2
-  48 000c 0021     		mov	r1, #0
-  49 000e 5A5E     		ldrsh	r2, [r3, r1]
-  50 0010 D423     		mov	r3, #212
-  51 0012 DB00     		lsl	r3, r3, #3
-  52 0014 9A42     		cmp	r2, r3
-  53 0016 2EDD     		ble	.L2
+ 111:.\HeartRateProcessing.c ****     if (PWM_ReadCounter()>PWM_ReadCompare())
+  58              		.loc 1 111 0
+  59 0020 FFF7FEFF 		bl	PWM_ReadCounter
+  60 0024 041C     		mov	r4, r0
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 4
+
+
+  61 0026 FFF7FEFF 		bl	PWM_ReadCompare
+  62 002a 031C     		mov	r3, r0
+  63 002c 9C42     		cmp	r4, r3
+  64 002e 2ED9     		bls	.L2
  112:.\HeartRateProcessing.c ****     {
  113:.\HeartRateProcessing.c ****         /* Check if the R peak just started - i.e. identify the rising 
  114:.\HeartRateProcessing.c ****          * edge of the R peak */
  115:.\HeartRateProcessing.c ****         if(newBeat)
-  54              		.loc 1 115 0
-  55 0018 1A4B     		ldr	r3, .L7
-  56 001a 1B78     		ldrb	r3, [r3]
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 4
-
-
-  57 001c 002B     		cmp	r3, #0
-  58 001e 26D0     		beq	.L3
+  65              		.loc 1 115 0
+  66 0030 1A4B     		ldr	r3, .L7
+  67 0032 1B78     		ldrb	r3, [r3]
+  68 0034 002B     		cmp	r3, #0
+  69 0036 26D0     		beq	.L3
  116:.\HeartRateProcessing.c ****         {
  117:.\HeartRateProcessing.c ****             /* Check if this is the first R-peak seen by the device yet.
  118:.\HeartRateProcessing.c ****              * If that is the case, we cannot calculate a heart rate value 
@@ -190,25 +201,25 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 1
  120:.\HeartRateProcessing.c ****              * Just note the timestamp of this peak.
  121:.\HeartRateProcessing.c ****              */
  122:.\HeartRateProcessing.c ****     		if(firstTime == true)
-  59              		.loc 1 122 0
-  60 0020 194B     		ldr	r3, .L7+4
-  61 0022 1B78     		ldrb	r3, [r3]
-  62 0024 002B     		cmp	r3, #0
-  63 0026 08D0     		beq	.L4
+  70              		.loc 1 122 0
+  71 0038 194B     		ldr	r3, .L7+4
+  72 003a 1B78     		ldrb	r3, [r3]
+  73 003c 002B     		cmp	r3, #0
+  74 003e 08D0     		beq	.L4
  123:.\HeartRateProcessing.c ****     		{
  124:.\HeartRateProcessing.c ****     			firstTime = false;
-  64              		.loc 1 124 0
-  65 0028 174B     		ldr	r3, .L7+4
-  66 002a 0022     		mov	r2, #0
-  67 002c 1A70     		strb	r2, [r3]
+  75              		.loc 1 124 0
+  76 0040 174B     		ldr	r3, .L7+4
+  77 0042 0022     		mov	r2, #0
+  78 0044 1A70     		strb	r2, [r3]
  125:.\HeartRateProcessing.c ****     			previousBeatTime = WatchdogTimer_GetTimestamp();
-  68              		.loc 1 125 0
-  69 002e FFF7FEFF 		bl	WatchdogTimer_GetTimestamp
-  70 0032 021C     		mov	r2, r0
-  71 0034 154B     		ldr	r3, .L7+8
-  72 0036 1A60     		str	r2, [r3]
-  73 0038 19E0     		b	.L3
-  74              	.L4:
+  79              		.loc 1 125 0
+  80 0046 FFF7FEFF 		bl	WatchdogTimer_GetTimestamp
+  81 004a 021C     		mov	r2, r0
+  82 004c 154B     		ldr	r3, .L7+8
+  83 004e 1A60     		str	r2, [r3]
+  84 0050 19E0     		b	.L3
+  85              	.L4:
  126:.\HeartRateProcessing.c ****     		}
  127:.\HeartRateProcessing.c ****     		else
  128:.\HeartRateProcessing.c ****     		{
@@ -218,48 +229,48 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 1
  132:.\HeartRateProcessing.c ****                  * beat value in beats per minute.
  133:.\HeartRateProcessing.c ****                  */
  134:.\HeartRateProcessing.c ****     			newBeatTime = WatchdogTimer_GetTimestamp();
-  75              		.loc 1 134 0
-  76 003a FFF7FEFF 		bl	WatchdogTimer_GetTimestamp
-  77 003e 021C     		mov	r2, r0
-  78 0040 134B     		ldr	r3, .L7+12
-  79 0042 1A60     		str	r2, [r3]
+  86              		.loc 1 134 0
+  87 0052 FFF7FEFF 		bl	WatchdogTimer_GetTimestamp
+  88 0056 021C     		mov	r2, r0
+  89 0058 134B     		ldr	r3, .L7+12
+  90 005a 1A60     		str	r2, [r3]
  135:.\HeartRateProcessing.c ****     			twoSampleTime = newBeatTime - previousBeatTime;
-  80              		.loc 1 135 0
-  81 0044 124B     		ldr	r3, .L7+12
-  82 0046 1A68     		ldr	r2, [r3]
-  83 0048 104B     		ldr	r3, .L7+8
-  84 004a 1B68     		ldr	r3, [r3]
-  85 004c D31A     		sub	r3, r2, r3
-  86 004e 7B60     		str	r3, [r7, #4]
+  91              		.loc 1 135 0
+  92 005c 124B     		ldr	r3, .L7+12
+  93 005e 1A68     		ldr	r2, [r3]
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 5
+
+
+  94 0060 104B     		ldr	r3, .L7+8
+  95 0062 1B68     		ldr	r3, [r3]
+  96 0064 D31A     		sub	r3, r2, r3
+  97 0066 7B60     		str	r3, [r7, #4]
  136:.\HeartRateProcessing.c ****                 
  137:.\HeartRateProcessing.c ****                 if(twoSampleTime != 0)
-  87              		.loc 1 137 0
-  88 0050 7B68     		ldr	r3, [r7, #4]
-  89 0052 002B     		cmp	r3, #0
-  90 0054 07D0     		beq	.L5
+  98              		.loc 1 137 0
+  99 0068 7B68     		ldr	r3, [r7, #4]
+ 100 006a 002B     		cmp	r3, #0
+ 101 006c 07D0     		beq	.L5
  138:.\HeartRateProcessing.c ****                 {
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 5
-
-
  139:.\HeartRateProcessing.c ****                     heartRate = (uint32)SEC_IN_MIN * MS_TO_SECOND / twoSampleTime;
-  91              		.loc 1 139 0
-  92 0056 0F48     		ldr	r0, .L7+16
-  93 0058 7968     		ldr	r1, [r7, #4]
-  94 005a FFF7FEFF 		bl	__aeabi_uidiv
-  95 005e 031C     		mov	r3, r0
-  96 0060 DAB2     		uxtb	r2, r3
-  97 0062 0D4B     		ldr	r3, .L7+20
-  98 0064 1A70     		strb	r2, [r3]
-  99              	.L5:
+ 102              		.loc 1 139 0
+ 103 006e 0F48     		ldr	r0, .L7+16
+ 104 0070 7968     		ldr	r1, [r7, #4]
+ 105 0072 FFF7FEFF 		bl	__aeabi_uidiv
+ 106 0076 031C     		mov	r3, r0
+ 107 0078 DAB2     		uxtb	r2, r3
+ 108 007a 0D4B     		ldr	r3, .L7+20
+ 109 007c 1A70     		strb	r2, [r3]
+ 110              	.L5:
  140:.\HeartRateProcessing.c ****                 }
  141:.\HeartRateProcessing.c ****                 
  142:.\HeartRateProcessing.c ****                 previousBeatTime = newBeatTime;
- 100              		.loc 1 142 0
- 101 0066 0A4B     		ldr	r3, .L7+12
- 102 0068 1A68     		ldr	r2, [r3]
- 103 006a 084B     		ldr	r3, .L7+8
- 104 006c 1A60     		str	r2, [r3]
- 105              	.L3:
+ 111              		.loc 1 142 0
+ 112 007e 0A4B     		ldr	r3, .L7+12
+ 113 0080 1A68     		ldr	r2, [r3]
+ 114 0082 084B     		ldr	r3, .L7+8
+ 115 0084 1A60     		str	r2, [r3]
+ 116              	.L3:
  143:.\HeartRateProcessing.c ****     		}
  144:.\HeartRateProcessing.c ****         }
  145:.\HeartRateProcessing.c ****         
@@ -267,12 +278,12 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 1
  147:.\HeartRateProcessing.c ****          * been accounted for and we need to wait for the next peak. 
  148:.\HeartRateProcessing.c ****          */
  149:.\HeartRateProcessing.c ****         newBeat = false;
- 106              		.loc 1 149 0 discriminator 1
- 107 006e 054B     		ldr	r3, .L7
- 108 0070 0022     		mov	r2, #0
- 109 0072 1A70     		strb	r2, [r3]
- 110 0074 02E0     		b	.L1
- 111              	.L2:
+ 117              		.loc 1 149 0 discriminator 1
+ 118 0086 054B     		ldr	r3, .L7
+ 119 0088 0022     		mov	r2, #0
+ 120 008a 1A70     		strb	r2, [r3]
+ 121 008c 02E0     		b	.L1
+ 122              	.L2:
  150:.\HeartRateProcessing.c ****     }
  151:.\HeartRateProcessing.c ****     else
  152:.\HeartRateProcessing.c ****     {
@@ -281,1212 +292,1215 @@ ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 1
  155:.\HeartRateProcessing.c ****          * the threshold, it will be a new peak. 
  156:.\HeartRateProcessing.c ****          */
  157:.\HeartRateProcessing.c ****         newBeat = true;
- 112              		.loc 1 157 0
- 113 0076 034B     		ldr	r3, .L7
- 114 0078 0122     		mov	r2, #1
- 115 007a 1A70     		strb	r2, [r3]
- 116              	.L1:
+ 123              		.loc 1 157 0
+ 124 008e 034B     		ldr	r3, .L7
+ 125 0090 0122     		mov	r2, #1
+ 126 0092 1A70     		strb	r2, [r3]
+ 127              	.L1:
  158:.\HeartRateProcessing.c ****     }
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 6
+
+
  159:.\HeartRateProcessing.c **** }
- 117              		.loc 1 159 0
- 118 007c BD46     		mov	sp, r7
- 119 007e 02B0     		add	sp, sp, #8
- 120              		@ sp needed
- 121 0080 80BD     		pop	{r7, pc}
- 122              	.L8:
- 123 0082 C046     		.align	2
- 124              	.L7:
- 125 0084 00000000 		.word	newBeat.6495
- 126 0088 01000000 		.word	firstTime.6496
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 6
+ 128              		.loc 1 159 0
+ 129 0094 BD46     		mov	sp, r7
+ 130 0096 03B0     		add	sp, sp, #12
+ 131              		@ sp needed
+ 132 0098 90BD     		pop	{r4, r7, pc}
+ 133              	.L8:
+ 134 009a C046     		.align	2
+ 135              	.L7:
+ 136 009c 00000000 		.word	newBeat.6540
+ 137 00a0 01000000 		.word	firstTime.6541
+ 138 00a4 04000000 		.word	previousBeatTime.6542
+ 139 00a8 08000000 		.word	newBeatTime.6543
+ 140 00ac 60EA0000 		.word	60000
+ 141 00b0 00000000 		.word	heartRate
+ 142              		.cfi_endproc
+ 143              	.LFE35:
+ 144              		.size	ProcessHeartRateSignal, .-ProcessHeartRateSignal
+ 145              		.data
+ 146              		.type	newBeat.6540, %object
+ 147              		.size	newBeat.6540, 1
+ 148              	newBeat.6540:
+ 149 0000 01       		.byte	1
+ 150              		.type	firstTime.6541, %object
+ 151              		.size	firstTime.6541, 1
+ 152              	firstTime.6541:
+ 153 0001 01       		.byte	1
+ 154              		.bss
+ 155 0001 000000   		.align	2
+ 156              	previousBeatTime.6542:
+ 157 0004 00000000 		.space	4
+ 158              		.align	2
+ 159              	newBeatTime.6543:
+ 160 0008 00000000 		.space	4
+ 161              		.text
+ 162              	.Letext0:
+ 163              		.file 2 ".\\Generated_Source\\PSoC4/cytypes.h"
+ 164              		.file 3 ".\\Generated_Source\\PSoC4/BLE_1_Stack.h"
+ 165              		.file 4 ".\\Generated_Source\\PSoC4/BLE_1_hrs.h"
+ 166              		.file 5 ".\\Generated_Source\\PSoC4/BLE_1_dis.h"
+ 167              		.section	.debug_info,"",%progbits
+ 168              	.Ldebug_info0:
+ 169 0000 14030000 		.4byte	0x314
+ 170 0004 0400     		.2byte	0x4
+ 171 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 172 000a 04       		.byte	0x4
+ 173 000b 01       		.uleb128 0x1
+ 174 000c D4080000 		.4byte	.LASF91
+ 175 0010 01       		.byte	0x1
+ 176 0011 16050000 		.4byte	.LASF92
+ 177 0015 4C080000 		.4byte	.LASF93
+ 178 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 179 001d 00000000 		.4byte	0
+ 180 0021 00000000 		.4byte	.Ldebug_line0
+ 181 0025 02       		.uleb128 0x2
+ 182 0026 01       		.byte	0x1
+ 183 0027 06       		.byte	0x6
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 7
 
 
- 127 008c 04000000 		.word	previousBeatTime.6497
- 128 0090 08000000 		.word	newBeatTime.6498
- 129 0094 60EA0000 		.word	60000
- 130 0098 00000000 		.word	heartRate
- 131              		.cfi_endproc
- 132              	.LFE35:
- 133              		.size	ProcessHeartRateSignal, .-ProcessHeartRateSignal
- 134              		.data
- 135              		.type	newBeat.6495, %object
- 136              		.size	newBeat.6495, 1
- 137              	newBeat.6495:
- 138 0000 01       		.byte	1
- 139              		.type	firstTime.6496, %object
- 140              		.size	firstTime.6496, 1
- 141              	firstTime.6496:
- 142 0001 01       		.byte	1
- 143              		.bss
- 144 0001 000000   		.align	2
- 145              	previousBeatTime.6497:
- 146 0004 00000000 		.space	4
- 147              		.align	2
- 148              	newBeatTime.6498:
- 149 0008 00000000 		.space	4
- 150              		.text
- 151              	.Letext0:
- 152              		.file 2 ".\\Generated_Source\\PSoC4/cytypes.h"
- 153              		.file 3 ".\\Generated_Source\\PSoC4/BLE_1_Stack.h"
- 154              		.file 4 ".\\Generated_Source\\PSoC4/BLE_1_hrs.h"
- 155              		.file 5 ".\\Generated_Source\\PSoC4/BLE_1_dis.h"
- 156              		.section	.debug_info,"",%progbits
- 157              	.Ldebug_info0:
- 158 0000 14030000 		.4byte	0x314
- 159 0004 0400     		.2byte	0x4
- 160 0006 00000000 		.4byte	.Ldebug_abbrev0
- 161 000a 04       		.byte	0x4
- 162 000b 01       		.uleb128 0x1
- 163 000c D4080000 		.4byte	.LASF91
- 164 0010 01       		.byte	0x1
- 165 0011 16050000 		.4byte	.LASF92
- 166 0015 4C080000 		.4byte	.LASF93
- 167 0019 00000000 		.4byte	.Ldebug_ranges0+0
- 168 001d 00000000 		.4byte	0
- 169 0021 00000000 		.4byte	.Ldebug_line0
- 170 0025 02       		.uleb128 0x2
- 171 0026 01       		.byte	0x1
- 172 0027 06       		.byte	0x6
- 173 0028 1E040000 		.4byte	.LASF0
- 174 002c 02       		.uleb128 0x2
- 175 002d 01       		.byte	0x1
- 176 002e 08       		.byte	0x8
- 177 002f DB030000 		.4byte	.LASF1
- 178 0033 02       		.uleb128 0x2
- 179 0034 02       		.byte	0x2
- 180 0035 05       		.byte	0x5
- 181 0036 3B000000 		.4byte	.LASF2
- 182 003a 02       		.uleb128 0x2
- 183 003b 02       		.byte	0x2
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 7
+ 184 0028 1E040000 		.4byte	.LASF0
+ 185 002c 02       		.uleb128 0x2
+ 186 002d 01       		.byte	0x1
+ 187 002e 08       		.byte	0x8
+ 188 002f DB030000 		.4byte	.LASF1
+ 189 0033 02       		.uleb128 0x2
+ 190 0034 02       		.byte	0x2
+ 191 0035 05       		.byte	0x5
+ 192 0036 3B000000 		.4byte	.LASF2
+ 193 003a 02       		.uleb128 0x2
+ 194 003b 02       		.byte	0x2
+ 195 003c 07       		.byte	0x7
+ 196 003d 89050000 		.4byte	.LASF3
+ 197 0041 02       		.uleb128 0x2
+ 198 0042 04       		.byte	0x4
+ 199 0043 05       		.byte	0x5
+ 200 0044 91020000 		.4byte	.LASF4
+ 201 0048 02       		.uleb128 0x2
+ 202 0049 04       		.byte	0x4
+ 203 004a 07       		.byte	0x7
+ 204 004b AF040000 		.4byte	.LASF5
+ 205 004f 02       		.uleb128 0x2
+ 206 0050 08       		.byte	0x8
+ 207 0051 05       		.byte	0x5
+ 208 0052 6C020000 		.4byte	.LASF6
+ 209 0056 02       		.uleb128 0x2
+ 210 0057 08       		.byte	0x8
+ 211 0058 07       		.byte	0x7
+ 212 0059 7A020000 		.4byte	.LASF7
+ 213 005d 03       		.uleb128 0x3
+ 214 005e 04       		.byte	0x4
+ 215 005f 05       		.byte	0x5
+ 216 0060 696E7400 		.ascii	"int\000"
+ 217 0064 02       		.uleb128 0x2
+ 218 0065 04       		.byte	0x4
+ 219 0066 07       		.byte	0x7
+ 220 0067 87040000 		.4byte	.LASF8
+ 221 006b 04       		.uleb128 0x4
+ 222 006c A3030000 		.4byte	.LASF9
+ 223 0070 02       		.byte	0x2
+ 224 0071 A1       		.byte	0xa1
+ 225 0072 2C000000 		.4byte	0x2c
+ 226 0076 04       		.uleb128 0x4
+ 227 0077 F7050000 		.4byte	.LASF10
+ 228 007b 02       		.byte	0x2
+ 229 007c A3       		.byte	0xa3
+ 230 007d 48000000 		.4byte	0x48
+ 231 0081 04       		.uleb128 0x4
+ 232 0082 73010000 		.4byte	.LASF11
+ 233 0086 02       		.byte	0x2
+ 234 0087 A5       		.byte	0xa5
+ 235 0088 33000000 		.4byte	0x33
+ 236 008c 02       		.uleb128 0x2
+ 237 008d 04       		.byte	0x4
+ 238 008e 04       		.byte	0x4
+ 239 008f 33020000 		.4byte	.LASF12
+ 240 0093 02       		.uleb128 0x2
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 8
 
 
- 184 003c 07       		.byte	0x7
- 185 003d 89050000 		.4byte	.LASF3
- 186 0041 02       		.uleb128 0x2
- 187 0042 04       		.byte	0x4
- 188 0043 05       		.byte	0x5
- 189 0044 91020000 		.4byte	.LASF4
- 190 0048 02       		.uleb128 0x2
- 191 0049 04       		.byte	0x4
- 192 004a 07       		.byte	0x7
- 193 004b AF040000 		.4byte	.LASF5
- 194 004f 02       		.uleb128 0x2
- 195 0050 08       		.byte	0x8
- 196 0051 05       		.byte	0x5
- 197 0052 6C020000 		.4byte	.LASF6
- 198 0056 02       		.uleb128 0x2
- 199 0057 08       		.byte	0x8
- 200 0058 07       		.byte	0x7
- 201 0059 7A020000 		.4byte	.LASF7
- 202 005d 03       		.uleb128 0x3
- 203 005e 04       		.byte	0x4
- 204 005f 05       		.byte	0x5
- 205 0060 696E7400 		.ascii	"int\000"
- 206 0064 02       		.uleb128 0x2
- 207 0065 04       		.byte	0x4
- 208 0066 07       		.byte	0x7
- 209 0067 87040000 		.4byte	.LASF8
- 210 006b 04       		.uleb128 0x4
- 211 006c A3030000 		.4byte	.LASF9
- 212 0070 02       		.byte	0x2
- 213 0071 A1       		.byte	0xa1
- 214 0072 2C000000 		.4byte	0x2c
- 215 0076 04       		.uleb128 0x4
- 216 0077 F7050000 		.4byte	.LASF10
- 217 007b 02       		.byte	0x2
- 218 007c A3       		.byte	0xa3
- 219 007d 48000000 		.4byte	0x48
- 220 0081 04       		.uleb128 0x4
- 221 0082 73010000 		.4byte	.LASF11
- 222 0086 02       		.byte	0x2
- 223 0087 A5       		.byte	0xa5
- 224 0088 33000000 		.4byte	0x33
- 225 008c 02       		.uleb128 0x2
- 226 008d 04       		.byte	0x4
- 227 008e 04       		.byte	0x4
- 228 008f 33020000 		.4byte	.LASF12
- 229 0093 02       		.uleb128 0x2
- 230 0094 08       		.byte	0x8
- 231 0095 04       		.byte	0x4
- 232 0096 3F060000 		.4byte	.LASF13
- 233 009a 02       		.uleb128 0x2
- 234 009b 01       		.byte	0x1
- 235 009c 08       		.byte	0x8
- 236 009d 68050000 		.4byte	.LASF14
- 237 00a1 02       		.uleb128 0x2
- 238 00a2 04       		.byte	0x4
- 239 00a3 07       		.byte	0x7
- 240 00a4 7D000000 		.4byte	.LASF15
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 8
+ 241 0094 08       		.byte	0x8
+ 242 0095 04       		.byte	0x4
+ 243 0096 3F060000 		.4byte	.LASF13
+ 244 009a 02       		.uleb128 0x2
+ 245 009b 01       		.byte	0x1
+ 246 009c 08       		.byte	0x8
+ 247 009d 68050000 		.4byte	.LASF14
+ 248 00a1 02       		.uleb128 0x2
+ 249 00a2 04       		.byte	0x4
+ 250 00a3 07       		.byte	0x7
+ 251 00a4 7D000000 		.4byte	.LASF15
+ 252 00a8 05       		.uleb128 0x5
+ 253 00a9 01       		.byte	0x1
+ 254 00aa 03       		.byte	0x3
+ 255 00ab 52       		.byte	0x52
+ 256 00ac 18020000 		.4byte	0x218
+ 257 00b0 06       		.uleb128 0x6
+ 258 00b1 DD010000 		.4byte	.LASF16
+ 259 00b5 00       		.sleb128 0
+ 260 00b6 06       		.uleb128 0x6
+ 261 00b7 38010000 		.4byte	.LASF17
+ 262 00bb 01       		.sleb128 1
+ 263 00bc 06       		.uleb128 0x6
+ 264 00bd A9070000 		.4byte	.LASF18
+ 265 00c1 02       		.sleb128 2
+ 266 00c2 06       		.uleb128 0x6
+ 267 00c3 B4060000 		.4byte	.LASF19
+ 268 00c7 03       		.sleb128 3
+ 269 00c8 06       		.uleb128 0x6
+ 270 00c9 02010000 		.4byte	.LASF20
+ 271 00cd 04       		.sleb128 4
+ 272 00ce 06       		.uleb128 0x6
+ 273 00cf 10030000 		.4byte	.LASF21
+ 274 00d3 05       		.sleb128 5
+ 275 00d4 06       		.uleb128 0x6
+ 276 00d5 12070000 		.4byte	.LASF22
+ 277 00d9 20       		.sleb128 32
+ 278 00da 06       		.uleb128 0x6
+ 279 00db C1040000 		.4byte	.LASF23
+ 280 00df 21       		.sleb128 33
+ 281 00e0 06       		.uleb128 0x6
+ 282 00e1 00000000 		.4byte	.LASF24
+ 283 00e5 22       		.sleb128 34
+ 284 00e6 06       		.uleb128 0x6
+ 285 00e7 43030000 		.4byte	.LASF25
+ 286 00eb 23       		.sleb128 35
+ 287 00ec 06       		.uleb128 0x6
+ 288 00ed 6B040000 		.4byte	.LASF26
+ 289 00f1 24       		.sleb128 36
+ 290 00f2 06       		.uleb128 0x6
+ 291 00f3 45000000 		.4byte	.LASF27
+ 292 00f7 25       		.sleb128 37
+ 293 00f8 06       		.uleb128 0x6
+ 294 00f9 8C060000 		.4byte	.LASF28
+ 295 00fd 26       		.sleb128 38
+ 296 00fe 06       		.uleb128 0x6
+ 297 00ff C2020000 		.4byte	.LASF29
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 9
 
 
- 241 00a8 05       		.uleb128 0x5
- 242 00a9 01       		.byte	0x1
- 243 00aa 03       		.byte	0x3
- 244 00ab 52       		.byte	0x52
- 245 00ac 18020000 		.4byte	0x218
- 246 00b0 06       		.uleb128 0x6
- 247 00b1 DD010000 		.4byte	.LASF16
- 248 00b5 00       		.sleb128 0
- 249 00b6 06       		.uleb128 0x6
- 250 00b7 38010000 		.4byte	.LASF17
- 251 00bb 01       		.sleb128 1
- 252 00bc 06       		.uleb128 0x6
- 253 00bd A9070000 		.4byte	.LASF18
- 254 00c1 02       		.sleb128 2
- 255 00c2 06       		.uleb128 0x6
- 256 00c3 B4060000 		.4byte	.LASF19
- 257 00c7 03       		.sleb128 3
- 258 00c8 06       		.uleb128 0x6
- 259 00c9 02010000 		.4byte	.LASF20
- 260 00cd 04       		.sleb128 4
- 261 00ce 06       		.uleb128 0x6
- 262 00cf 10030000 		.4byte	.LASF21
- 263 00d3 05       		.sleb128 5
- 264 00d4 06       		.uleb128 0x6
- 265 00d5 12070000 		.4byte	.LASF22
- 266 00d9 20       		.sleb128 32
- 267 00da 06       		.uleb128 0x6
- 268 00db C1040000 		.4byte	.LASF23
- 269 00df 21       		.sleb128 33
- 270 00e0 06       		.uleb128 0x6
- 271 00e1 00000000 		.4byte	.LASF24
- 272 00e5 22       		.sleb128 34
- 273 00e6 06       		.uleb128 0x6
- 274 00e7 43030000 		.4byte	.LASF25
- 275 00eb 23       		.sleb128 35
- 276 00ec 06       		.uleb128 0x6
- 277 00ed 6B040000 		.4byte	.LASF26
- 278 00f1 24       		.sleb128 36
- 279 00f2 06       		.uleb128 0x6
- 280 00f3 45000000 		.4byte	.LASF27
- 281 00f7 25       		.sleb128 37
- 282 00f8 06       		.uleb128 0x6
- 283 00f9 8C060000 		.4byte	.LASF28
- 284 00fd 26       		.sleb128 38
- 285 00fe 06       		.uleb128 0x6
- 286 00ff C2020000 		.4byte	.LASF29
- 287 0103 27       		.sleb128 39
- 288 0104 06       		.uleb128 0x6
- 289 0105 8E080000 		.4byte	.LASF30
- 290 0109 28       		.sleb128 40
- 291 010a 06       		.uleb128 0x6
- 292 010b F9040000 		.4byte	.LASF31
- 293 010f 29       		.sleb128 41
- 294 0110 06       		.uleb128 0x6
- 295 0111 2E050000 		.4byte	.LASF32
- 296 0115 2A       		.sleb128 42
- 297 0116 06       		.uleb128 0x6
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 9
+ 298 0103 27       		.sleb128 39
+ 299 0104 06       		.uleb128 0x6
+ 300 0105 8E080000 		.4byte	.LASF30
+ 301 0109 28       		.sleb128 40
+ 302 010a 06       		.uleb128 0x6
+ 303 010b F9040000 		.4byte	.LASF31
+ 304 010f 29       		.sleb128 41
+ 305 0110 06       		.uleb128 0x6
+ 306 0111 2E050000 		.4byte	.LASF32
+ 307 0115 2A       		.sleb128 42
+ 308 0116 06       		.uleb128 0x6
+ 309 0117 DF070000 		.4byte	.LASF33
+ 310 011b 2B       		.sleb128 43
+ 311 011c 06       		.uleb128 0x6
+ 312 011d 79010000 		.4byte	.LASF34
+ 313 0121 2C       		.sleb128 44
+ 314 0122 06       		.uleb128 0x6
+ 315 0123 B3000000 		.4byte	.LASF35
+ 316 0127 C000     		.sleb128 64
+ 317 0129 06       		.uleb128 0x6
+ 318 012a 94040000 		.4byte	.LASF36
+ 319 012e C100     		.sleb128 65
+ 320 0130 06       		.uleb128 0x6
+ 321 0131 5F000000 		.4byte	.LASF37
+ 322 0135 C200     		.sleb128 66
+ 323 0137 06       		.uleb128 0x6
+ 324 0138 4B010000 		.4byte	.LASF38
+ 325 013c C300     		.sleb128 67
+ 326 013e 06       		.uleb128 0x6
+ 327 013f 74070000 		.4byte	.LASF39
+ 328 0143 C400     		.sleb128 68
+ 329 0145 06       		.uleb128 0x6
+ 330 0146 36070000 		.4byte	.LASF40
+ 331 014a C500     		.sleb128 69
+ 332 014c 06       		.uleb128 0x6
+ 333 014d 17010000 		.4byte	.LASF41
+ 334 0151 C600     		.sleb128 70
+ 335 0153 06       		.uleb128 0x6
+ 336 0154 05080000 		.4byte	.LASF42
+ 337 0158 C700     		.sleb128 71
+ 338 015a 06       		.uleb128 0x6
+ 339 015b 44040000 		.4byte	.LASF43
+ 340 015f C800     		.sleb128 72
+ 341 0161 06       		.uleb128 0x6
+ 342 0162 39020000 		.4byte	.LASF44
+ 343 0166 C900     		.sleb128 73
+ 344 0168 06       		.uleb128 0x6
+ 345 0169 BA050000 		.4byte	.LASF45
+ 346 016d CA00     		.sleb128 74
+ 347 016f 06       		.uleb128 0x6
+ 348 0170 9D010000 		.4byte	.LASF46
+ 349 0174 CB00     		.sleb128 75
+ 350 0176 06       		.uleb128 0x6
+ 351 0177 2A040000 		.4byte	.LASF47
+ 352 017b CC00     		.sleb128 76
+ 353 017d 06       		.uleb128 0x6
+ 354 017e 52020000 		.4byte	.LASF48
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 10
 
 
- 298 0117 DF070000 		.4byte	.LASF33
- 299 011b 2B       		.sleb128 43
- 300 011c 06       		.uleb128 0x6
- 301 011d 79010000 		.4byte	.LASF34
- 302 0121 2C       		.sleb128 44
- 303 0122 06       		.uleb128 0x6
- 304 0123 B3000000 		.4byte	.LASF35
- 305 0127 C000     		.sleb128 64
- 306 0129 06       		.uleb128 0x6
- 307 012a 94040000 		.4byte	.LASF36
- 308 012e C100     		.sleb128 65
- 309 0130 06       		.uleb128 0x6
- 310 0131 5F000000 		.4byte	.LASF37
- 311 0135 C200     		.sleb128 66
- 312 0137 06       		.uleb128 0x6
- 313 0138 4B010000 		.4byte	.LASF38
- 314 013c C300     		.sleb128 67
- 315 013e 06       		.uleb128 0x6
- 316 013f 74070000 		.4byte	.LASF39
- 317 0143 C400     		.sleb128 68
- 318 0145 06       		.uleb128 0x6
- 319 0146 36070000 		.4byte	.LASF40
- 320 014a C500     		.sleb128 69
- 321 014c 06       		.uleb128 0x6
- 322 014d 17010000 		.4byte	.LASF41
- 323 0151 C600     		.sleb128 70
- 324 0153 06       		.uleb128 0x6
- 325 0154 05080000 		.4byte	.LASF42
- 326 0158 C700     		.sleb128 71
- 327 015a 06       		.uleb128 0x6
- 328 015b 44040000 		.4byte	.LASF43
- 329 015f C800     		.sleb128 72
- 330 0161 06       		.uleb128 0x6
- 331 0162 39020000 		.4byte	.LASF44
- 332 0166 C900     		.sleb128 73
- 333 0168 06       		.uleb128 0x6
- 334 0169 BA050000 		.4byte	.LASF45
- 335 016d CA00     		.sleb128 74
- 336 016f 06       		.uleb128 0x6
- 337 0170 9D010000 		.4byte	.LASF46
- 338 0174 CB00     		.sleb128 75
- 339 0176 06       		.uleb128 0x6
- 340 0177 2A040000 		.4byte	.LASF47
- 341 017b CC00     		.sleb128 76
- 342 017d 06       		.uleb128 0x6
- 343 017e 52020000 		.4byte	.LASF48
- 344 0182 CD00     		.sleb128 77
- 345 0184 06       		.uleb128 0x6
- 346 0185 E4000000 		.4byte	.LASF49
- 347 0189 CE00     		.sleb128 78
- 348 018b 06       		.uleb128 0x6
- 349 018c E9030000 		.4byte	.LASF50
- 350 0190 CF00     		.sleb128 79
- 351 0192 06       		.uleb128 0x6
- 352 0193 2D080000 		.4byte	.LASF51
- 353 0197 D000     		.sleb128 80
- 354 0199 06       		.uleb128 0x6
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 10
+ 355 0182 CD00     		.sleb128 77
+ 356 0184 06       		.uleb128 0x6
+ 357 0185 E4000000 		.4byte	.LASF49
+ 358 0189 CE00     		.sleb128 78
+ 359 018b 06       		.uleb128 0x6
+ 360 018c E9030000 		.4byte	.LASF50
+ 361 0190 CF00     		.sleb128 79
+ 362 0192 06       		.uleb128 0x6
+ 363 0193 2D080000 		.4byte	.LASF51
+ 364 0197 D000     		.sleb128 80
+ 365 0199 06       		.uleb128 0x6
+ 366 019a D8050000 		.4byte	.LASF52
+ 367 019e D100     		.sleb128 81
+ 368 01a0 06       		.uleb128 0x6
+ 369 01a1 EF020000 		.4byte	.LASF53
+ 370 01a5 D200     		.sleb128 82
+ 371 01a7 06       		.uleb128 0x6
+ 372 01a8 9A020000 		.4byte	.LASF54
+ 373 01ac D300     		.sleb128 83
+ 374 01ae 06       		.uleb128 0x6
+ 375 01af BC010000 		.4byte	.LASF55
+ 376 01b3 D400     		.sleb128 84
+ 377 01b5 06       		.uleb128 0x6
+ 378 01b6 B0080000 		.4byte	.LASF56
+ 379 01ba D500     		.sleb128 85
+ 380 01bc 06       		.uleb128 0x6
+ 381 01bd B5030000 		.4byte	.LASF57
+ 382 01c1 F000     		.sleb128 112
+ 383 01c3 06       		.uleb128 0x6
+ 384 01c4 EC060000 		.4byte	.LASF58
+ 385 01c8 F100     		.sleb128 113
+ 386 01ca 06       		.uleb128 0x6
+ 387 01cb 6D050000 		.4byte	.LASF59
+ 388 01cf F200     		.sleb128 114
+ 389 01d1 06       		.uleb128 0x6
+ 390 01d2 F4010000 		.4byte	.LASF60
+ 391 01d6 F300     		.sleb128 115
+ 392 01d8 06       		.uleb128 0x6
+ 393 01d9 77030000 		.4byte	.LASF61
+ 394 01dd F400     		.sleb128 116
+ 395 01df 06       		.uleb128 0x6
+ 396 01e0 D8040000 		.4byte	.LASF62
+ 397 01e4 F500     		.sleb128 117
+ 398 01e6 06       		.uleb128 0x6
+ 399 01e7 12020000 		.4byte	.LASF63
+ 400 01eb F600     		.sleb128 118
+ 401 01ed 06       		.uleb128 0x6
+ 402 01ee CD060000 		.4byte	.LASF64
+ 403 01f2 F700     		.sleb128 119
+ 404 01f4 06       		.uleb128 0x6
+ 405 01f5 1C060000 		.4byte	.LASF65
+ 406 01f9 F800     		.sleb128 120
+ 407 01fb 06       		.uleb128 0x6
+ 408 01fc 54060000 		.4byte	.LASF66
+ 409 0200 F900     		.sleb128 121
+ 410 0202 06       		.uleb128 0x6
+ 411 0203 BB070000 		.4byte	.LASF67
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 11
 
 
- 355 019a D8050000 		.4byte	.LASF52
- 356 019e D100     		.sleb128 81
- 357 01a0 06       		.uleb128 0x6
- 358 01a1 EF020000 		.4byte	.LASF53
- 359 01a5 D200     		.sleb128 82
- 360 01a7 06       		.uleb128 0x6
- 361 01a8 9A020000 		.4byte	.LASF54
- 362 01ac D300     		.sleb128 83
- 363 01ae 06       		.uleb128 0x6
- 364 01af BC010000 		.4byte	.LASF55
- 365 01b3 D400     		.sleb128 84
- 366 01b5 06       		.uleb128 0x6
- 367 01b6 B0080000 		.4byte	.LASF56
- 368 01ba D500     		.sleb128 85
- 369 01bc 06       		.uleb128 0x6
- 370 01bd B5030000 		.4byte	.LASF57
- 371 01c1 F000     		.sleb128 112
- 372 01c3 06       		.uleb128 0x6
- 373 01c4 EC060000 		.4byte	.LASF58
- 374 01c8 F100     		.sleb128 113
- 375 01ca 06       		.uleb128 0x6
- 376 01cb 6D050000 		.4byte	.LASF59
- 377 01cf F200     		.sleb128 114
- 378 01d1 06       		.uleb128 0x6
- 379 01d2 F4010000 		.4byte	.LASF60
- 380 01d6 F300     		.sleb128 115
- 381 01d8 06       		.uleb128 0x6
- 382 01d9 77030000 		.4byte	.LASF61
- 383 01dd F400     		.sleb128 116
- 384 01df 06       		.uleb128 0x6
- 385 01e0 D8040000 		.4byte	.LASF62
- 386 01e4 F500     		.sleb128 117
- 387 01e6 06       		.uleb128 0x6
- 388 01e7 12020000 		.4byte	.LASF63
- 389 01eb F600     		.sleb128 118
- 390 01ed 06       		.uleb128 0x6
- 391 01ee CD060000 		.4byte	.LASF64
- 392 01f2 F700     		.sleb128 119
- 393 01f4 06       		.uleb128 0x6
- 394 01f5 1C060000 		.4byte	.LASF65
- 395 01f9 F800     		.sleb128 120
- 396 01fb 06       		.uleb128 0x6
- 397 01fc 54060000 		.4byte	.LASF66
- 398 0200 F900     		.sleb128 121
- 399 0202 06       		.uleb128 0x6
- 400 0203 BB070000 		.4byte	.LASF67
- 401 0207 FA00     		.sleb128 122
- 402 0209 06       		.uleb128 0x6
- 403 020a FE050000 		.4byte	.LASF68
- 404 020e FA01     		.sleb128 250
- 405 0210 06       		.uleb128 0x6
- 406 0211 95030000 		.4byte	.LASF69
- 407 0215 FF01     		.sleb128 255
- 408 0217 00       		.byte	0
- 409 0218 05       		.uleb128 0x5
- 410 0219 01       		.byte	0x1
- 411 021a 04       		.byte	0x4
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 11
+ 412 0207 FA00     		.sleb128 122
+ 413 0209 06       		.uleb128 0x6
+ 414 020a FE050000 		.4byte	.LASF68
+ 415 020e FA01     		.sleb128 250
+ 416 0210 06       		.uleb128 0x6
+ 417 0211 95030000 		.4byte	.LASF69
+ 418 0215 FF01     		.sleb128 255
+ 419 0217 00       		.byte	0
+ 420 0218 05       		.uleb128 0x5
+ 421 0219 01       		.byte	0x1
+ 422 021a 04       		.byte	0x4
+ 423 021b 22       		.byte	0x22
+ 424 021c 39020000 		.4byte	0x239
+ 425 0220 06       		.uleb128 0x6
+ 426 0221 69030000 		.4byte	.LASF70
+ 427 0225 00       		.sleb128 0
+ 428 0226 06       		.uleb128 0x6
+ 429 0227 E1020000 		.4byte	.LASF71
+ 430 022b 01       		.sleb128 1
+ 431 022c 06       		.uleb128 0x6
+ 432 022d 10040000 		.4byte	.LASF72
+ 433 0231 02       		.sleb128 2
+ 434 0232 06       		.uleb128 0x6
+ 435 0233 86000000 		.4byte	.LASF73
+ 436 0237 03       		.sleb128 3
+ 437 0238 00       		.byte	0
+ 438 0239 05       		.uleb128 0x5
+ 439 023a 01       		.byte	0x1
+ 440 023b 05       		.byte	0x5
+ 441 023c 1D       		.byte	0x1d
+ 442 023d 7E020000 		.4byte	0x27e
+ 443 0241 06       		.uleb128 0x6
+ 444 0242 64090000 		.4byte	.LASF74
+ 445 0246 00       		.sleb128 0
+ 446 0247 06       		.uleb128 0x6
+ 447 0248 2C030000 		.4byte	.LASF75
+ 448 024c 01       		.sleb128 1
+ 449 024d 06       		.uleb128 0x6
+ 450 024e 9B000000 		.4byte	.LASF76
+ 451 0252 02       		.sleb128 2
+ 452 0253 06       		.uleb128 0x6
+ 453 0254 92070000 		.4byte	.LASF77
+ 454 0258 03       		.sleb128 3
+ 455 0259 06       		.uleb128 0x6
+ 456 025a 5D070000 		.4byte	.LASF78
+ 457 025e 04       		.sleb128 4
+ 458 025f 06       		.uleb128 0x6
+ 459 0260 CD000000 		.4byte	.LASF79
+ 460 0264 05       		.sleb128 5
+ 461 0265 06       		.uleb128 0x6
+ 462 0266 50090000 		.4byte	.LASF80
+ 463 026a 06       		.sleb128 6
+ 464 026b 06       		.uleb128 0x6
+ 465 026c A2050000 		.4byte	.LASF81
+ 466 0270 07       		.sleb128 7
+ 467 0271 06       		.uleb128 0x6
+ 468 0272 80090000 		.4byte	.LASF82
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 12
 
 
- 412 021b 22       		.byte	0x22
- 413 021c 39020000 		.4byte	0x239
- 414 0220 06       		.uleb128 0x6
- 415 0221 69030000 		.4byte	.LASF70
- 416 0225 00       		.sleb128 0
- 417 0226 06       		.uleb128 0x6
- 418 0227 E1020000 		.4byte	.LASF71
- 419 022b 01       		.sleb128 1
- 420 022c 06       		.uleb128 0x6
- 421 022d 10040000 		.4byte	.LASF72
- 422 0231 02       		.sleb128 2
- 423 0232 06       		.uleb128 0x6
- 424 0233 86000000 		.4byte	.LASF73
- 425 0237 03       		.sleb128 3
- 426 0238 00       		.byte	0
- 427 0239 05       		.uleb128 0x5
- 428 023a 01       		.byte	0x1
- 429 023b 05       		.byte	0x5
- 430 023c 1D       		.byte	0x1d
- 431 023d 7E020000 		.4byte	0x27e
- 432 0241 06       		.uleb128 0x6
- 433 0242 64090000 		.4byte	.LASF74
- 434 0246 00       		.sleb128 0
- 435 0247 06       		.uleb128 0x6
- 436 0248 2C030000 		.4byte	.LASF75
- 437 024c 01       		.sleb128 1
- 438 024d 06       		.uleb128 0x6
- 439 024e 9B000000 		.4byte	.LASF76
- 440 0252 02       		.sleb128 2
- 441 0253 06       		.uleb128 0x6
- 442 0254 92070000 		.4byte	.LASF77
- 443 0258 03       		.sleb128 3
- 444 0259 06       		.uleb128 0x6
- 445 025a 5D070000 		.4byte	.LASF78
- 446 025e 04       		.sleb128 4
- 447 025f 06       		.uleb128 0x6
- 448 0260 CD000000 		.4byte	.LASF79
- 449 0264 05       		.sleb128 5
- 450 0265 06       		.uleb128 0x6
- 451 0266 50090000 		.4byte	.LASF80
- 452 026a 06       		.sleb128 6
- 453 026b 06       		.uleb128 0x6
- 454 026c A2050000 		.4byte	.LASF81
- 455 0270 07       		.sleb128 7
- 456 0271 06       		.uleb128 0x6
- 457 0272 80090000 		.4byte	.LASF82
- 458 0276 08       		.sleb128 8
- 459 0277 06       		.uleb128 0x6
- 460 0278 77060000 		.4byte	.LASF83
- 461 027c 09       		.sleb128 9
- 462 027d 00       		.byte	0
- 463 027e 07       		.uleb128 0x7
- 464 027f 24000000 		.4byte	.LASF94
- 465 0283 01       		.byte	0x1
- 466 0284 5F       		.byte	0x5f
- 467 0285 00000000 		.4byte	.LFB35
- 468 0289 9C000000 		.4byte	.LFE35-.LFB35
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 12
+ 469 0276 08       		.sleb128 8
+ 470 0277 06       		.uleb128 0x6
+ 471 0278 77060000 		.4byte	.LASF83
+ 472 027c 09       		.sleb128 9
+ 473 027d 00       		.byte	0
+ 474 027e 07       		.uleb128 0x7
+ 475 027f 24000000 		.4byte	.LASF94
+ 476 0283 01       		.byte	0x1
+ 477 0284 5F       		.byte	0x5f
+ 478 0285 00000000 		.4byte	.LFB35
+ 479 0289 B4000000 		.4byte	.LFE35-.LFB35
+ 480 028d 01       		.uleb128 0x1
+ 481 028e 9C       		.byte	0x9c
+ 482 028f FF020000 		.4byte	0x2ff
+ 483 0293 08       		.uleb128 0x8
+ 484 0294 08040000 		.4byte	.LASF84
+ 485 0298 01       		.byte	0x1
+ 486 0299 61       		.byte	0x61
+ 487 029a FF020000 		.4byte	0x2ff
+ 488 029e 05       		.uleb128 0x5
+ 489 029f 03       		.byte	0x3
+ 490 02a0 00000000 		.4byte	newBeat.6540
+ 491 02a4 08       		.uleb128 0x8
+ 492 02a5 69010000 		.4byte	.LASF85
+ 493 02a9 01       		.byte	0x1
+ 494 02aa 62       		.byte	0x62
+ 495 02ab FF020000 		.4byte	0x2ff
+ 496 02af 05       		.uleb128 0x5
+ 497 02b0 03       		.byte	0x3
+ 498 02b1 01000000 		.4byte	firstTime.6541
+ 499 02b5 08       		.uleb128 0x8
+ 500 02b6 57050000 		.4byte	.LASF86
+ 501 02ba 01       		.byte	0x1
+ 502 02bb 63       		.byte	0x63
+ 503 02bc 76000000 		.4byte	0x76
+ 504 02c0 05       		.uleb128 0x5
+ 505 02c1 03       		.byte	0x3
+ 506 02c2 04000000 		.4byte	previousBeatTime.6542
+ 507 02c6 08       		.uleb128 0x8
+ 508 02c7 A9030000 		.4byte	.LASF87
+ 509 02cb 01       		.byte	0x1
+ 510 02cc 64       		.byte	0x64
+ 511 02cd 76000000 		.4byte	0x76
+ 512 02d1 05       		.uleb128 0x5
+ 513 02d2 03       		.byte	0x3
+ 514 02d3 08000000 		.4byte	newBeatTime.6543
+ 515 02d7 08       		.uleb128 0x8
+ 516 02d8 FE070000 		.4byte	.LASF88
+ 517 02dc 01       		.byte	0x1
+ 518 02dd 65       		.byte	0x65
+ 519 02de 81000000 		.4byte	0x81
+ 520 02e2 02       		.uleb128 0x2
+ 521 02e3 91       		.byte	0x91
+ 522 02e4 6A       		.sleb128 -22
+ 523 02e5 09       		.uleb128 0x9
+ 524 02e6 BB020000 		.4byte	.LASF95
+ 525 02ea 01       		.byte	0x1
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 13
 
 
- 469 028d 01       		.uleb128 0x1
- 470 028e 9C       		.byte	0x9c
- 471 028f FF020000 		.4byte	0x2ff
- 472 0293 08       		.uleb128 0x8
- 473 0294 08040000 		.4byte	.LASF84
- 474 0298 01       		.byte	0x1
- 475 0299 61       		.byte	0x61
- 476 029a FF020000 		.4byte	0x2ff
- 477 029e 05       		.uleb128 0x5
- 478 029f 03       		.byte	0x3
- 479 02a0 00000000 		.4byte	newBeat.6495
- 480 02a4 08       		.uleb128 0x8
- 481 02a5 69010000 		.4byte	.LASF85
- 482 02a9 01       		.byte	0x1
- 483 02aa 62       		.byte	0x62
- 484 02ab FF020000 		.4byte	0x2ff
- 485 02af 05       		.uleb128 0x5
- 486 02b0 03       		.byte	0x3
- 487 02b1 01000000 		.4byte	firstTime.6496
- 488 02b5 08       		.uleb128 0x8
- 489 02b6 57050000 		.4byte	.LASF86
- 490 02ba 01       		.byte	0x1
- 491 02bb 63       		.byte	0x63
- 492 02bc 76000000 		.4byte	0x76
- 493 02c0 05       		.uleb128 0x5
- 494 02c1 03       		.byte	0x3
- 495 02c2 04000000 		.4byte	previousBeatTime.6497
- 496 02c6 08       		.uleb128 0x8
- 497 02c7 A9030000 		.4byte	.LASF87
- 498 02cb 01       		.byte	0x1
- 499 02cc 64       		.byte	0x64
- 500 02cd 76000000 		.4byte	0x76
- 501 02d1 05       		.uleb128 0x5
- 502 02d2 03       		.byte	0x3
- 503 02d3 08000000 		.4byte	newBeatTime.6498
- 504 02d7 08       		.uleb128 0x8
- 505 02d8 FE070000 		.4byte	.LASF88
- 506 02dc 01       		.byte	0x1
- 507 02dd 65       		.byte	0x65
- 508 02de 81000000 		.4byte	0x81
- 509 02e2 02       		.uleb128 0x2
- 510 02e3 91       		.byte	0x91
- 511 02e4 72       		.sleb128 -14
- 512 02e5 09       		.uleb128 0x9
- 513 02e6 BB020000 		.4byte	.LASF95
- 514 02ea 01       		.byte	0x1
- 515 02eb 65       		.byte	0x65
- 516 02ec 81000000 		.4byte	0x81
- 517 02f0 08       		.uleb128 0x8
- 518 02f1 46060000 		.4byte	.LASF89
- 519 02f5 01       		.byte	0x1
- 520 02f6 66       		.byte	0x66
- 521 02f7 76000000 		.4byte	0x76
- 522 02fb 02       		.uleb128 0x2
- 523 02fc 91       		.byte	0x91
- 524 02fd 74       		.sleb128 -12
- 525 02fe 00       		.byte	0
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 13
+ 526 02eb 65       		.byte	0x65
+ 527 02ec 81000000 		.4byte	0x81
+ 528 02f0 08       		.uleb128 0x8
+ 529 02f1 46060000 		.4byte	.LASF89
+ 530 02f5 01       		.byte	0x1
+ 531 02f6 66       		.byte	0x66
+ 532 02f7 76000000 		.4byte	0x76
+ 533 02fb 02       		.uleb128 0x2
+ 534 02fc 91       		.byte	0x91
+ 535 02fd 6C       		.sleb128 -20
+ 536 02fe 00       		.byte	0
+ 537 02ff 02       		.uleb128 0x2
+ 538 0300 01       		.byte	0x1
+ 539 0301 02       		.byte	0x2
+ 540 0302 9C050000 		.4byte	.LASF90
+ 541 0306 0A       		.uleb128 0xa
+ 542 0307 23080000 		.4byte	.LASF96
+ 543 030b 01       		.byte	0x1
+ 544 030c 3F       		.byte	0x3f
+ 545 030d 6B000000 		.4byte	0x6b
+ 546 0311 05       		.uleb128 0x5
+ 547 0312 03       		.byte	0x3
+ 548 0313 00000000 		.4byte	heartRate
+ 549 0317 00       		.byte	0
+ 550              		.section	.debug_abbrev,"",%progbits
+ 551              	.Ldebug_abbrev0:
+ 552 0000 01       		.uleb128 0x1
+ 553 0001 11       		.uleb128 0x11
+ 554 0002 01       		.byte	0x1
+ 555 0003 25       		.uleb128 0x25
+ 556 0004 0E       		.uleb128 0xe
+ 557 0005 13       		.uleb128 0x13
+ 558 0006 0B       		.uleb128 0xb
+ 559 0007 03       		.uleb128 0x3
+ 560 0008 0E       		.uleb128 0xe
+ 561 0009 1B       		.uleb128 0x1b
+ 562 000a 0E       		.uleb128 0xe
+ 563 000b 55       		.uleb128 0x55
+ 564 000c 17       		.uleb128 0x17
+ 565 000d 11       		.uleb128 0x11
+ 566 000e 01       		.uleb128 0x1
+ 567 000f 10       		.uleb128 0x10
+ 568 0010 17       		.uleb128 0x17
+ 569 0011 00       		.byte	0
+ 570 0012 00       		.byte	0
+ 571 0013 02       		.uleb128 0x2
+ 572 0014 24       		.uleb128 0x24
+ 573 0015 00       		.byte	0
+ 574 0016 0B       		.uleb128 0xb
+ 575 0017 0B       		.uleb128 0xb
+ 576 0018 3E       		.uleb128 0x3e
+ 577 0019 0B       		.uleb128 0xb
+ 578 001a 03       		.uleb128 0x3
+ 579 001b 0E       		.uleb128 0xe
+ 580 001c 00       		.byte	0
+ 581 001d 00       		.byte	0
+ 582 001e 03       		.uleb128 0x3
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 14
 
 
- 526 02ff 02       		.uleb128 0x2
- 527 0300 01       		.byte	0x1
- 528 0301 02       		.byte	0x2
- 529 0302 9C050000 		.4byte	.LASF90
- 530 0306 0A       		.uleb128 0xa
- 531 0307 23080000 		.4byte	.LASF96
- 532 030b 01       		.byte	0x1
- 533 030c 3F       		.byte	0x3f
- 534 030d 6B000000 		.4byte	0x6b
- 535 0311 05       		.uleb128 0x5
- 536 0312 03       		.byte	0x3
- 537 0313 00000000 		.4byte	heartRate
- 538 0317 00       		.byte	0
- 539              		.section	.debug_abbrev,"",%progbits
- 540              	.Ldebug_abbrev0:
- 541 0000 01       		.uleb128 0x1
- 542 0001 11       		.uleb128 0x11
- 543 0002 01       		.byte	0x1
- 544 0003 25       		.uleb128 0x25
- 545 0004 0E       		.uleb128 0xe
- 546 0005 13       		.uleb128 0x13
- 547 0006 0B       		.uleb128 0xb
- 548 0007 03       		.uleb128 0x3
- 549 0008 0E       		.uleb128 0xe
- 550 0009 1B       		.uleb128 0x1b
- 551 000a 0E       		.uleb128 0xe
- 552 000b 55       		.uleb128 0x55
- 553 000c 17       		.uleb128 0x17
- 554 000d 11       		.uleb128 0x11
- 555 000e 01       		.uleb128 0x1
- 556 000f 10       		.uleb128 0x10
- 557 0010 17       		.uleb128 0x17
- 558 0011 00       		.byte	0
- 559 0012 00       		.byte	0
- 560 0013 02       		.uleb128 0x2
- 561 0014 24       		.uleb128 0x24
- 562 0015 00       		.byte	0
- 563 0016 0B       		.uleb128 0xb
- 564 0017 0B       		.uleb128 0xb
- 565 0018 3E       		.uleb128 0x3e
- 566 0019 0B       		.uleb128 0xb
- 567 001a 03       		.uleb128 0x3
- 568 001b 0E       		.uleb128 0xe
- 569 001c 00       		.byte	0
- 570 001d 00       		.byte	0
- 571 001e 03       		.uleb128 0x3
- 572 001f 24       		.uleb128 0x24
- 573 0020 00       		.byte	0
- 574 0021 0B       		.uleb128 0xb
- 575 0022 0B       		.uleb128 0xb
- 576 0023 3E       		.uleb128 0x3e
- 577 0024 0B       		.uleb128 0xb
- 578 0025 03       		.uleb128 0x3
- 579 0026 08       		.uleb128 0x8
- 580 0027 00       		.byte	0
- 581 0028 00       		.byte	0
- 582 0029 04       		.uleb128 0x4
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 14
+ 583 001f 24       		.uleb128 0x24
+ 584 0020 00       		.byte	0
+ 585 0021 0B       		.uleb128 0xb
+ 586 0022 0B       		.uleb128 0xb
+ 587 0023 3E       		.uleb128 0x3e
+ 588 0024 0B       		.uleb128 0xb
+ 589 0025 03       		.uleb128 0x3
+ 590 0026 08       		.uleb128 0x8
+ 591 0027 00       		.byte	0
+ 592 0028 00       		.byte	0
+ 593 0029 04       		.uleb128 0x4
+ 594 002a 16       		.uleb128 0x16
+ 595 002b 00       		.byte	0
+ 596 002c 03       		.uleb128 0x3
+ 597 002d 0E       		.uleb128 0xe
+ 598 002e 3A       		.uleb128 0x3a
+ 599 002f 0B       		.uleb128 0xb
+ 600 0030 3B       		.uleb128 0x3b
+ 601 0031 0B       		.uleb128 0xb
+ 602 0032 49       		.uleb128 0x49
+ 603 0033 13       		.uleb128 0x13
+ 604 0034 00       		.byte	0
+ 605 0035 00       		.byte	0
+ 606 0036 05       		.uleb128 0x5
+ 607 0037 04       		.uleb128 0x4
+ 608 0038 01       		.byte	0x1
+ 609 0039 0B       		.uleb128 0xb
+ 610 003a 0B       		.uleb128 0xb
+ 611 003b 3A       		.uleb128 0x3a
+ 612 003c 0B       		.uleb128 0xb
+ 613 003d 3B       		.uleb128 0x3b
+ 614 003e 0B       		.uleb128 0xb
+ 615 003f 01       		.uleb128 0x1
+ 616 0040 13       		.uleb128 0x13
+ 617 0041 00       		.byte	0
+ 618 0042 00       		.byte	0
+ 619 0043 06       		.uleb128 0x6
+ 620 0044 28       		.uleb128 0x28
+ 621 0045 00       		.byte	0
+ 622 0046 03       		.uleb128 0x3
+ 623 0047 0E       		.uleb128 0xe
+ 624 0048 1C       		.uleb128 0x1c
+ 625 0049 0D       		.uleb128 0xd
+ 626 004a 00       		.byte	0
+ 627 004b 00       		.byte	0
+ 628 004c 07       		.uleb128 0x7
+ 629 004d 2E       		.uleb128 0x2e
+ 630 004e 01       		.byte	0x1
+ 631 004f 3F       		.uleb128 0x3f
+ 632 0050 19       		.uleb128 0x19
+ 633 0051 03       		.uleb128 0x3
+ 634 0052 0E       		.uleb128 0xe
+ 635 0053 3A       		.uleb128 0x3a
+ 636 0054 0B       		.uleb128 0xb
+ 637 0055 3B       		.uleb128 0x3b
+ 638 0056 0B       		.uleb128 0xb
+ 639 0057 27       		.uleb128 0x27
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 15
 
 
- 583 002a 16       		.uleb128 0x16
- 584 002b 00       		.byte	0
- 585 002c 03       		.uleb128 0x3
- 586 002d 0E       		.uleb128 0xe
- 587 002e 3A       		.uleb128 0x3a
- 588 002f 0B       		.uleb128 0xb
- 589 0030 3B       		.uleb128 0x3b
- 590 0031 0B       		.uleb128 0xb
- 591 0032 49       		.uleb128 0x49
- 592 0033 13       		.uleb128 0x13
- 593 0034 00       		.byte	0
- 594 0035 00       		.byte	0
- 595 0036 05       		.uleb128 0x5
- 596 0037 04       		.uleb128 0x4
- 597 0038 01       		.byte	0x1
- 598 0039 0B       		.uleb128 0xb
- 599 003a 0B       		.uleb128 0xb
- 600 003b 3A       		.uleb128 0x3a
- 601 003c 0B       		.uleb128 0xb
- 602 003d 3B       		.uleb128 0x3b
- 603 003e 0B       		.uleb128 0xb
- 604 003f 01       		.uleb128 0x1
- 605 0040 13       		.uleb128 0x13
- 606 0041 00       		.byte	0
- 607 0042 00       		.byte	0
- 608 0043 06       		.uleb128 0x6
- 609 0044 28       		.uleb128 0x28
- 610 0045 00       		.byte	0
- 611 0046 03       		.uleb128 0x3
- 612 0047 0E       		.uleb128 0xe
- 613 0048 1C       		.uleb128 0x1c
- 614 0049 0D       		.uleb128 0xd
- 615 004a 00       		.byte	0
- 616 004b 00       		.byte	0
- 617 004c 07       		.uleb128 0x7
- 618 004d 2E       		.uleb128 0x2e
- 619 004e 01       		.byte	0x1
- 620 004f 3F       		.uleb128 0x3f
- 621 0050 19       		.uleb128 0x19
- 622 0051 03       		.uleb128 0x3
- 623 0052 0E       		.uleb128 0xe
- 624 0053 3A       		.uleb128 0x3a
- 625 0054 0B       		.uleb128 0xb
- 626 0055 3B       		.uleb128 0x3b
- 627 0056 0B       		.uleb128 0xb
- 628 0057 27       		.uleb128 0x27
- 629 0058 19       		.uleb128 0x19
- 630 0059 11       		.uleb128 0x11
- 631 005a 01       		.uleb128 0x1
- 632 005b 12       		.uleb128 0x12
- 633 005c 06       		.uleb128 0x6
- 634 005d 40       		.uleb128 0x40
- 635 005e 18       		.uleb128 0x18
- 636 005f 9642     		.uleb128 0x2116
- 637 0061 19       		.uleb128 0x19
- 638 0062 01       		.uleb128 0x1
- 639 0063 13       		.uleb128 0x13
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 15
+ 640 0058 19       		.uleb128 0x19
+ 641 0059 11       		.uleb128 0x11
+ 642 005a 01       		.uleb128 0x1
+ 643 005b 12       		.uleb128 0x12
+ 644 005c 06       		.uleb128 0x6
+ 645 005d 40       		.uleb128 0x40
+ 646 005e 18       		.uleb128 0x18
+ 647 005f 9642     		.uleb128 0x2116
+ 648 0061 19       		.uleb128 0x19
+ 649 0062 01       		.uleb128 0x1
+ 650 0063 13       		.uleb128 0x13
+ 651 0064 00       		.byte	0
+ 652 0065 00       		.byte	0
+ 653 0066 08       		.uleb128 0x8
+ 654 0067 34       		.uleb128 0x34
+ 655 0068 00       		.byte	0
+ 656 0069 03       		.uleb128 0x3
+ 657 006a 0E       		.uleb128 0xe
+ 658 006b 3A       		.uleb128 0x3a
+ 659 006c 0B       		.uleb128 0xb
+ 660 006d 3B       		.uleb128 0x3b
+ 661 006e 0B       		.uleb128 0xb
+ 662 006f 49       		.uleb128 0x49
+ 663 0070 13       		.uleb128 0x13
+ 664 0071 02       		.uleb128 0x2
+ 665 0072 18       		.uleb128 0x18
+ 666 0073 00       		.byte	0
+ 667 0074 00       		.byte	0
+ 668 0075 09       		.uleb128 0x9
+ 669 0076 34       		.uleb128 0x34
+ 670 0077 00       		.byte	0
+ 671 0078 03       		.uleb128 0x3
+ 672 0079 0E       		.uleb128 0xe
+ 673 007a 3A       		.uleb128 0x3a
+ 674 007b 0B       		.uleb128 0xb
+ 675 007c 3B       		.uleb128 0x3b
+ 676 007d 0B       		.uleb128 0xb
+ 677 007e 49       		.uleb128 0x49
+ 678 007f 13       		.uleb128 0x13
+ 679 0080 00       		.byte	0
+ 680 0081 00       		.byte	0
+ 681 0082 0A       		.uleb128 0xa
+ 682 0083 34       		.uleb128 0x34
+ 683 0084 00       		.byte	0
+ 684 0085 03       		.uleb128 0x3
+ 685 0086 0E       		.uleb128 0xe
+ 686 0087 3A       		.uleb128 0x3a
+ 687 0088 0B       		.uleb128 0xb
+ 688 0089 3B       		.uleb128 0x3b
+ 689 008a 0B       		.uleb128 0xb
+ 690 008b 49       		.uleb128 0x49
+ 691 008c 13       		.uleb128 0x13
+ 692 008d 3F       		.uleb128 0x3f
+ 693 008e 19       		.uleb128 0x19
+ 694 008f 02       		.uleb128 0x2
+ 695 0090 18       		.uleb128 0x18
+ 696 0091 00       		.byte	0
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 16
 
 
- 640 0064 00       		.byte	0
- 641 0065 00       		.byte	0
- 642 0066 08       		.uleb128 0x8
- 643 0067 34       		.uleb128 0x34
- 644 0068 00       		.byte	0
- 645 0069 03       		.uleb128 0x3
- 646 006a 0E       		.uleb128 0xe
- 647 006b 3A       		.uleb128 0x3a
- 648 006c 0B       		.uleb128 0xb
- 649 006d 3B       		.uleb128 0x3b
- 650 006e 0B       		.uleb128 0xb
- 651 006f 49       		.uleb128 0x49
- 652 0070 13       		.uleb128 0x13
- 653 0071 02       		.uleb128 0x2
- 654 0072 18       		.uleb128 0x18
- 655 0073 00       		.byte	0
- 656 0074 00       		.byte	0
- 657 0075 09       		.uleb128 0x9
- 658 0076 34       		.uleb128 0x34
- 659 0077 00       		.byte	0
- 660 0078 03       		.uleb128 0x3
- 661 0079 0E       		.uleb128 0xe
- 662 007a 3A       		.uleb128 0x3a
- 663 007b 0B       		.uleb128 0xb
- 664 007c 3B       		.uleb128 0x3b
- 665 007d 0B       		.uleb128 0xb
- 666 007e 49       		.uleb128 0x49
- 667 007f 13       		.uleb128 0x13
- 668 0080 00       		.byte	0
- 669 0081 00       		.byte	0
- 670 0082 0A       		.uleb128 0xa
- 671 0083 34       		.uleb128 0x34
- 672 0084 00       		.byte	0
- 673 0085 03       		.uleb128 0x3
- 674 0086 0E       		.uleb128 0xe
- 675 0087 3A       		.uleb128 0x3a
- 676 0088 0B       		.uleb128 0xb
- 677 0089 3B       		.uleb128 0x3b
- 678 008a 0B       		.uleb128 0xb
- 679 008b 49       		.uleb128 0x49
- 680 008c 13       		.uleb128 0x13
- 681 008d 3F       		.uleb128 0x3f
- 682 008e 19       		.uleb128 0x19
- 683 008f 02       		.uleb128 0x2
- 684 0090 18       		.uleb128 0x18
- 685 0091 00       		.byte	0
- 686 0092 00       		.byte	0
- 687 0093 00       		.byte	0
- 688              		.section	.debug_aranges,"",%progbits
- 689 0000 1C000000 		.4byte	0x1c
- 690 0004 0200     		.2byte	0x2
- 691 0006 00000000 		.4byte	.Ldebug_info0
- 692 000a 04       		.byte	0x4
- 693 000b 00       		.byte	0
- 694 000c 0000     		.2byte	0
- 695 000e 0000     		.2byte	0
- 696 0010 00000000 		.4byte	.LFB35
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 16
+ 697 0092 00       		.byte	0
+ 698 0093 00       		.byte	0
+ 699              		.section	.debug_aranges,"",%progbits
+ 700 0000 1C000000 		.4byte	0x1c
+ 701 0004 0200     		.2byte	0x2
+ 702 0006 00000000 		.4byte	.Ldebug_info0
+ 703 000a 04       		.byte	0x4
+ 704 000b 00       		.byte	0
+ 705 000c 0000     		.2byte	0
+ 706 000e 0000     		.2byte	0
+ 707 0010 00000000 		.4byte	.LFB35
+ 708 0014 B4000000 		.4byte	.LFE35-.LFB35
+ 709 0018 00000000 		.4byte	0
+ 710 001c 00000000 		.4byte	0
+ 711              		.section	.debug_ranges,"",%progbits
+ 712              	.Ldebug_ranges0:
+ 713 0000 00000000 		.4byte	.LFB35
+ 714 0004 B4000000 		.4byte	.LFE35
+ 715 0008 00000000 		.4byte	0
+ 716 000c 00000000 		.4byte	0
+ 717              		.section	.debug_line,"",%progbits
+ 718              	.Ldebug_line0:
+ 719 0000 B0000000 		.section	.debug_str,"MS",%progbits,1
+ 719      02008300 
+ 719      00000201 
+ 719      FB0E0D00 
+ 719      01010101 
+ 720              	.LASF24:
+ 721 0000 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
+ 721      455F4556 
+ 721      545F4741 
+ 721      505F5041 
+ 721      53534B45 
+ 722              	.LASF94:
+ 723 0024 50726F63 		.ascii	"ProcessHeartRateSignal\000"
+ 723      65737348 
+ 723      65617274 
+ 723      52617465 
+ 723      5369676E 
+ 724              	.LASF2:
+ 725 003b 73686F72 		.ascii	"short int\000"
+ 725      7420696E 
+ 725      7400
+ 726              	.LASF27:
+ 727 0045 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
+ 727      455F4556 
+ 727      545F4741 
+ 727      505F4155 
+ 727      54485F46 
+ 728              	.LASF37:
+ 729 005f 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
+ 729      455F4556 
+ 729      545F4741 
+ 729      54545F44 
+ 729      4953434F 
+ 730              	.LASF15:
+ 731 007d 73697A65 		.ascii	"sizetype\000"
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 17
 
 
- 697 0014 9C000000 		.4byte	.LFE35-.LFB35
- 698 0018 00000000 		.4byte	0
- 699 001c 00000000 		.4byte	0
- 700              		.section	.debug_ranges,"",%progbits
- 701              	.Ldebug_ranges0:
- 702 0000 00000000 		.4byte	.LFB35
- 703 0004 9C000000 		.4byte	.LFE35
- 704 0008 00000000 		.4byte	0
- 705 000c 00000000 		.4byte	0
- 706              		.section	.debug_line,"",%progbits
- 707              	.Ldebug_line0:
- 708 0000 AF000000 		.section	.debug_str,"MS",%progbits,1
- 708      02008300 
- 708      00000201 
- 708      FB0E0D00 
- 708      01010101 
- 709              	.LASF24:
- 710 0000 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_ENTRY_REQUEST\000"
- 710      455F4556 
- 710      545F4741 
- 710      505F5041 
- 710      53534B45 
- 711              	.LASF94:
- 712 0024 50726F63 		.ascii	"ProcessHeartRateSignal\000"
- 712      65737348 
- 712      65617274 
- 712      52617465 
- 712      5369676E 
- 713              	.LASF2:
- 714 003b 73686F72 		.ascii	"short int\000"
- 714      7420696E 
- 714      7400
- 715              	.LASF27:
- 716 0045 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_FAILED\000"
- 716      455F4556 
- 716      545F4741 
- 716      505F4155 
- 716      54485F46 
- 717              	.LASF37:
- 718 005f 4359424C 		.ascii	"CYBLE_EVT_GATT_DISCONNECT_IND\000"
- 718      455F4556 
- 718      545F4741 
- 718      54545F44 
- 718      4953434F 
- 719              	.LASF15:
- 720 007d 73697A65 		.ascii	"sizetype\000"
- 720      74797065 
- 720      00
- 721              	.LASF73:
- 722 0086 4359424C 		.ascii	"CYBLE_HRS_CHAR_COUNT\000"
- 722      455F4852 
- 722      535F4348 
- 722      41525F43 
- 722      4F554E54 
- 723              	.LASF76:
- 724 009b 4359424C 		.ascii	"CYBLE_DIS_SERIAL_NUMBER\000"
- 724      455F4449 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 17
+ 731      74797065 
+ 731      00
+ 732              	.LASF73:
+ 733 0086 4359424C 		.ascii	"CYBLE_HRS_CHAR_COUNT\000"
+ 733      455F4852 
+ 733      535F4348 
+ 733      41525F43 
+ 733      4F554E54 
+ 734              	.LASF76:
+ 735 009b 4359424C 		.ascii	"CYBLE_DIS_SERIAL_NUMBER\000"
+ 735      455F4449 
+ 735      535F5345 
+ 735      5249414C 
+ 735      5F4E554D 
+ 736              	.LASF35:
+ 737 00b3 4359424C 		.ascii	"CYBLE_EVT_GATTC_ERROR_RSP\000"
+ 737      455F4556 
+ 737      545F4741 
+ 737      5454435F 
+ 737      4552524F 
+ 738              	.LASF79:
+ 739 00cd 4359424C 		.ascii	"CYBLE_DIS_SOFTWARE_REV\000"
+ 739      455F4449 
+ 739      535F534F 
+ 739      46545741 
+ 739      52455F52 
+ 740              	.LASF49:
+ 741 00e4 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_CMD_REQ\000"
+ 741      455F4556 
+ 741      545F4741 
+ 741      5454535F 
+ 741      57524954 
+ 742              	.LASF20:
+ 743 0102 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
+ 743      455F4556 
+ 743      545F4843 
+ 743      495F5354 
+ 743      41545553 
+ 744              	.LASF41:
+ 745 0117 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
+ 745      455F4556 
+ 745      545F4741 
+ 745      5454435F 
+ 745      52454144 
+ 746              	.LASF17:
+ 747 0138 4359424C 		.ascii	"CYBLE_EVT_STACK_ON\000"
+ 747      455F4556 
+ 747      545F5354 
+ 747      41434B5F 
+ 747      4F4E00
+ 748              	.LASF38:
+ 749 014b 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
+ 749      455F4556 
+ 749      545F4741 
+ 749      5454535F 
+ 749      58434E48 
+ 750              	.LASF85:
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 18
 
 
- 724      535F5345 
- 724      5249414C 
- 724      5F4E554D 
- 725              	.LASF35:
- 726 00b3 4359424C 		.ascii	"CYBLE_EVT_GATTC_ERROR_RSP\000"
- 726      455F4556 
- 726      545F4741 
- 726      5454435F 
- 726      4552524F 
- 727              	.LASF79:
- 728 00cd 4359424C 		.ascii	"CYBLE_DIS_SOFTWARE_REV\000"
- 728      455F4449 
- 728      535F534F 
- 728      46545741 
- 728      52455F52 
- 729              	.LASF49:
- 730 00e4 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_CMD_REQ\000"
- 730      455F4556 
- 730      545F4741 
- 730      5454535F 
- 730      57524954 
- 731              	.LASF20:
- 732 0102 4359424C 		.ascii	"CYBLE_EVT_HCI_STATUS\000"
- 732      455F4556 
- 732      545F4843 
- 732      495F5354 
- 732      41545553 
- 733              	.LASF41:
- 734 0117 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_TYPE_RSP\000"
- 734      455F4556 
- 734      545F4741 
- 734      5454435F 
- 734      52454144 
- 735              	.LASF17:
- 736 0138 4359424C 		.ascii	"CYBLE_EVT_STACK_ON\000"
- 736      455F4556 
- 736      545F5354 
- 736      41434B5F 
- 736      4F4E00
- 737              	.LASF38:
- 738 014b 4359424C 		.ascii	"CYBLE_EVT_GATTS_XCNHG_MTU_REQ\000"
- 738      455F4556 
- 738      545F4741 
- 738      5454535F 
- 738      58434E48 
- 739              	.LASF85:
- 740 0169 66697273 		.ascii	"firstTime\000"
- 740      7454696D 
- 740      6500
- 741              	.LASF11:
- 742 0173 696E7431 		.ascii	"int16\000"
- 742      3600
- 743              	.LASF34:
- 744 0179 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
- 744      455F4556 
- 744      545F4741 
- 744      505F4B45 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 18
+ 751 0169 66697273 		.ascii	"firstTime\000"
+ 751      7454696D 
+ 751      6500
+ 752              	.LASF11:
+ 753 0173 696E7431 		.ascii	"int16\000"
+ 753      3600
+ 754              	.LASF34:
+ 755 0179 4359424C 		.ascii	"CYBLE_EVT_GAP_KEYINFO_EXCHNGE_CMPLT\000"
+ 755      455F4556 
+ 755      545F4741 
+ 755      505F4B45 
+ 755      59494E46 
+ 756              	.LASF46:
+ 757 019d 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_MULTI_RSP\000"
+ 757      455F4556 
+ 757      545F4741 
+ 757      5454435F 
+ 757      52454144 
+ 758              	.LASF55:
+ 759 01bc 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
+ 759      455F4556 
+ 759      545F4741 
+ 759      5454535F 
+ 759      48414E44 
+ 760              	.LASF16:
+ 761 01dd 4359424C 		.ascii	"CYBLE_EVT_HOST_INVALID\000"
+ 761      455F4556 
+ 761      545F484F 
+ 761      53545F49 
+ 761      4E56414C 
+ 762              	.LASF60:
+ 763 01f4 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
+ 763      455F4556 
+ 763      545F4C32 
+ 763      4341505F 
+ 763      43424643 
+ 764              	.LASF63:
+ 765 0212 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
+ 765      455F4556 
+ 765      545F4C32 
+ 765      4341505F 
+ 765      43424643 
+ 766              	.LASF12:
+ 767 0233 666C6F61 		.ascii	"float\000"
+ 767      7400
+ 768              	.LASF44:
+ 769 0239 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
+ 769      455F4556 
+ 769      545F4741 
+ 769      5454435F 
+ 769      52454144 
+ 770              	.LASF48:
+ 771 0252 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
+ 771      455F4556 
+ 771      545F4741 
+ 771      5454435F 
+ 771      57524954 
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 19
 
 
- 744      59494E46 
- 745              	.LASF46:
- 746 019d 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_MULTI_RSP\000"
- 746      455F4556 
- 746      545F4741 
- 746      5454435F 
- 746      52454144 
- 747              	.LASF55:
- 748 01bc 4359424C 		.ascii	"CYBLE_EVT_GATTS_HANDLE_VALUE_CNF\000"
- 748      455F4556 
- 748      545F4741 
- 748      5454535F 
- 748      48414E44 
- 749              	.LASF16:
- 750 01dd 4359424C 		.ascii	"CYBLE_EVT_HOST_INVALID\000"
- 750      455F4556 
- 750      545F484F 
- 750      53545F49 
- 750      4E56414C 
- 751              	.LASF60:
- 752 01f4 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_IND\000"
- 752      455F4556 
- 752      545F4C32 
- 752      4341505F 
- 752      43424643 
- 753              	.LASF63:
- 754 0212 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_CNF\000"
- 754      455F4556 
- 754      545F4C32 
- 754      4341505F 
- 754      43424643 
- 755              	.LASF12:
- 756 0233 666C6F61 		.ascii	"float\000"
- 756      7400
- 757              	.LASF44:
- 758 0239 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_RSP\000"
- 758      455F4556 
- 758      545F4741 
- 758      5454435F 
- 758      52454144 
- 759              	.LASF48:
- 760 0252 4359424C 		.ascii	"CYBLE_EVT_GATTC_WRITE_RSP\000"
- 760      455F4556 
- 760      545F4741 
- 760      5454435F 
- 760      57524954 
- 761              	.LASF6:
- 762 026c 6C6F6E67 		.ascii	"long long int\000"
- 762      206C6F6E 
- 762      6720696E 
- 762      7400
- 763              	.LASF7:
- 764 027a 6C6F6E67 		.ascii	"long long unsigned int\000"
- 764      206C6F6E 
- 764      6720756E 
- 764      7369676E 
- 764      65642069 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 19
+ 772              	.LASF6:
+ 773 026c 6C6F6E67 		.ascii	"long long int\000"
+ 773      206C6F6E 
+ 773      6720696E 
+ 773      7400
+ 774              	.LASF7:
+ 775 027a 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 775      206C6F6E 
+ 775      6720756E 
+ 775      7369676E 
+ 775      65642069 
+ 776              	.LASF4:
+ 777 0291 6C6F6E67 		.ascii	"long int\000"
+ 777      20696E74 
+ 777      00
+ 778              	.LASF54:
+ 779 029a 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
+ 779      455F4556 
+ 779      545F4741 
+ 779      5454435F 
+ 779      48414E44 
+ 780              	.LASF95:
+ 781 02bb 70776D6F 		.ascii	"pwmout\000"
+ 781      757400
+ 782              	.LASF29:
+ 783 02c2 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_CONNECTED\000"
+ 783      455F4556 
+ 783      545F4741 
+ 783      505F4445 
+ 783      56494345 
+ 784              	.LASF71:
+ 785 02e1 4359424C 		.ascii	"CYBLE_HRS_BSL\000"
+ 785      455F4852 
+ 785      535F4253 
+ 785      4C00
+ 786              	.LASF53:
+ 787 02ef 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
+ 787      455F4556 
+ 787      545F4741 
+ 787      5454435F 
+ 787      48414E44 
+ 788              	.LASF21:
+ 789 0310 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
+ 789      455F4556 
+ 789      545F5354 
+ 789      41434B5F 
+ 789      42555359 
+ 790              	.LASF75:
+ 791 032c 4359424C 		.ascii	"CYBLE_DIS_MODEL_NUMBER\000"
+ 791      455F4449 
+ 791      535F4D4F 
+ 791      44454C5F 
+ 791      4E554D42 
+ 792              	.LASF25:
+ 793 0343 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
+ 793      455F4556 
+ 793      545F4741 
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 20
 
 
- 765              	.LASF4:
- 766 0291 6C6F6E67 		.ascii	"long int\000"
- 766      20696E74 
- 766      00
- 767              	.LASF54:
- 768 029a 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_IND\000"
- 768      455F4556 
- 768      545F4741 
- 768      5454435F 
- 768      48414E44 
- 769              	.LASF95:
- 770 02bb 70776D6F 		.ascii	"pwmout\000"
- 770      757400
- 771              	.LASF29:
- 772 02c2 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_CONNECTED\000"
- 772      455F4556 
- 772      545F4741 
- 772      505F4445 
- 772      56494345 
- 773              	.LASF71:
- 774 02e1 4359424C 		.ascii	"CYBLE_HRS_BSL\000"
- 774      455F4852 
- 774      535F4253 
- 774      4C00
- 775              	.LASF53:
- 776 02ef 4359424C 		.ascii	"CYBLE_EVT_GATTC_HANDLE_VALUE_NTF\000"
- 776      455F4556 
- 776      545F4741 
- 776      5454435F 
- 776      48414E44 
- 777              	.LASF21:
- 778 0310 4359424C 		.ascii	"CYBLE_EVT_STACK_BUSY_STATUS\000"
- 778      455F4556 
- 778      545F5354 
- 778      41434B5F 
- 778      42555359 
- 779              	.LASF75:
- 780 032c 4359424C 		.ascii	"CYBLE_DIS_MODEL_NUMBER\000"
- 780      455F4449 
- 780      535F4D4F 
- 780      44454C5F 
- 780      4E554D42 
- 781              	.LASF25:
- 782 0343 4359424C 		.ascii	"CYBLE_EVT_GAP_PASSKEY_DISPLAY_REQUEST\000"
- 782      455F4556 
- 782      545F4741 
- 782      505F5041 
- 782      53534B45 
- 783              	.LASF70:
- 784 0369 4359424C 		.ascii	"CYBLE_HRS_HRM\000"
- 784      455F4852 
- 784      535F4852 
- 784      4D00
- 785              	.LASF61:
- 786 0377 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
- 786      455F4556 
- 786      545F4C32 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 20
+ 793      505F5041 
+ 793      53534B45 
+ 794              	.LASF70:
+ 795 0369 4359424C 		.ascii	"CYBLE_HRS_HRM\000"
+ 795      455F4852 
+ 795      535F4852 
+ 795      4D00
+ 796              	.LASF61:
+ 797 0377 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_CONN_CNF\000"
+ 797      455F4556 
+ 797      545F4C32 
+ 797      4341505F 
+ 797      43424643 
+ 798              	.LASF69:
+ 799 0395 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
+ 799      455F4556 
+ 799      545F4D41 
+ 799      5800
+ 800              	.LASF9:
+ 801 03a3 75696E74 		.ascii	"uint8\000"
+ 801      3800
+ 802              	.LASF87:
+ 803 03a9 6E657742 		.ascii	"newBeatTime\000"
+ 803      65617454 
+ 803      696D6500 
+ 804              	.LASF57:
+ 805 03b5 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
+ 805      455F4556 
+ 805      545F4C32 
+ 805      4341505F 
+ 805      434F4E4E 
+ 806              	.LASF1:
+ 807 03db 756E7369 		.ascii	"unsigned char\000"
+ 807      676E6564 
+ 807      20636861 
+ 807      7200
+ 808              	.LASF50:
+ 809 03e9 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
+ 809      455F4556 
+ 809      545F4741 
+ 809      5454535F 
+ 809      50524550 
+ 810              	.LASF84:
+ 811 0408 6E657742 		.ascii	"newBeat\000"
+ 811      65617400 
+ 812              	.LASF72:
+ 813 0410 4359424C 		.ascii	"CYBLE_HRS_CPT\000"
+ 813      455F4852 
+ 813      535F4350 
+ 813      5400
+ 814              	.LASF0:
+ 815 041e 7369676E 		.ascii	"signed char\000"
+ 815      65642063 
+ 815      68617200 
+ 816              	.LASF47:
+ 817 042a 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
+ 817      455F4556 
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 21
 
 
- 786      4341505F 
- 786      43424643 
- 787              	.LASF69:
- 788 0395 4359424C 		.ascii	"CYBLE_EVT_MAX\000"
- 788      455F4556 
- 788      545F4D41 
- 788      5800
- 789              	.LASF9:
- 790 03a3 75696E74 		.ascii	"uint8\000"
- 790      3800
- 791              	.LASF87:
- 792 03a9 6E657742 		.ascii	"newBeatTime\000"
- 792      65617454 
- 792      696D6500 
- 793              	.LASF57:
- 794 03b5 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_REQ\000"
- 794      455F4556 
- 794      545F4C32 
- 794      4341505F 
- 794      434F4E4E 
- 795              	.LASF1:
- 796 03db 756E7369 		.ascii	"unsigned char\000"
- 796      676E6564 
- 796      20636861 
- 796      7200
- 797              	.LASF50:
- 798 03e9 4359424C 		.ascii	"CYBLE_EVT_GATTS_PREP_WRITE_REQ\000"
- 798      455F4556 
- 798      545F4741 
- 798      5454535F 
- 798      50524550 
- 799              	.LASF84:
- 800 0408 6E657742 		.ascii	"newBeat\000"
- 800      65617400 
- 801              	.LASF72:
- 802 0410 4359424C 		.ascii	"CYBLE_HRS_CPT\000"
- 802      455F4852 
- 802      535F4350 
- 802      5400
- 803              	.LASF0:
- 804 041e 7369676E 		.ascii	"signed char\000"
- 804      65642063 
- 804      68617200 
- 805              	.LASF47:
- 806 042a 4359424C 		.ascii	"CYBLE_EVT_GATTS_WRITE_REQ\000"
- 806      455F4556 
- 806      545F4741 
- 806      5454535F 
- 806      57524954 
- 807              	.LASF43:
- 808 0444 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
- 808      455F4556 
- 808      545F4741 
- 808      5454435F 
- 808      46494E44 
- 809              	.LASF26:
- 810 046b 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 21
+ 817      545F4741 
+ 817      5454535F 
+ 817      57524954 
+ 818              	.LASF43:
+ 819 0444 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_BY_TYPE_VALUE_RSP\000"
+ 819      455F4556 
+ 819      545F4741 
+ 819      5454435F 
+ 819      46494E44 
+ 820              	.LASF26:
+ 821 046b 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_COMPLETE\000"
+ 821      455F4556 
+ 821      545F4741 
+ 821      505F4155 
+ 821      54485F43 
+ 822              	.LASF8:
+ 823 0487 756E7369 		.ascii	"unsigned int\000"
+ 823      676E6564 
+ 823      20696E74 
+ 823      00
+ 824              	.LASF36:
+ 825 0494 4359424C 		.ascii	"CYBLE_EVT_GATT_CONNECT_IND\000"
+ 825      455F4556 
+ 825      545F4741 
+ 825      54545F43 
+ 825      4F4E4E45 
+ 826              	.LASF5:
+ 827 04af 6C6F6E67 		.ascii	"long unsigned int\000"
+ 827      20756E73 
+ 827      69676E65 
+ 827      6420696E 
+ 827      7400
+ 828              	.LASF23:
+ 829 04c1 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ\000"
+ 829      455F4556 
+ 829      545F4741 
+ 829      505F4155 
+ 829      54485F52 
+ 830              	.LASF62:
+ 831 04d8 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
+ 831      455F4556 
+ 831      545F4C32 
+ 831      4341505F 
+ 831      43424643 
+ 832              	.LASF31:
+ 833 04f9 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
+ 833      455F4556 
+ 833      545F4741 
+ 833      505F454E 
+ 833      43525950 
+ 834              	.LASF92:
+ 835 0516 2E5C4865 		.ascii	".\\HeartRateProcessing.c\000"
+ 835      61727452 
+ 835      61746550 
+ 835      726F6365 
+ 835      7373696E 
+ 836              	.LASF32:
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 22
 
 
- 810      455F4556 
- 810      545F4741 
- 810      505F4155 
- 810      54485F43 
- 811              	.LASF8:
- 812 0487 756E7369 		.ascii	"unsigned int\000"
- 812      676E6564 
- 812      20696E74 
- 812      00
- 813              	.LASF36:
- 814 0494 4359424C 		.ascii	"CYBLE_EVT_GATT_CONNECT_IND\000"
- 814      455F4556 
- 814      545F4741 
- 814      54545F43 
- 814      4F4E4E45 
- 815              	.LASF5:
- 816 04af 6C6F6E67 		.ascii	"long unsigned int\000"
- 816      20756E73 
- 816      69676E65 
- 816      6420696E 
- 816      7400
- 817              	.LASF23:
- 818 04c1 4359424C 		.ascii	"CYBLE_EVT_GAP_AUTH_REQ\000"
- 818      455F4556 
- 818      545F4741 
- 818      505F4155 
- 818      54485F52 
- 819              	.LASF62:
- 820 04d8 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DISCONN_IND\000"
- 820      455F4556 
- 820      545F4C32 
- 820      4341505F 
- 820      43424643 
- 821              	.LASF31:
- 822 04f9 4359424C 		.ascii	"CYBLE_EVT_GAP_ENCRYPT_CHANGE\000"
- 822      455F4556 
- 822      545F4741 
- 822      505F454E 
- 822      43525950 
- 823              	.LASF92:
- 824 0516 2E5C4865 		.ascii	".\\HeartRateProcessing.c\000"
- 824      61727452 
- 824      61746550 
- 824      726F6365 
- 824      7373696E 
- 825              	.LASF32:
- 826 052e 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
- 826      455F4556 
- 826      545F4741 
- 826      505F434F 
- 826      4E4E4543 
- 827              	.LASF86:
- 828 0557 70726576 		.ascii	"previousBeatTime\000"
- 828      696F7573 
- 828      42656174 
- 828      54696D65 
- 828      00
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 22
+ 837 052e 4359424C 		.ascii	"CYBLE_EVT_GAP_CONNECTION_UPDATE_COMPLETE\000"
+ 837      455F4556 
+ 837      545F4741 
+ 837      505F434F 
+ 837      4E4E4543 
+ 838              	.LASF86:
+ 839 0557 70726576 		.ascii	"previousBeatTime\000"
+ 839      696F7573 
+ 839      42656174 
+ 839      54696D65 
+ 839      00
+ 840              	.LASF14:
+ 841 0568 63686172 		.ascii	"char\000"
+ 841      00
+ 842              	.LASF59:
+ 843 056d 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
+ 843      455F4556 
+ 843      545F4C32 
+ 843      4341505F 
+ 843      434F4D4D 
+ 844              	.LASF3:
+ 845 0589 73686F72 		.ascii	"short unsigned int\000"
+ 845      7420756E 
+ 845      7369676E 
+ 845      65642069 
+ 845      6E7400
+ 846              	.LASF90:
+ 847 059c 5F426F6F 		.ascii	"_Bool\000"
+ 847      6C00
+ 848              	.LASF81:
+ 849 05a2 4359424C 		.ascii	"CYBLE_DIS_REG_CERT_DATA\000"
+ 849      455F4449 
+ 849      535F5245 
+ 849      475F4345 
+ 849      52545F44 
+ 850              	.LASF45:
+ 851 05ba 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BLOB_RSP\000"
+ 851      455F4556 
+ 851      545F4741 
+ 851      5454435F 
+ 851      52454144 
+ 852              	.LASF52:
+ 853 05d8 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
+ 853      455F4556 
+ 853      545F4741 
+ 853      5454435F 
+ 853      45584543 
+ 854              	.LASF10:
+ 855 05f7 75696E74 		.ascii	"uint32\000"
+ 855      333200
+ 856              	.LASF68:
+ 857 05fe 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
+ 857      455F4556 
+ 857      545F5045 
+ 857      4E44494E 
+ 857      475F464C 
+ 858              	.LASF65:
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 23
 
 
- 829              	.LASF14:
- 830 0568 63686172 		.ascii	"char\000"
- 830      00
- 831              	.LASF59:
- 832 056d 4359424C 		.ascii	"CYBLE_EVT_L2CAP_COMMAND_REJ\000"
- 832      455F4556 
- 832      545F4C32 
- 832      4341505F 
- 832      434F4D4D 
- 833              	.LASF3:
- 834 0589 73686F72 		.ascii	"short unsigned int\000"
- 834      7420756E 
- 834      7369676E 
- 834      65642069 
- 834      6E7400
- 835              	.LASF90:
- 836 059c 5F426F6F 		.ascii	"_Bool\000"
- 836      6C00
- 837              	.LASF81:
- 838 05a2 4359424C 		.ascii	"CYBLE_DIS_REG_CERT_DATA\000"
- 838      455F4449 
- 838      535F5245 
- 838      475F4345 
- 838      52545F44 
- 839              	.LASF45:
- 840 05ba 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BLOB_RSP\000"
- 840      455F4556 
- 840      545F4741 
- 840      5454435F 
- 840      52454144 
- 841              	.LASF52:
- 842 05d8 4359424C 		.ascii	"CYBLE_EVT_GATTC_EXEC_WRITE_RSP\000"
- 842      455F4556 
- 842      545F4741 
- 842      5454435F 
- 842      45584543 
- 843              	.LASF10:
- 844 05f7 75696E74 		.ascii	"uint32\000"
- 844      333200
- 845              	.LASF68:
- 846 05fe 4359424C 		.ascii	"CYBLE_EVT_PENDING_FLASH_WRITE\000"
- 846      455F4556 
- 846      545F5045 
- 846      4E44494E 
- 846      475F464C 
- 847              	.LASF65:
- 848 061c 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
- 848      455F4556 
- 848      545F4C32 
- 848      4341505F 
- 848      43424643 
- 849              	.LASF13:
- 850 063f 646F7562 		.ascii	"double\000"
- 850      6C6500
- 851              	.LASF89:
- 852 0646 74776F53 		.ascii	"twoSampleTime\000"
- 852      616D706C 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 23
+ 859 061c 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_RX_CREDIT_IND\000"
+ 859      455F4556 
+ 859      545F4C32 
+ 859      4341505F 
+ 859      43424643 
+ 860              	.LASF13:
+ 861 063f 646F7562 		.ascii	"double\000"
+ 861      6C6500
+ 862              	.LASF89:
+ 863 0646 74776F53 		.ascii	"twoSampleTime\000"
+ 863      616D706C 
+ 863      6554696D 
+ 863      6500
+ 864              	.LASF66:
+ 865 0654 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_TX_CREDIT_IND\000"
+ 865      455F4556 
+ 865      545F4C32 
+ 865      4341505F 
+ 865      43424643 
+ 866              	.LASF83:
+ 867 0677 4359424C 		.ascii	"CYBLE_DIS_CHAR_COUNT\000"
+ 867      455F4449 
+ 867      535F4348 
+ 867      41525F43 
+ 867      4F554E54 
+ 868              	.LASF28:
+ 869 068c 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
+ 869      455F4556 
+ 869      545F4741 
+ 869      50505F41 
+ 869      44564552 
+ 870              	.LASF19:
+ 871 06b4 4359424C 		.ascii	"CYBLE_EVT_HARDWARE_ERROR\000"
+ 871      455F4556 
+ 871      545F4841 
+ 871      52445741 
+ 871      52455F45 
+ 872              	.LASF64:
+ 873 06cd 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
+ 873      455F4556 
+ 873      545F4C32 
+ 873      4341505F 
+ 873      43424643 
+ 874              	.LASF58:
+ 875 06ec 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
+ 875      455F4556 
+ 875      545F4C32 
+ 875      4341505F 
+ 875      434F4E4E 
+ 876              	.LASF22:
+ 877 0712 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
+ 877      455F4556 
+ 877      545F4741 
+ 877      50435F53 
+ 877      43414E5F 
+ 878              	.LASF40:
+ 879 0736 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 24
 
 
- 852      6554696D 
- 852      6500
- 853              	.LASF66:
- 854 0654 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_TX_CREDIT_IND\000"
- 854      455F4556 
- 854      545F4C32 
- 854      4341505F 
- 854      43424643 
- 855              	.LASF83:
- 856 0677 4359424C 		.ascii	"CYBLE_DIS_CHAR_COUNT\000"
- 856      455F4449 
- 856      535F4348 
- 856      41525F43 
- 856      4F554E54 
- 857              	.LASF28:
- 858 068c 4359424C 		.ascii	"CYBLE_EVT_GAPP_ADVERTISEMENT_START_STOP\000"
- 858      455F4556 
- 858      545F4741 
- 858      50505F41 
- 858      44564552 
- 859              	.LASF19:
- 860 06b4 4359424C 		.ascii	"CYBLE_EVT_HARDWARE_ERROR\000"
- 860      455F4556 
- 860      545F4841 
- 860      52445741 
- 860      52455F45 
- 861              	.LASF64:
- 862 06cd 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_READ\000"
- 862      455F4556 
- 862      545F4C32 
- 862      4341505F 
- 862      43424643 
- 863              	.LASF58:
- 864 06ec 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CONN_PARAM_UPDATE_RSP\000"
- 864      455F4556 
- 864      545F4C32 
- 864      4341505F 
- 864      434F4E4E 
- 865              	.LASF22:
- 866 0712 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_PROGRESS_RESULT\000"
- 866      455F4556 
- 866      545F4741 
- 866      50435F53 
- 866      43414E5F 
- 867              	.LASF40:
- 868 0736 4359424C 		.ascii	"CYBLE_EVT_GATTC_READ_BY_GROUP_TYPE_RSP\000"
- 868      455F4556 
- 868      545F4741 
- 868      5454435F 
- 868      52454144 
- 869              	.LASF78:
- 870 075d 4359424C 		.ascii	"CYBLE_DIS_FIRMWARE_REV\000"
- 870      455F4449 
- 870      535F4649 
- 870      524D5741 
- 870      52455F52 
- 871              	.LASF39:
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 24
-
-
- 872 0774 4359424C 		.ascii	"CYBLE_EVT_GATTC_XCHNG_MTU_RSP\000"
- 872      455F4556 
- 872      545F4741 
- 872      5454435F 
- 872      5843484E 
- 873              	.LASF77:
- 874 0792 4359424C 		.ascii	"CYBLE_DIS_HARDWARE_REV\000"
- 874      455F4449 
- 874      535F4841 
- 874      52445741 
- 874      52455F52 
- 875              	.LASF18:
- 876 07a9 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
- 876      455F4556 
- 876      545F5449 
- 876      4D454F55 
- 876      5400
- 877              	.LASF67:
- 878 07bb 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
- 878      455F4556 
- 878      545F4C32 
- 878      4341505F 
- 878      43424643 
- 879              	.LASF33:
- 880 07df 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
- 880      455F4556 
- 880      545F4741 
- 880      50435F53 
- 880      43414E5F 
- 881              	.LASF88:
- 882 07fe 6164634F 		.ascii	"adcOut\000"
- 882      757400
- 883              	.LASF42:
- 884 0805 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
- 884      455F4556 
- 884      545F4741 
- 884      5454435F 
- 884      46494E44 
- 885              	.LASF96:
- 886 0823 68656172 		.ascii	"heartRate\000"
- 886      74526174 
- 886      6500
- 887              	.LASF51:
- 888 082d 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
- 888      455F4556 
- 888      545F4741 
- 888      5454535F 
- 888      45584543 
- 889              	.LASF93:
- 890 084c 433A5C55 		.ascii	"C:\\Users\\mliha\\Documents\\Lab_3_Embedded\\BLE La"
- 890      73657273 
- 890      5C6D6C69 
- 890      68615C44 
- 890      6F63756D 
- 891 087a 6220335C 		.ascii	"b 3\\BLE Lab 3.cydsn\000"
- 891      424C4520 
- 891      4C616220 
-ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccwSjL8A.s 			page 25
-
-
- 891      332E6379 
- 891      64736E00 
- 892              	.LASF30:
- 893 088e 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_DISCONNECTED\000"
- 893      455F4556 
- 893      545F4741 
- 893      505F4445 
- 893      56494345 
- 894              	.LASF56:
- 895 08b0 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
+ 879      455F4556 
+ 879      545F4741 
+ 879      5454435F 
+ 879      52454144 
+ 880              	.LASF78:
+ 881 075d 4359424C 		.ascii	"CYBLE_DIS_FIRMWARE_REV\000"
+ 881      455F4449 
+ 881      535F4649 
+ 881      524D5741 
+ 881      52455F52 
+ 882              	.LASF39:
+ 883 0774 4359424C 		.ascii	"CYBLE_EVT_GATTC_XCHNG_MTU_RSP\000"
+ 883      455F4556 
+ 883      545F4741 
+ 883      5454435F 
+ 883      5843484E 
+ 884              	.LASF77:
+ 885 0792 4359424C 		.ascii	"CYBLE_DIS_HARDWARE_REV\000"
+ 885      455F4449 
+ 885      535F4841 
+ 885      52445741 
+ 885      52455F52 
+ 886              	.LASF18:
+ 887 07a9 4359424C 		.ascii	"CYBLE_EVT_TIMEOUT\000"
+ 887      455F4556 
+ 887      545F5449 
+ 887      4D454F55 
+ 887      5400
+ 888              	.LASF67:
+ 889 07bb 4359424C 		.ascii	"CYBLE_EVT_L2CAP_CBFC_DATA_WRITE_IND\000"
+ 889      455F4556 
+ 889      545F4C32 
+ 889      4341505F 
+ 889      43424643 
+ 890              	.LASF33:
+ 891 07df 4359424C 		.ascii	"CYBLE_EVT_GAPC_SCAN_START_STOP\000"
+ 891      455F4556 
+ 891      545F4741 
+ 891      50435F53 
+ 891      43414E5F 
+ 892              	.LASF88:
+ 893 07fe 6164634F 		.ascii	"adcOut\000"
+ 893      757400
+ 894              	.LASF42:
+ 895 0805 4359424C 		.ascii	"CYBLE_EVT_GATTC_FIND_INFO_RSP\000"
  895      455F4556 
  895      545F4741 
- 895      5454535F 
- 895      44415441 
- 896              	.LASF91:
- 897 08d4 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
- 897      4320342E 
- 897      382E3420 
- 897      32303134 
- 897      30353236 
- 898 0907 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
- 898      20726576 
- 898      6973696F 
- 898      6E203231 
- 898      31333538 
- 899 093a 30202D66 		.ascii	"0 -ffunction-sections\000"
- 899      66756E63 
- 899      74696F6E 
- 899      2D736563 
- 899      74696F6E 
- 900              	.LASF80:
- 901 0950 4359424C 		.ascii	"CYBLE_DIS_SYSTEM_ID\000"
- 901      455F4449 
- 901      535F5359 
- 901      5354454D 
- 901      5F494400 
- 902              	.LASF74:
- 903 0964 4359424C 		.ascii	"CYBLE_DIS_MANUFACTURER_NAME\000"
- 903      455F4449 
- 903      535F4D41 
- 903      4E554641 
- 903      43545552 
- 904              	.LASF82:
- 905 0980 4359424C 		.ascii	"CYBLE_DIS_PNP_ID\000"
- 905      455F4449 
- 905      535F504E 
- 905      505F4944 
- 905      00
- 906              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br
+ 895      5454435F 
+ 895      46494E44 
+ 896              	.LASF96:
+ 897 0823 68656172 		.ascii	"heartRate\000"
+ 897      74526174 
+ 897      6500
+ 898              	.LASF51:
+ 899 082d 4359424C 		.ascii	"CYBLE_EVT_GATTS_EXEC_WRITE_REQ\000"
+ 899      455F4556 
+ 899      545F4741 
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 25
+
+
+ 899      5454535F 
+ 899      45584543 
+ 900              	.LASF93:
+ 901 084c 433A5C55 		.ascii	"C:\\Users\\mliha\\Documents\\Lab_3_Embedded\\BLE La"
+ 901      73657273 
+ 901      5C6D6C69 
+ 901      68615C44 
+ 901      6F63756D 
+ 902 087a 6220335C 		.ascii	"b 3\\BLE Lab 3.cydsn\000"
+ 902      424C4520 
+ 902      4C616220 
+ 902      332E6379 
+ 902      64736E00 
+ 903              	.LASF30:
+ 904 088e 4359424C 		.ascii	"CYBLE_EVT_GAP_DEVICE_DISCONNECTED\000"
+ 904      455F4556 
+ 904      545F4741 
+ 904      505F4445 
+ 904      56494345 
+ 905              	.LASF56:
+ 906 08b0 4359424C 		.ascii	"CYBLE_EVT_GATTS_DATA_SIGNED_CMD_REQ\000"
+ 906      455F4556 
+ 906      545F4741 
+ 906      5454535F 
+ 906      44415441 
+ 907              	.LASF91:
+ 908 08d4 474E5520 		.ascii	"GNU C 4.8.4 20140526 (release) [ARM/embedded-4_8-br"
+ 908      4320342E 
+ 908      382E3420 
+ 908      32303134 
+ 908      30353236 
+ 909 0907 616E6368 		.ascii	"anch revision 211358] -mcpu=cortex-m0 -mthumb -g -O"
+ 909      20726576 
+ 909      6973696F 
+ 909      6E203231 
+ 909      31333538 
+ 910 093a 30202D66 		.ascii	"0 -ffunction-sections\000"
+ 910      66756E63 
+ 910      74696F6E 
+ 910      2D736563 
+ 910      74696F6E 
+ 911              	.LASF80:
+ 912 0950 4359424C 		.ascii	"CYBLE_DIS_SYSTEM_ID\000"
+ 912      455F4449 
+ 912      535F5359 
+ 912      5354454D 
+ 912      5F494400 
+ 913              	.LASF74:
+ 914 0964 4359424C 		.ascii	"CYBLE_DIS_MANUFACTURER_NAME\000"
+ 914      455F4449 
+ 914      535F4D41 
+ 914      4E554641 
+ 914      43545552 
+ 915              	.LASF82:
+ 916 0980 4359424C 		.ascii	"CYBLE_DIS_PNP_ID\000"
+ 916      455F4449 
+ 916      535F504E 
+ARM GAS  C:\Users\mliha\AppData\Local\Temp\ccz7mvm4.s 			page 26
+
+
+ 916      505F4944 
+ 916      00
+ 917              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.8.4 20140526 (release) [ARM/embedded-4_8-br

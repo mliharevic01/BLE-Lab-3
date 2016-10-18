@@ -14,9 +14,9 @@
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\cyfitteriar.inc" value="NONE;" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\cyfitter.h" value="NONE;" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\cydisabledsheets.h" value="NONE;" />
-  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\TCPWM.c" value="ARM_C_FILE;TCPWM" />
-  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\TCPWM.h" value="NONE;TCPWM" />
-  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\TCPWM_PM.c" value="ARM_C_FILE;TCPWM" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Opamp.c" value="ARM_C_FILE;Opamp" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Opamp.h" value="NONE;Opamp" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Opamp_PM.c" value="ARM_C_FILE;Opamp" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\SW2_Switch.c" value="ARM_C_FILE;SW2_Switch" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\SW2_Switch.h" value="NONE;SW2_Switch" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\SW2_Switch_aliases.h" value="NONE;SW2_Switch" />
@@ -53,17 +53,24 @@
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\BLE_1_StackGattClient.h" value="NONE;BLE_1" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\BLE_1_Stack.h" value="NONE;BLE_1" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\BLE_1_eventHandler.h" value="NONE;BLE_1" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Clock_1.c" value="ARM_C_FILE;Clock_1" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Clock_1.h" value="NONE;Clock_1" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\ADC.c" value="ARM_C_FILE;ADC" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\ADC.h" value="NONE;ADC" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\ADC_PM.c" value="ARM_C_FILE;ADC" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\ADC_INT.c" value="ARM_C_FILE;ADC" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Heart_Rate_input.c" value="ARM_C_FILE;Heart_Rate_input" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Heart_Rate_input.h" value="NONE;Heart_Rate_input" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Heart_Rate_input_aliases.h" value="NONE;Heart_Rate_input" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\PWM.c" value="ARM_C_FILE;PWM" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\PWM.h" value="NONE;PWM" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\PWM_PM.c" value="ARM_C_FILE;PWM" />
-  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Clock_2.c" value="ARM_C_FILE;Clock_2" />
-  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Clock_2.h" value="NONE;Clock_2" />
-  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Clock_1.c" value="ARM_C_FILE;Clock_1" />
-  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Clock_1.h" value="NONE;Clock_1" />
-  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Pulse_Count.c" value="ARM_C_FILE;Pulse_Count" />
-  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Pulse_Count.h" value="NONE;Pulse_Count" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\BLE_1_bless_isr.c" value="ARM_C_FILE;BLE_1_bless_isr" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\BLE_1_bless_isr.h" value="NONE;BLE_1_bless_isr" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\ADC_IRQ.c" value="ARM_C_FILE;ADC_IRQ" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\ADC_IRQ.h" value="NONE;ADC_IRQ" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\ADC_intClock.c" value="ARM_C_FILE;ADC_intClock" />
+  <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\ADC_intClock.h" value="NONE;ADC_intClock" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\cm0gcc.ld" value="NONE;cy_boot" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Cm0RealView.scat" value="NONE;cy_boot" />
   <file name="C:\Users\mliha\Documents\Lab_3_Embedded\BLE Lab 3\BLE Lab 3.cydsn\codegentemp\Cm0Start.c" value="ARM_C_FILE;cy_boot" />
